@@ -1,0 +1,12 @@
+.container a:hover{
+    text-decoration: none;
+}
+.btn{
+    background-color: #EEEEEE;
+    width: 200px;
+    border-radius: 0px;
+}
+.btn:focus{
+    background: #ffffff!important;
+    width:205px;
+}

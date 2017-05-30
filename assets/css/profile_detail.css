@@ -1,0 +1,219 @@
+.profile_detail.container-fluid{
+    padding:0px;
+}
+.profile_detail .cover-allsong{
+    margin:0 -15px 0px;
+}
+ul.docs-pictures{
+    list-style:none;
+}
+/*********** ALL VIDEOS ***************/
+#allvideos .allvideo-playlist ul.docs-pictures{
+    padding-left:0px;
+}
+
+#allvideos .allvideo-playlist .docs-pictures li{
+    margin: 15px 0;
+}
+#allvideos .allvideo-playlist .remix_items a{
+    margin:0px;
+}
+#allvideos .allvideo-playlist .docs-pictures li figure.effect-bubba{
+    height:200px;
+}
+
+#allvideos .allvideo-playlist figure.effect-bubba h2{
+    
+}
+#allvideos .allvideo-playlist #photo{
+    padding:0 75px;
+}
+/*********** ALL PRESS ***************/
+#allpress .press-quote{
+    box-shadow: 1px 2px 1px #888;
+    margin: 15px 0;
+}
+/*********** ALL FANS ***************/
+#allfans .img_fans{
+    height:200px;
+}
+#allfans .about-fan{
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+#allfans .col-md-2{
+    margin:10px 0;
+}
+.image_fix_value_video{
+    width: 110px;
+    height: 110px;
+    background-position: 50% 25% !important;
+    background-size: cover !important;
+    transition-duration: 500ms;
+    transition-property: width, height;
+    cursor: pointer;
+}
+
+/*
+.navbar-default .navbar-nav > li > a{
+    transition: all .2s ease;
+    border-top: 1px solid #e7e7e7;
+}
+.navbar-default .navbar-nav .active > a,.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+    background: #09487D!important;
+    color:#fff!important;
+    border-top:1px solid #E40879;
+}
+.profile_detail .navbar-default .navbar-header{
+        position: inherit;
+}
+.profile_detail .navbar-default .navbar-header button{
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}*/
+/*********** ALL BLOGS ***************/
+#blogs .col-xs-6,
+#allblogs .allblogs .col-xs-6{
+    height:200px;
+    overflow: hidden;
+}
+#blogs .left-blog h2,
+#allblogs .allblogs .left-blog h2{
+    font-size:1.3em;
+    margin-top:5px;
+}
+#blogs .left-blog h2 a{
+    text-decoration: none;
+}
+#blogs .img-thumbnail,
+#allblogs .allblogs .img-thumbnail{
+    width:100%;
+}
+#blogs .content-blogs a,
+#allblogs .allblogs .content-blogs a{
+        position: absolute;
+    /* top: 128px;width: 79px; */
+    bottom: 0;    
+    right: 15px;
+    padding: 5px 10px;
+    background: #337ab7;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.8s ease;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#blogs .content-blogs a:hover,
+#allblogs .allblogs .content-blogs a:hover{
+    background: #09487D;
+}
+/******* ALL SONG  ******/
+#jquery_jplayer_29{
+    width: 478px!important;
+}
+#jquery_jplayer_29 img{
+    width: 478px!important;
+}
+@media screen and  (max-width: 992px){
+    .image_album{
+        height:220px!important;
+    }
+    #blogs .col-md-3,
+    #allblogs .allblogs .col-md-3{
+        width:50%;
+    }
+}
+@media (min-width:768px) and (max-width:992px)
+{
+    #blogs .col-xs-6 , 
+    #allblogs .allblogs .col-xs-6{
+        width:50%;
+    }
+}
+@media (max-width:768px){
+    #blogs img,
+    #allblogs .allblogs img{
+        min-height:160px!important;
+    }
+    .blogs-container{
+        height: 195px;
+    }
+    #blogs .col-xs-6,
+    #allblogs .allblogs .col-xs-6{
+        height:175px;
+    }
+    #blogs .ctn-blogs,
+    #allblogs .ctn-blogs{
+        min-height: 130px;
+        max-height: 130px;
+        
+    }
+    #blogs .content-blogs a,
+    #allblogs .allblogs .content-blogs a{
+        right: 15px;
+    }
+    #blogs .blogs-container
+    #allblogs .allblogs-container{
+        min-height:175px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 600px){
+    #blogs img,
+    #allblogs .allblogs img{
+        min-height:250px!important;
+    }
+    #blogs .col-xs-6,
+    #allblogs .allblogs .col-xs-6{
+        width:100%;
+        height:250px;
+    }
+    #blogs .ctn-blogs,
+    #allblogs .allblogs .ctn-blogs{
+        margin-top:10px;  
+        padding-left: 15px;  
+    }
+    #allvideos .col-md-3{
+        width:100%;
+    } 
+    .menu_detailprofile .playlist-allsong .col-md-4{
+        width:100%!important;
+    }
+
+}
+@media (min-width:500px) and (max-width:599px)
+{
+    #allvideos figure.effect-bubba h2{
+            padding-top: 23%;
+    }
+}
+@media (max-width: 480px){
+    #allvideos .allvideo-playlist #photo{
+    padding:0 15px;
+    }
+    #blogs img,
+    #allblogs .allblogs img{
+        min-height:200px!important;
+    }
+    #blogs .col-xs-6,
+    #allblogs .allblogs .col-xs-6{
+        width:100%;
+        height:200px;
+    }
+    #allvideos figure.effect-bubba h2{
+        padding-top: 26%;
+    }
+}
+@media (max-width: 380px){
+    #allpress .press-quote .page_object_press_item p{
+        font-size:14px;
+    }
+}

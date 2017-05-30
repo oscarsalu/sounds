@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>template2</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".l1").click(function(){
+				$("#info").siblings().fadeOut("slow","linear");
+				$("#info").fadeIn("slow","linear");
+				$(this).parent().siblings().children().removeClass("current");
+				$(this).addClass("current");
+			});
+			$(".l2").click(function(){
+				$("#photos").siblings().fadeOut("slow","linear");
+				$("#photos").fadeIn("slow","linear");
+				$(this).parent().siblings().children().removeClass("current");
+				$(this).addClass("current");
+			});
+			$(".l3").click(function(){
+				$("#stats").siblings().fadeOut("slow","linear");
+				$("#stats").fadeIn("slow","linear");
+				$(this).parent().siblings().children().removeClass("current");
+				$(this).addClass("current");
+			});
+			$(".l4").click(function(){
+				$("#videos").siblings().fadeOut("slow","linear");
+				$("#videos").fadeIn("slow","linear");
+				$(this).parent().siblings().children().removeClass("current");
+				$(this).addClass("current");
+			});
+			$(".l5").click(function(){
+				$("#bios").siblings().fadeOut("slow","linear");
+				$("#bios").fadeIn("slow","linear");
+				$(this).parent().siblings().children().removeClass("current");
+				$(this).addClass("current");
+			});
+			$(".l6").click(function(){
+				$("#song").siblings().fadeOut("slow","linear");
+				$("#song").fadeIn("slow","linear");
+				$(this).parent().siblings().children().removeClass("current");
+				$(this).addClass("current");
+			});
+			$(".l7").click(function(){
+				$("#press").siblings().fadeOut("slow","linear");
+				$("#press").fadeIn("slow","linear");
+				$(this).parent().siblings().children().removeClass("current");
+				$(this).addClass("current");
+			});
+			$(".l8").click(function(){
+				$("#show").siblings().fadeOut("slow","linear");
+				$("#show").fadeIn("slow","linear");
+				$(this).parent().siblings().children().removeClass("current");
+				$(this).addClass("current");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+
+		<header>
+			<div id="menu">
+				<nav class="navbar navbar-inverse navbar-fixed-top">
+				  <div class="container-fluid">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <a class="navbar-brand" href="#">Steven</a>
+				    </div>
+
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav js">
+				        <li><a href="#" class="l1 current">1.Info</a></li>
+				        <li><a href="#" class="l2">2.Photos</a></li>
+				        <li><a href="#" class="l3">3.Stats</a></li>
+						<li><a href="#" class="l4">4.Videos</a></li>
+						<li><a href="#" class="l5">5.Bios</a></li>
+						<li><a href="#" class="l6">6.Songs</a></li>
+						<li><a href="#" class="l7">7.Press</a></li>
+						<li><a href="#" class="l8">8.Shows</a></li>
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+				</nav>
+			</div><!-- end #menu -->
+		</header>
+		<div id="main-content">
+			<div class="container">
+				<div id="info" class="panels">
+					<div class="row">
+						<h2 class="h2 animated fadeInDown">Info</h2>
+						<div class="col-md-3">
+							<div class="info">
+								<img src="images/taylo.jpg" class="img-responsive animated bounceInDown">
+								<h3 class="animated fadeInUp">Steven</h3>
+
+								<p class="animated fadeInUp">From:<br />
+									<span class="from">from</span>
+								</p>
+
+								<p class="animated fadeInUp">Genre:<br />
+									<span class="genre">genre</span>
+								</p>
+
+								<p class="animated fadeInUp">Members:<br />
+									<span class="members">members</span>
+								</p>
+								<p class="animated fadeInUp">Bios:<br />
+									<span class="bios">lorem ipsum dolar it set</span>
+								</p>
+							</div>
+						</div>
+
+						<div class="col-md-9">
+							<div id="info_statistics_div_placeholder">
+	                            <ul class="new_charts fix-nav">
+	                                <li class="animated bounceInLeft">
+	                                    <div id="gender_demographics">
+	                                        <div class="chartTitle">Gender Demographics</div>
+	                                        <div class="chartBody">No Data Available</div>
+	                                    </div>
+	                                    <div class="clearfix"></div>
+	                                </li>
+	                                <li class="animated bounceInRight">
+	                                    <div id="demographics">
+	                                        <div class="chartTitle">Age Breakdown</div>
+	                                        <div class="chartBody">
+	                                            <div class="row">
+	                                                <span class="labelChart">13-17</span>
+	                                                <div class="lineChart">
+	                                                    <div class="innerLineChart"></div>
+	                                                </div>
+	                                            </div>
+	                                            <div class="row">
+	                                                <span class="labelChart">18-24</span>
+	                                                <div class="lineChart">
+	                                                    <div class="innerLineChart"></div>
+	                                                </div>
+	                                            </div>
+	                                            <div class="row">
+	                                                <span class="labelChart">25-34</span>
+	                                                <div class="lineChart">
+	                                                    <div class="innerLineChart"></div>
+	                                                </div>
+	                                            </div>
+	                                            <div class="row">
+	                                                <span class="labelChart">35-44</span>
+	                                                <div class="lineChart">
+	                                                    <div class="innerLineChart"></div>
+	                                                </div>
+	                                            </div>
+	                                            <div class="row">
+	                                                <span class="labelChart">45+</span>
+	                                                <div class="lineChart">
+	                                                    <div class="innerLineChart last"></div>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                    <div class="clearfix"></div>
+	                                </li>
+	                                <li class="animated bounceInLeft">
+	                                    <div id="fans">
+	                                        <div class="chartTitle"><span id="fans_count">2</span>&nbsp;&nbsp;fans</div>
+	                                        <div class="chartBody"></div>
+	                                    </div>
+	                                    <div class="clearfix"></div>
+	                                </li>
+	                                <li  class="animated bounceInRight">
+	                                    <div id="fans_near_chart">
+	                                        <div class="chartTitle">Fans Near</div>
+	                                        <div class="chartBody"> No Data Available </div>
+	                                    </div>
+	                                    <div class="clearfix"></div>
+	                                </li>
+	                                <div style="clear: both"></div>
+	                            </ul>
+	                            <div class="see_all">*Fan demographics represent 99Sound fans only</div>
+	                        </div>
+						</div>
+					</div>
+				</div><!-- end #info -->
+
+				<div id="photos" class="none panels">
+					<h2 class="h2 animated fadeInDown">Photos</h2>
+						<div class="row">
+							<div class="li-image">
+								<a href="#" class="animated slideInLeft"><img src="images/w1.png" class="img-responsive fix-img" title="My photos"></a>
+								<a href="#" class="animated slideInLeft"><img src="images/w2.png" class="img-responsive fix-img" title="My photos"></a>
+								<a href="#" class="animated slideInUp"><img src="images/w3.png" class="img-responsive fix-img" title="My photos"></a>
+								<a href="#" class="animated slideInRight"><img src="images/w4.png" class="img-responsive fix-img" title="My photos"></a>
+								<a href="#" class="animated slideInRight"><img src="images/w5.png" class="img-responsive fix-img" title="My photos"></a>
+								<a href="#" class="animated slideInLeft"><img src="images/w3.png" class="img-responsive fix-img" title="My photos"></a>
+								<a href="#" class="animated slideInLeft"><img src="images/w1.png" class="img-responsive fix-img" title="My photos"></a>
+								<a href="#" class="animated slideInUp"><img src="images/w2.png" class="img-responsive fix-img" title="My photos"></a>
+								<a href="#" class="animated slideInRight"><img src="images/w5.png" class="img-responsive fix-img" title="My photos"></a>
+								<a href="#" class="animated slideInRight"><img src="images/w4.png" class="img-responsive fix-img" title="My photos"></a>
+							</div>
+						</div>
+				</div><!-- end #photos -->
+
+				<div id="stats" class="none panels">
+					<h2 class="h2 animated fadeInDown">Stats</h2>
+					<div class="row">
+						<div class="index">
+							<h5 class="animated fadeInDown">Fan Demographics</h5>
+							<p class="animated fadeInDown">Top Demographics is Females (age 13-17)</p>
+
+							<table  class="animated fadeInRight">
+								<tr>
+									<th>Female</th>
+									<th>Age</th>
+									<th>Male</th>
+								</tr>
+
+								<tr>
+									<td>0.0%</td>
+									<td>13-17</td>
+									<td>0.0%</td>
+								</tr>
+
+								<tr>
+									<td>0.0%</td>
+									<td>18-24</td>
+									<td>0.0%</td>
+								</tr>
+								<tr>
+									<td>0.0%</td>
+									<td>25-34</td>
+									<td>0.0%</td>
+								</tr>
+								<tr>
+									<td>0.0%</td>
+									<td>35-44</td>
+									<td>0.0%</td>
+								</tr>
+								<tr>
+									<td>0.0%</td>
+									<td>45-54</td>
+									<td>0.0%</td>
+								</tr>
+								<tr>
+									<td>0.0%</td>
+									<td>55+</td>
+									<td>0.0%</td>
+								</tr>
+								<tr>
+									<td>0.0%</td>
+									<td>n/a</td>
+									<td>0.0%</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="stats-info animated fadeInLeft">
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-xs-6 stats-info">
+									<h5>Their fans live here</h5>
+									<p>No Data Available</p>
+								</div>
+
+								<div class="col-md-6 col-sm-6 col-xs-6 stats-info">
+									<h5>Fan Summary</h5>
+									<p><b>2 total fans</b></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- end #stats -->
+
+				<div id="videos" class="none">
+					<h2 class="h2 animated fadeInDown">Videos</h2>
+					<div class="video-content">
+						<div class="row">
+							<div class="tab-content tab-video col-md-6 col-md-offset-2">
+							    <div role="tabpanel" class="tab-pane active animated zoomIn" id="th1">
+							    	<iframe width="100%" height="380" src="https://www.youtube.com/embed/XdP8KWQbDqE" frameborder="0" allowfullscreen></iframe>
+							    </div>
+							    <div role="tabpanel" class="tab-pane animated zoomIn" id="th2">
+							    	<iframe width="100%" height="380" src="https://www.youtube.com/embed/KRaWnd3LJfs" frameborder="0" allowfullscreen></iframe>
+							    </div>
+							    <div role="tabpanel" class="tab-pane animated zoomIn" id="th3">
+							    	<iframe width="100%" height="380" src="https://www.youtube.com/embed/NmugSMBh_iI" frameborder="0" allowfullscreen></iframe>
+							    </div>
+							    <div role="tabpanel" class="tab-pane animated zoomIn" id="th4">
+							    	<iframe width="100%" height="380" src="https://www.youtube.com/embed/09R8_2nJtjg" frameborder="0" allowfullscreen></iframe>
+							    </div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="video-caption animated fadeInUp">
+									<p>This <b>Videos</b> has</p>
+									<ul>
+										<li><b>10101</b> views</li>
+										<li><b>10101</b> likes</li>
+										<li><b>10101</b> comment</li>
+									</ul>
+								</div>
+								<p class="but-control animated fadeInUp"><a href="#" class="prev">...Prev</a><a href="#" class="next">Next...</a></p>
+							</div>
+
+						</div>
+						<script type="text/javascript">
+							
+							$(document).ready(function(){
+								$(".prev").click(function(event){
+									// event.preventDefault();
+									// alert(1);
+									if($("#th4").hasClass("active")){
+										event.preventDefault();
+										$("#th4").hide("slow","swing");
+										$("#th3").show("slow","swing");
+										$("*").removeClass("active");
+										$("#th3").addClass("active");
+										//$(".video-info:last-child")addClass("none");
+										//$(".video-info:nth-child(3)")removeClass("none");
+										return;
+									}
+									if ($("#th3").hasClass("active")) {
+										event.preventDefault(); 
+										$("#th3").hide("slow","swing");
+										$("#th2").show("slow","swing");
+										$("*").removeClass("active");
+										$("#th2").addClass("active");
+										//$(".video-info:nth-child(3)")addClass("none");
+										//$(".video-info:nth-child(2)")removeClass("none");
+										return;
+									}
+									if ($("#th2").hasClass("active")) {
+										event.preventDefault(); 
+										$("#th2").hide("slow","swing");
+										$("#th1").show("slow","swing");
+										$("*").removeClass("active");
+										$("#th1").addClass("active");
+										//$(".video-info:nth-child(2)")addClass("none");
+										//$(".video-info:first-child")removeClass("none");
+										return;
+									}
+									if ($("#th1").hasClass("active")) {
+										event.preventDefault();
+										return;
+									}
+								});//previous video
+
+								$(".next").click(function (event) {
+									if($("#th1").hasClass("active")){
+										event.preventDefault();
+										$("#th1").hide("slow","linear");
+										$("#th2").show("slow","linear");
+										$("*").removeClass("active");
+										$("#th2").addClass("active");
+										//$(".col-3>.video-info2")removeClass("none");
+										return;
+									}
+									if ($("#th2").hasClass("active")) {
+										event.preventDefault();
+										$("#th2").hide("slow","linear");
+										$("#th3").show("slow","linear");
+										$("*").removeClass("active");
+										$("#th3").addClass("active");
+										//$(".video-info:nth-child(2)")addClass("none");
+										//$(".video-info:nth-child(3)")removeClass("none");
+										return;
+									}
+									if ($("#th3").hasClass("active")) {
+										event.preventDefault();
+										$("#th3").hide("slow","linear");
+										$("#th4").show("slow","linear");
+										$("*").removeClass("active");
+										$("#th4").addClass("active");
+										//$(".video-info:nth-child(3)")addClass("none");
+										//$(".video-info:last-child")removeClass("none");
+										return;
+									}
+									if ($("#th4").hasClass("active")) {
+										event.preventDefault();
+										return;
+										//$(this).tab('show')
+									}
+								});//next video
+							});
+						</script>
+					</div>
+				</div><!-- end #video -->
+
+				<div id="bios" class="none">
+					<h2 class="h2 animated fadeInDown">Bios</h2>
+					<div class="row">
+						<div class="bios-content">
+							<div class="bios-img animated fadeInDown">
+								<img src="images/taylo.jpg" class="img-responsive">
+							</div>
+							<p class="animated fadeInUp">Lorem ipsum dolar idot</p>
+						</div>
+					</div>
+				</div><!-- end #bios -->
+
+				<div id="song" class="none">
+					<h2 class="h2 animated fadeInDown">Song</h2>
+					<div class="song-content">
+						<div class="row">
+							<div class="col-md-2">
+								<ul class="li-btn">
+									<li><a href="#" class="butn1 animated fadeInUp">List 1</a></li>
+									<li><a href="#" class="butn2 animated fadeInUp">List 2</a></li>
+									<li><a href="#" class="butn3 animated fadeInUp">List 3</a></li>
+									<li><a href="#" class="butn4 animated fadeInUp">List 4</a></li>
+								</ul>
+							</div>
+							
+							<div class="col-md-6 col-sm-7">
+								<table class="animated fadeInLeft">
+									<tr>
+										<td>
+											<embed height="295" flashvars="affiliateID=7434&amp;playlist=6275_8079&amp;urlpath=http://www.websitemusicplayer.com/members/6275/&amp;buycoloroff=FFFFFF&amp;buycolorover=FF0000&amp;buycolordown=FFFFFF&amp;buytext=CLICK HERE TO BUY THIS MUSIC&amp;ordertext=CLICK HERE TO ORDER&amp;buycolorhit=000000&amp;color_round_buttons=79717A&amp;color_player_buttons=24282B&amp;color_bot_inside=006699&amp;color_track_front=538D8F&amp;color_vol_front=FFFFFF&amp;color_font=FFFFFF&amp;color_timetxt=FFFFFF&amp;color_titletxt=FFFFFF&amp;color_equalizer=17B2FF&amp;autostart=false&amp;fadesound=false" pluginspage="http://www.adobe.com/go/getflashplayer" src="http://www.websitemusicplayer.com/musicplayer-m.swf" type="application/x-shockwave-flash" width="386" quality="high" wmode="transparent" allowscriptaccess="always">
+										</td>
+									</tr>
+								</table>
+							</div>
+
+							<div class="col-md-3 col-sm-3">
+								<div class="info-song  animated fadeInRight">
+									<h4>This <b>Artist</b> has</h4>
+									<p><b>10</b> plays</p>
+									<p><b>0</b> downloads</p>
+								</div>
+
+								<div class="info-song bot animated fadeInRight">
+									<h4>This <b>Song</b> has</h4>
+									<p><b>10</b> plays</p>
+									<p><b>0</b> downloads</p>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+
+
+							<script type="text/javascript">
+								$(document).ready(function(){
+									$(".butn1").click(function(e){
+										e.preventDefault();
+										if($(this).parent().hasClass("li-active") && ($(this).parent().siblings().hasClass("li-active"))==false){
+											$(this).parent().removeClass("li-active");
+											return;
+										}
+										else{
+											$(this).parent().addClass("li-active");
+											$(this).parent().siblings().removeClass("li-active");
+											return;
+										}								
+									});
+
+									$(".butn2").click(function(e){
+										e.preventDefault();
+										if($(this).parent().hasClass("li-active") && ($(this).parent().siblings().hasClass("li-active"))==false){
+											$(this).parent().removeClass("li-active");
+											return;
+										}
+										else{
+											$(this).parent().addClass("li-active");
+											$(this).parent().siblings().removeClass("li-active");
+											return;
+										}									
+									});
+
+									$(".butn3").click(function(e){
+										e.preventDefault();
+										if($(this).parent().hasClass("li-active") && ($(this).parent().siblings().hasClass("li-active"))==false){
+											$(this).parent().removeClass("li-active");
+											return;
+										}
+										else{
+											$(this).parent().addClass("li-active");
+											$(this).parent().siblings().removeClass("li-active");
+											return;
+										}									
+									});
+
+									$(".butn4").click(function(e){
+										e.preventDefault();
+										if($(this).parent().hasClass("li-active") && ($(this).parent().siblings().hasClass("li-active"))==false){
+											$(this).parent().removeClass("li-active");
+											return;
+										}
+										else{
+											$(this).parent().addClass("li-active");
+											$(this).parent().siblings().removeClass("li-active");
+											return;
+										}									
+									});
+								});
+							</script>
+						</div>
+					</div>
+				</div><!-- end #song -->
+
+				<div id="press" class="none">
+					<h2 class="h2 animated fadeInDown">Press</h2>
+					<div class="press-content">
+
+						<div class="row">
+							<div id="id1" class="press-block animated fadeInUp">
+								<p>"--- Lorem ipsum dolor sit amet ---"</p>
+								<p>
+									<a href="#">The author</a>
+								</p>
+							</div>
+
+							<div id="id2" class="press-block none animated fadeInUp">
+								<p>"--- Lorem <b>ipsum dolor </b>sit amet asdfadf---"</p>
+								<p>
+									<a href="#">The author1</a>
+								</p>
+							</div>
+
+							<div id="id3" class="press-block none animated fadeInUp">
+								<p>"--- Lorem ipsum dolor sit <b>amet asd adadf </b>asd---"</p>
+								<p>
+									<a href="#">The author2</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div><!-- end #press -->
+
+				<div id="show" class="none">
+					<div class="show-content">
+						<h2 class="h2 animated fadeInDown">Shows</h2>
+
+						<div class="row">
+							<div class="tab-show animated fadeInDown">
+							  <!-- Nav tabs -->
+							  <ul class="nav nav-tabs" role="tablist">
+							    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Upcoming Shows</a></li>
+							    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Past Shows</a></li>
+							  </ul>
+
+							  <!-- Tab panes -->
+							  <div class="tab-content">
+							    <div role="tabpanel" class="tab-pane active" id="home">
+							    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+							    </div>
+							    <div role="tabpanel" class="tab-pane" id="profile">
+							    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...two</p>
+							    </div>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="navbar-fixed-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-4">
+						<div class="content-f1">
+							<p>Download Assets:</p>
+							<ul>
+								<li><a href="#"><i class="fa fa-picture-o"></i>Photos</a></li>
+								<li><a href="#"><i class="fa fa-music"></i>Music</a></li>
+								<li><a href="#"><i class="fa fa-user"></i>Bios</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4 col-xs-4">
+						<div class="content-f2">
+							...
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4 col-xs-4">
+						<div class="content-f3">
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Contact</button>
+							<button type="button" class="btn btn-default">View Profile</button>
+
+							<!-- Modal -->
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							  <div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							        <h4 class="modal-title" id="myModalLabel">Send Message</h4>
+							      </div>
+							      <div class="modal-body">
+							        <form>
+							           <div class="form-group">
+									    <label for="to">To</label>
+									    <ul class="li-check">
+									    	<li><input type="checkbox" name="to[public_email]">Artist</li>
+									    	<li><input type="checkbox" name="to[public_email]">Artist</li>
+									    	<li><input type="checkbox" name="to[public_email]">Artist</li>
+									    </ul>
+									  </div>
+									  <div class="form-group">
+									    <label for="from">From</label>
+									    <input type="text" class="form-control" placeholder="From..." id="from">
+									  </div>
+									  <div class="form-group">
+									    <label for="sub">Subject</label>
+									    <input type="text" class="form-control" placeholder="Subject..." id="sub">
+									  </div>
+									  <div class="form-group">
+									    <label for="message">Message</label>
+									    <textarea id="message" rows="5" cols="10" placeholder="Message..."></textarea>
+									  </div>
+									</form>
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-primary">Send</button>
+							        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

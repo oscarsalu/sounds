@@ -1,0 +1,236 @@
+.Myprof-style5 {
+    clear: both;
+    padding-bottom: 10px;
+    background: #212020; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#CBCECE, #212020); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#CBCECE, #212020); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#CBCECE, #212020); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#CBCECE, #212020); /* Standard syntax */
+}
+.n5style{
+	margin-top:-170px;
+}
+.mb_area{
+	background-color:#fff;
+	font-size:18px;
+	margin-top:20px;
+	/*margin: 10px 51px;*/
+	margin-bottom:20px;
+}
+.mb_area a{
+	color:#6B6565;
+	text-decoration:none;
+}
+.mb_area a:hover{
+	color:#0CB3F5;
+}
+.box_land5_style {
+    color: #6b6565;
+    /*background: rgba(53, 53, 53, 0.91);*/
+    border: 1px solid #777;
+    border-radius:10px;
+    margin: 10px;
+    padding: 0px 0px 10px 0px;
+}
+.rm_padding{
+	padding:0;
+}
+.box_land5_heading{
+    border-bottom: solid 1px #777;
+    margin: 0px 0px 10px 0px;
+}
+.bord_col{
+	width:14%;
+	border-bottom: solid 3px #0CB3F5;
+	margin-left:4px;
+	padding-bottom:2px;
+}
+.bord_cols{
+	width:18%;
+	border-bottom: solid 3px #0CB3F5;
+	margin-left:4px;
+}
+.box_land5_text{
+    padding: 28px 38px 10px 9px;
+}
+.hp-detail-p {
+    padding: 30px 15px;
+}
+.re_padding{
+	padding:0;
+	overflow:hidden;
+}
+.stats_box{
+	padding:0 19px;
+}
+.stats_box ul li a{
+	color:#333;
+}
+.themp{
+	padding-bottom:2px;
+
+}
+.stats_lstyle5 ul {
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	list-style:none;
+}
+
+.stats_lstyle5 li {
+	padding:8px 0px;
+	border-bottom:1px solid #525252;
+	text-align:left;
+}
+
+.stats_lstyle5 li:last-child {
+	border-bottom:none !important;
+}
+
+.stats_lstyle5 a {
+	display:block;
+	color:#bdbdbd;
+	font-size:14px;
+}
+
+.stats_lstyle5 a i {
+	padding-right:6px;
+}
+
+.stats_lstyle5 a > span {
+	float:right;
+}
+
+.cu_name{
+    font-size:14px;
+    font-weight: bold;
+}
+.cnts-list .media{
+    border-bottom: 1px dotted #ccc;
+}
+.cnts-list{
+	padding:0 19px;
+}
+.blog5-list{
+		padding:0 19px;
+}
+.blog-text{
+	border-bottom: 1px dotted #ccc;
+}
+.clb5{
+	background-color:#5BC98A;
+	margin:9px 14px 1px 0;
+}
+.Scroll5Style1
+{
+    height: 140px;
+    max-height: 300px;
+    min-height: 140px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-top: 25px;
+}
+.Scroll5Style2
+{
+    max-height: 300px;
+    min-height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.Scroll5Style3
+{
+    max-height: 700px;
+    min-height: 700px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.vidth5style{
+	display:block;
+	position:relative;
+	color: #fff;
+}
+.vidcle5style{
+	color:#fff;
+	font-size: 40px;
+    opacity: 0.6;
+    position: absolute;
+    right: 38%;
+    top: 35%;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    transition:all 500ms ease-in-out;  
+}
+.vidcle5style:hover{
+		color:#0CB3F5;
+	opacity:1;
+	text-shadow:0 1px 3px rgba(0,0,0,.8);
+}
+.st-area{
+	margin: 22px 18px;
+    max-width: 96%;
+}
+
+@media (min-width:320px) and (max-width: 480px) { 
+	.video-list-thumbs .glyphicon-play-circle{
+    font-size: 35px;
+    right: 36%;
+    top: 27%;
+	}
+	.st-area{
+ 		 width: 90%;
+ 	}
+}
+@media (min-width:300px) and (max-width:1024px) {
+
+ 	.st-area{
+ 		 width:95%;
+ 	}
+ }
+@media (min-width:320px) and (max-width: 981px) { 
+ .box_land5_text{
+    padding:0 14px 0 14px;
+    }
+    .st-area{
+	margin: 22px 23px;
+    width: 95%;
+}
+ }
+ @media (min-width:320px) and (max-width:800px) {
+
+ 	.st-area{
+ 		 width: 94%;
+ 	}
+ }
+  @media (min-width:320px) and (max-width:768px) {
+
+ 	.st-area{
+ 		 width: 94%;
+ 	}
+ }
+ @media (min-width:320px) and (max-width:640px) {
+
+ 	.st-area{
+ 		 width: 92%;
+ 	}
+ 	 @media (min-width:320px) and (max-width:600px) {
+
+ 	.st-area{
+ 		 width: 91%;
+ 	}
+ }
+  @media (min-width:320px) and (max-width:480px) {
+
+ 	.st-area{
+ 		 width: 89%;
+ 	}
+ }
+  @media (min-width:320px) and (max-width:360px) {
+
+ 	.st-area{
+ 		 width:88%;
+ 	}
+ }
+ @media (min-width:300px) and (max-width:320px) {
+
+ 	.st-area{
+ 		 width:85%;
+ 	}
+ }

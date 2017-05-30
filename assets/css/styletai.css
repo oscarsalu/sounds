@@ -1,0 +1,636 @@
+/***** HOME *****/
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #home .artist-signup,#home .artist-home{
+    height:550px;
+}
+#home{
+    font-family: oswaldlight
+}    
+
+
+  #home .s4 h3.nt{
+    font-size:20px;
+    margin-top: 15px;
+  }
+  #home .s4 a{
+    text-decoration: none;
+    }
+  #presskit .recipient .col-md-12{
+    margin:10px 0;
+  }
+  #presskit .recipient h3{
+    float:left;
+  }
+
+.top100{
+    background:url("../images/bg/musical.png") fixed;
+}
+  .top100 .col-xs-6{
+    margin: 10px 0;
+    height: 200px;
+  }
+  .top100 .col-xs-6 img{
+    width:100%;
+    max-height: 200px;
+  }
+  #msearch .result .as,#musician .featured .as{
+    border:2px solid #CDCDCD;
+    height:254px;
+    margin:10px 0;
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23);
+    /*width: 165px;
+    height: 165px;*/
+}
+#msearch .result .as{
+    height:300px;
+}
+#msearch .result .as{
+    transition: all 0.8s ease;
+}
+#msearch .result .as:hover{
+    border:2px solid #0EA0DE;
+    box-shadow: 10px 0 20px rgba(168, 223, 226, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23);
+    /*background:#A8DFE2;*/
+}
+#musician .featured .as:hover{
+    opacity: 0.9    ;
+}
+#msearch .result .as img,#musician .featured .as img{
+    width: 100%;
+    height: 250px;
+}
+#msearch .result .des,#musician .des{
+    background: url(../images/bg.png);
+    padding:10px 0;
+    bottom: 54px;
+    position: relative;
+    width: 100%;
+
+}
+#msearch .result .as h4,#msearch .result .as h5,#musician .des h4,#musician .des h5{
+    margin-top:0;
+    margin-bottom: 0;
+}
+#msearch .result .as h4,#msearch .result .as h5{
+    color:#FFF
+}
+#msearch .result .as h4 a,#musician .des h4 a{
+    color:#FFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#musician .state{
+    margin-top:20px;
+    border-radius: 5px;
+    border: 1px solid #CDCDCD;
+}
+#musician .state h1{
+    margin-top: 10px;
+    font-size: 22px;
+    text-align: center;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#fefefe), color-stop(100%,#d9d9d9) );
+    background: -webkit-linear-gradient(top,#fefefe 0,#d9d9d9 100%);
+    background: -o-linear-gradient(top,#fefefe 0,#d9d9d9 100%);
+    background: -ms-linear-gradient(top,#fefefe 0,#d9d9d9 100%);
+    background: linear-gradient(to bottom,#fefefe 0,#d9d9d9 100%);
+    -pie-background: linear-gradient(top,#fefefe 0,#d9d9d9 100%);
+    border-bottom: 1px solid #CDCDCD;
+}
+#musician .state ul li{
+    list-style: none;
+}
+#mresult,#msearch{
+    background:#DDD;
+}
+#msearch .top-search{
+    margin:20px 0;
+    border-radius:5px;
+
+}
+#msearch .top-search .up{
+    background:  #0EA0DE;
+    border-radius:5px 5px 0 0;
+}
+#msearch .top-search .bel{
+    background:  #FFF;
+    border-radius:0 0 5px 5px;
+    margin-top:-10px;
+}
+#msearch .top-search .up h1{
+    padding: 20px 0;
+    text-align: center;  
+}
+#msearch .top-search .form-group{
+   padding:5px 10px;
+   margin-bottom: 0px;
+   color:#454458;
+}
+
+#msearch .top-search .btn{
+   margin:20px 5px 5px 20px;
+}
+#msearch .result{
+    border: 4px solid  #0EA0DE;
+    background:#FFF;
+    border-radius:5px;
+    padding:15px;
+    margin:10px 0;
+}
+#msearch .result .ge{
+    color: #191875;
+    font-size: 12px;
+    position: relative;
+    top: -45px;
+    text-align: center;
+    
+}
+#msearch .result .pagi a{
+    margin: 0 5px;
+    border-radius: 5px;
+}
+/** MRESULT **/
+.section-dark .iphone h5{
+    color:#000;
+    text-align: center;
+}
+#mresult .container{
+    padding-bottom: 20px;
+}
+#mresult .name{    
+    padding:0px;
+    background:#FFF;
+    margin-top: 10px;
+    color:#000;    
+    border-left: 5px solid #337ab7;
+    /*border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-left: 4px solid #393838;
+    border-top: 4px solid #393838;
+    border-right: 4px solid #393838;*/
+}
+#mresult .name .avatar{
+    /*padding-left: 0px;
+    padding-right: 0px;*/
+    padding-top: 10px;
+}
+#mresult .name .inf{
+    padding-left: 0px;
+    margin-left: -20px;
+}
+#mresult .name img{
+    height: 265px;
+    width: 90%;
+}
+#mresult .name h2{
+    margin-top: 10px;
+    font-size: 35px;
+    font-weight: bold;
+}
+#mresult .name span{
+    padding-right: 10px;
+}
+#mresult .name .btn{
+    padding: 10px 25px;
+}
+#mresult .main{    
+    background: #FFF;
+    padding:15px;    
+    border-left: 5px solid #337ab7;        
+    /*border-left: 4px solid #393838;
+    border-bottom: 4px solid #393838;
+    border-right: 4px solid #393838; 
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;*/
+    color:#000;
+    /*margin:20px 0;*/
+}
+#mresult .main h3{
+    font-size: 25px;    
+    font: 20px/24px HelveticaNeue-CondensedBold,HelveticaNeueBoldCondensed,HelveticaNeue-Bold-Condensed,'Helvetica Neue Bold Condensed','Open Sans Condensed','Helvetica Neue',Helvetica-Neue,Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    color: #393838;
+    margin-top: 20px;
+}
+#mresult .main p{
+    font-size: 14px;
+}
+#mresult .main .mu-right{
+    margin-left: 50px;
+}
+#mresult .main .videos img{
+    width: 100%;
+    margin-right: 10px;
+    height: 110px;
+}
+#mresult .main .videos a .play{
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    width: 86.5%;
+    margin-right: 10px;
+    height: 110px;
+    position: absolute;
+    opacity: 0.7;
+    visibility: hidden;
+    background: #000;
+    top:0px;
+}
+#mresult .main .videos a .play .button_play{
+    width: 45%;
+    height: 75%;
+    border: 7px solid #fff;
+    position: absolute;
+    border-radius: 100%;
+    top: 14px;
+    left: 27%;
+}
+#mresult .main .videos a .play .button_play:before{
+    content: "\f04b";
+    speak: none;
+    font-family: FontAwesome!important;
+    font-style: normal;
+    text-rendering: auto;
+    position: absolute;
+    top: 16%;
+    left: 37%;
+    font-size: 36px;
+    color: #fff;
+}    
+#mresult .main .videos a:hover .play{
+    visibility: visible;    
+}
+#mresult .main .pic{
+    padding: 0px;
+}
+#mresult .main .videos ul{
+    padding-left:10px;
+}
+#mresult .main .videos ul li{
+    list-style: none;
+    float: left;
+    width: 18%;
+    margin:5px 4px;
+    overflow: hidden;
+}
+#mresult .main .videos ul li img{
+    width:100%;
+    height:75px;
+    border:1px solid #DDD;
+}
+#mresult .main .ins b{
+    float:left;
+    padding-right:15px;
+}
+.close-pop{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    right: -55px;
+    top: -15px;
+    background: #000;
+    padding-top: 3px;
+    padding-left: 5px;
+}
+.close-pop a{
+    color: #fff;
+}
+/****** NEW TREND   ******/
+#home .s4 .col-xs-6{
+    margin:14px 0;
+}
+#home .s4 .remix_items a {
+    /*margin: 20px 2% 0 0;*/
+     min-height: 132px;
+    /*
+    float: left;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    width:100%
+    */
+}
+
+#home .s4  figure.effect-bubba {
+    background: #000;
+}
+
+#home .s4  figure.effect-bubba img {
+    opacity: 1;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+    width:100%;
+    height:auto;
+}
+
+
+#home .s4 figure.effect-bubba figcaption::before {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1)
+}
+#home .s4 figure.effect-bubba figcaption::after {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0)
+}
+#home .s4  figure.effect-bubba h2 {
+    color:#FFF;    font-size: 18px;
+    padding-top: 30%;
+    padding-left: 40px;
+    padding-right: 40px;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 60px, 0);
+    transform: translate3d(0, 60px, 0);
+    margin:0;
+}
+#home .s4  figure.effect-bubba p{
+    padding-left: 40px;font-size: 14px;color: #FFF;
+    padding-right: 40px;
+    -webkit-transition: -webkit-transform 0.50s;
+    transition: transform 0.50s;
+    -webkit-transform: translate3d(0, 70px, 0);
+    transform: translate3d(0, 70px, 0);
+}
+
+
+#home  .s4 .newtrend img{
+    /*margin:0 auto;*/
+	border: none;
+    width: 100%;
+    height: auto;
+}
+#home  .s4 figure.effect-bubba:hover img {
+    opacity: 0.4
+}
+#home .s4  figure.effect-bubba:hover figcaption::before,
+#home .s4 figure.effect-bubba:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+#home .s4  figure.effect-bubba:hover h2,
+#home .s4  figure.effect-bubba:hover i,
+#home .s4  figure.effect-bubba:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+#home .section-itunes .column-copy{
+    padding:50px 50px 0 50px;
+}
+#home .section-guided-tours .iphone,#home .section-foryou .iphone{
+    /*
+    background: #FFF;
+    position: absolute;
+    top: 91px;
+    left: 22px;
+    width: 315px;
+    height:480px; 
+    height:700px;    
+    border: 1px solid #202020;*/
+    background: #FFF;
+    position: absolute;
+    top: 71px;
+    left: 16px;
+    width: 91%;
+    
+    border: 1px solid #202020;
+    overflow: hidden;
+}
+#home .section-guided-tours .iphone img,#home .section-foryou .iphone img{
+    width:100%;
+}
+#home .section-guided-tours .iphone .row .col-xs-4,#home .section-foryou .iphone .row .col-xs-4{
+    padding-right: 3px;
+    padding-left: 3px;
+    margin:2px 0;
+    min-height:122px;
+}
+#home .section-guided-tours .iphone .phonetext p,#home .section-foryou .iphone .phonetext p{
+    margin:0;
+}
+#home .section-guided-tours .iphone .topphone .col-xs-4,#home .section-foryou .iphone .topphone .col-xs-4{
+    padding-right: 3px;
+    padding-left: 3px;
+}
+#home .section-guided-tours .iphone .row .col-xs-4 img,#home .section-foryou .iphone .row .col-xs-4 img{
+    height:92px;
+    width:100%;margin:0 auto;
+    border:2px solid #F0F0F2;
+}
+#home .section-guided-tours .iphone .row .col-xs-4 h5,#home .section-foryou .iphone .row .col-xs-4 h5{
+    margin: 0 0 0 0;
+    text-align: center;
+    color:#000;
+    font-size: 10px;
+    line-height: 1.3;
+}
+#home .section-guided-tours .iphone .row .col-xs-4 h5.name,#home .section-foryou .iphone .row .col-xs-4 h5.name{
+    
+}
+#home .section-guided-tours .iphone .row .col-xs-4 h5.add,#home .section-foryou .iphone .row .col-xs-4 h5.add{
+    font-weight: 200;
+    font-size: 11px;
+    line-height: 1.1;
+}
+#home .section-giftcards a,#home .section-ipods a{
+    color:#FFF;
+    text-decoration: none;
+}
+#home .section-giftcards{
+    padding:40px 0;
+}
+.section-giftcards .image-giftcards {
+    background-repeat: no-repeat;
+    background-size: 516px 598px;
+    height: 598px;
+    width: 516px;
+    background-image: url("images/heros/gigs.pnsg");
+}
+
+
+
+@media screen and (min-width:1920px){
+    #home .section-guided-tours .iphone,#home .section-foryou .iphone{
+        top: 85px;
+        left: 19px;
+        width: 400px;
+        overflow: hidden;
+    }
+    .page-overview .section-itunes .image-itunes-hw{
+        background-size: 540px 650px;
+        height: 650px;
+        width: 540px;
+    }
+    #home .ss2,#home .s3{
+        padding:0px;
+    }
+    .section-itunes .large-vertical-center{
+        width: 50%;
+    }
+}
+@media (max-width: 1200px){
+        .page-overview .section-ipods .image-ipod-shuffle {
+        /*background-size: 77px 78px;
+        height: 78px;
+        width: 77px*/
+        background-size: 145px 275px;
+        height: 275px;
+        width: 145px;
+
+    }
+}
+
+@media (max-width: 1068px){
+#home .section-guided-tours .iphone,  #home .section-foryou .iphone{
+        /*
+        width: 260px;
+        height:462px;    
+        top: 75px;
+        left: 20px;*/
+        width: 273px;
+        height: 500px;
+        top: 59px;
+        left: 13px;
+    }
+    #home .section-guided-tours .iphone .col-xs-4 img,#home .section-foryou .iphone .col-xs-4 img{
+        height:80px
+    }
+    .section-giftcards .image-giftcards {
+    background-size: 420px 560px;
+    height: 560px;
+    width: 420px;
+    }
+}
+
+@media (max-width: 1024px){
+    #home .section .hero-headline h1{
+        font-size:30px;
+    }
+    #home .is-absolute .intro-copy a{
+        margin:10px 0;
+    }
+    .section-giftcards .image-giftcards {
+        background-size: 420px 560px;
+        height: 560px;
+        width: 420px;
+    }
+}
+
+@media (max-width: 992px){
+    #musician .top h2{
+        font-size:20px;
+    }
+    #home .section-itunes .column-copy{
+        text-align: center;
+        width:100%;
+        /*height:350px;*/
+    }
+    #home .section-giftcards{
+    padding:0;
+    }   
+    .section-giftcards .card-text {
+    padding: 50px 50px;
+    text-align: center;
+}
+#home .section-itunes .column-copy {
+    padding: 0px 50px;
+}
+        
+  
+}
+@media (max-width: 768px){
+    #musician .join, #musician .testi{
+        width:80%;
+            
+    }
+    #musician .top h2{
+        font-size:25px;
+    }
+    #musician .top .text{
+        text-align: center;
+    }
+    .page-overview .oswaldregular{
+        font-size: 1.2em !important;
+        line-height: 1.3em !important;
+    }
+    #home .oswaldregularp{
+        font-size: 0.8em !important;
+    }
+    #home .section-itunes .column-copy{
+        /*padding:30px 10px; */
+    }
+}
+@media (max-width: 600px){
+    #musician .search{
+        width:90%;
+    }
+    #musician .search form{
+        width:98%;
+        
+    }
+    #musician .join, #musician .testi{
+        width:90%
+            
+    }
+    .top100 .col-xs-6{
+        width:100%
+    }
+    .top100 .col-xs-6 .effect-bubba{
+        width:320px
+    }
+
+}
+@media screen and  (max-width: 480px){
+     #home .new-trend .col-xs-6{
+        width:100%;
+     }
+    #msearch .result .col-xs-6,#musician .featured .col-xs-6{
+        width:100%;
+    }
+    #musician .state .col-xs-6{
+        width:50%;
+    } 
+    #musician .state .col-xs-6 ul{
+        padding-left:15px;
+    } 
+    #musician .state .col-xs-6 ul a{
+        font-size:12px;
+    } 
+    #musician .join, #musician .testi{
+        width:100%;
+    }
+    #home .section .hero-headline h1,#home .section .hero-headline h2{
+        font-size: 25px;
+        line-height: 26px;
+    }
+     
+    section.sponsors .oswaldregularh3{
+        font-size:2.4em !important;
+    }
+    #home .page-overview .section-fullheight .section-content h2,#home .section-hero .hero-intro.is-absolute h2.intro-headline,#home .artist-crowd h1,.oswaldregularh2{
+        font-size:24px!important;
+    }
+    #fixfox .hero-copy{
+        font-size: 25px !important;
+        line-height: 26px;
+    }
+}
+@media screen and  (max-width: 400px){
+        #home .s4 .col-xs-6{
+        width:100%;
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    #fixfox h1 {
+        font-size: 25px !important;
+        
+    }
+}

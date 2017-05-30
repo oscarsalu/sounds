@@ -1,0 +1,151 @@
+.bg-landing{
+    background: url('../../images/bg/8277771-hd-backgrounds.jpg') fixed;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-color: rgb(0, 0, 0);
+}
+
+.icon_part {
+    width: 30px;
+    position: relative;
+    top: -4px;
+}
+.mb1-blog-img{
+    float: left;
+    margin-right: 5px;
+}
+.remove_part {
+    background: url('../../images/icon/cancel_2-icon.png') no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 2px;
+    top: 6px;
+    cursor: pointer;
+    display: none;
+    z-index: 99;
+}
+.remove_padding {
+    padding: 0px;
+}
+.padding_left {
+    padding-left: 0px;
+}
+.header_new_style .tt a{
+    color: #fff;
+}
+.liner_landing {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #080808;
+    box-shadow: 0 1px 0 rgba(34, 34, 34, 0.8);
+    -webkit-box-shadow: 0 1px 0 rgba(34, 34, 34, 0.8);
+    margin: -1px 0 15px;
+}
+.jp-video-270p{
+    width: 100%;
+}
+.jp-type-playlist img{
+    
+}
+.header_new_style{
+    margin: 8px 0;
+    overflow: hidden;
+}
+.jp-type-playlist .jp-jplayer{
+    width: 100% !important;
+    text-align: center;
+}
+.header_new_style .panel-heading .panel-title a {
+    text-transform: uppercase;
+    color: #eee;
+}
+.header_new_style .panel-group .panel, .header_new_style .panel-heading {
+    border-radius: 0px;
+}
+.panel-default > .panel-heading{
+    background: #222;
+}
+div.jp-type-playlist div.jp-playlist a{
+    color: #888;
+}
+div.jp-type-playlist div.jp-playlist a.jp-playlist-current, div.jp-type-playlist div.jp-playlist a:hover{
+    color: #3b5998;
+}
+.image_fix_value {
+    width: 200px;
+    height: 200px;
+    background-position: 50% 25% !important;
+    background-size: cover !important;
+    transition-duration: 500ms;
+    transition-property: width, height;
+    cursor: pointer;
+}
+.image_fix_value_video{
+    width: 300px;
+    height: 300px;
+    background-position: 50% 25% !important;
+    background-size: cover !important;
+    transition-duration: 500ms;
+    transition-property: width, height;
+    cursor:  pointer;
+    margin: 0px auto;
+}
+.image_fix_value_event{
+    width: 200px;
+    height: 200px;
+    background-position: 50% 25% !important;
+    background-size: cover !important;
+    transition-duration: 500ms;
+    transition-property: width, height;
+    cursor:  pointer;
+    margin: 0px auto;
+}
+figure.effect-bubba:hover .image_fix_value_event{
+    opacity: 0.4
+}
+.text-justify a{
+    margin: 0px 7px;
+}
+.text-justify{
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.header_new_style .wp_content_list{
+    margin-bottom: 10px;
+    margin-top: 2px;
+    border-bottom: solid 1px #222;
+    color: #ccc;
+}
+.wp_content_list{
+    overflow: hidden;
+}
+.comment_list a img{
+    width: 100%;
+}
+.list_member{
+    margin: 5px 0;
+    padding: 0px;
+}
+.bg-lg-ct{
+    background: none;
+
+}
+.background_landing{
+    
+}
+.header_new_style h2.text_caplock{
+    margin-left: 0px;
+    border-bottom: 1px solid #000080;
+    display: inline-block;
+    margin-bottom: 0px;
+}
+.header_new_style{
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.04);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .15), 0 1px 0 rgba(255, 255, 255, .04);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.04);
+    padding: 0px 10px 10px 10px;
+}

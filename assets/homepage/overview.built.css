@@ -1,0 +1,3041 @@
+.js body {
+    background-color: #000000
+}
+.js body.js-ready {
+    background-color: #ffffff
+}
+.js .page-overview section {
+    opacity: 1
+}
+.js .page-overview .section-hero-overview {
+    opacity: 1
+}
+.js .page-overview .section-hero-overview video {
+    opacity: 1
+}
+.js .page-overview .section-hero-overview .section-foreground {
+    opacity: 1
+}
+.js-ready .page-overview section {
+    opacity: 1
+}
+.js-ready .page-overview .section-hero-overview video {
+    opacity: 1
+}
+.js-ready .page-overview .section-hero-overview .section-foreground {
+    opacity: 1
+}
+
+.canvas .page-overview .section-foryou {
+    background-image: none;
+    background-color:#C6D9F4/* #edb5c2*/
+}
+.cssFilter .page-overview .section-connect {
+    background-image: none;
+    background-color: #3d3b50
+}
+.webgl .page-overview .section-radio {
+    background-image: none;
+    /*background-color: #000000*/
+}
+.page-overview .video-fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+html.js .page-overview .video-fade {
+    position: fixed
+}
+.video .page-overview .section-hero-overview .hero-intro,
+.video .page-overview .section-hero,
+.video .page-overview .hero-headline .section-image {
+    background-image: none
+}
+.page-overview .section-fullheight .section-foreground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+.page-overview .section-devices h4{
+    margin: 10px 0 0.45em 0;
+}
+/**************  GIFT CARD ****************/
+.section-giftcards {
+    /*background-color: #f2f2f2*/
+}
+.section-giftcards .section-card {
+    /*height: 800px*/
+}
+.section-giftcards .card-text{
+    padding: 100px 50px;
+}
+@media only screen and (max-width: 1068px) {
+    .section-giftcards .section-card {
+       /* height: 520px*/
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .section-giftcards .section-card {
+        height: 450px
+    }
+    .section-giftcards .card-text{
+    padding: 0px;
+}
+}
+.section-giftcards .column-copy {
+    height: 800px
+}
+@media only screen and (max-width: 1068px) {
+    .section-giftcards .column-copy {
+        height: 520px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .section-giftcards .column-copy {
+        height: auto;
+        margin-top: 86px;
+        margin-bottom: 18px;
+        text-align: center
+    }
+}
+.section-giftcards .mail-giftcard {
+    margin-bottom: 0.5em
+}
+.section-giftcards .email-giftcard {
+    margin-bottom: 2em
+}
+.section-giftcards .icon-giftcards {
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-image: url("images/icons/icon_apple_music_gift_card_large.svg");
+    background-size: 53px 38px;
+    height: 38px;
+    width: 53px
+}
+
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .section-foreground {
+        position: relative
+    }
+    .page-overview .section-fullheight .large-fixed,
+    .page-overview .section-fullheight .handheld-fixed,
+    .page-overview .section-fullheight .small-fixed {
+        width: 100vw;
+        height: 100vh
+    }
+}
+@media screen and  (max-width: 1024px){
+    .page-overview .section-membership h2{
+        font-size:35px;
+    }
+    .page-overview .section-membership .large-6{
+        padding:15px;
+    }
+}
+@media screen and  (max-width: 768px){
+    .page-overview .section-membership,.page-overview .section-devices,.page-overview .section-giftcards{
+        padding:10px 0;
+    }
+    .page-overview .section-membership .small-12,.page-overview .section-itunes .small-12{
+        width:100%;
+        text-align:center;
+    }
+    .page-overview .section-itunes.large-push-7{
+        left:0;
+    }
+    .page-overview .section-devices .large-2{
+        width:50%;    min-height: 180px;
+    }
+    .page-overview .section-devices .large-push-2{
+            left: 0px;    min-height: 180px;
+    }
+}
+@media screen and  (max-width: 480px){
+    .page-overview .section-devices .large-2{
+        width:100%;min-height: 100px;
+    }
+    .page-overview .section-giftcards .card-text{
+        padding:50px 0;
+    }
+    .page-overview .section-membership h2{
+        font-size:30px;
+    }
+   .oswaldregularh1 #content_ffan2_header, #fixfox .oswaldregularh1 #content_ffan_headerh1,.oswaldregularh1 #content_h2_tour,.oswaldregularh3 #content_fart6_header,.oswaldregularh2 #content_fan_landing_page_header{
+    font-size: 25px !important;
+     }
+     
+}
+.page-overview .section-fullheight .large-fixed,
+.page-overview .section-fullheight .handheld-fixed,
+.page-overview .section-fullheight .small-fixed,
+.page-overview .section-hero .large-fixed,
+.page-overview .section-hero .handheld-fixed,
+.page-overview .section-hero .small-fixed {
+    position: fixed
+}
+.page-overview .section-fullheight .section-bleed,
+.page-overview .section-hero .section-bleed {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    font-family: 'Open Sans'!important;
+}
+.page-overview .section-hero .section-bleed #my-video{
+    margin-top: 50px;
+}
+.page-overview .section-foreground h1{
+    margin-bottom: 0px;
+}
+.page-overview .section-foreground .oswaldregularh1{
+    line-height:1em;
+    
+}
+.page-overview .section-fullheight .section-bleed video,
+.page-overview .section-hero .section-bleed video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    max-width: none;
+    object-fit: cover
+}
+.page-overview .section-fullheight.section-radio .section-foreground,
+.page-overview .section-fullheight.section-foryou .section-foreground {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+.page-overview .section-fullheight .section-background.handheld-fixed {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+html.touch .page-overview .section-hero {
+    overflow: hidden
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    html.touch .page-overview .section-hero {
+        max-height: none
+    }
+}
+.page-overview .section-hero h1,
+.page-overview .section-hero .hero-logo {
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    background-image: url("/v/music/bimages/heros/apple_music.svg");
+    /*background-size: 329px 79px;*/
+    height: 79px;
+    width: 100%;/*329px*/
+    margin-left: auto;
+    margin-right: auto;
+    /*
+    margin-bottom: 40px
+    */
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-hero h1,
+    .page-overview .section-hero .hero-logo {
+        /*background-size: 256px 61px;*/
+        height: 61px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-hero h1,
+    .page-overview .section-hero .hero-logo {
+        background-size: 157px 37px;
+        height: 37px;
+        width: 157px
+    }
+}
+html.no-svg .page-overview .section-hero h1,
+html.no-svg .page-overview .section-hero .hero-logo {
+    background-image: url("images/heros/apple_music_large.png");
+    background-size: 330px 80px;
+    height: 80px;
+    width: 330px
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-hero h1,
+    .page-overview .section-hero .hero-logo {
+        margin-bottom: 34px
+    }
+}
+
+
+.page-overview .section-hero .hero-copy {
+    background-image: none;
+    text-indent: 0;
+    height: auto;
+    width: auto;
+    white-space: normal;
+    overflow: visible;
+    margin-top: -100px;
+}
+html.svg .page-overview .section-hero .hero-copy {
+    background-image: none;
+    height: auto;
+    width: auto
+}
+.page-overview .section-hero h2 {
+    font-size: 72px;
+    /*line-height: 1.0556;*/
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 36px
+}
+html.oldie .page-overview .section-hero h2 {
+    font-weight: normal;
+    font-family: "Myriad Set Pro 100", "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+html.oldie[lang=ja-JP] .page-overview .section-hero h2 {
+    font-family: "Apple TP 100", "Apple TP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+html.oldie[lang=zh-CN] .page-overview .section-hero h2 {
+    font-family: "PingHei 100", "PingHei", "STHeitiSC-Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+html.oldie[lang=zh-TW] .page-overview .section-hero h2 {
+    font-family: "MHei 100", "MHei", "STHeitiTC-Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+html.oldie[lang=zh-HK] .page-overview .section-hero h2 {
+    font-family: "MHei 100", "MHei", "STHeitiTC-Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+html.oldie[lang=th-TH] .page-overview .section-hero h2 {
+    font-family: "Sukhumvit Set 100", "Sukhumvit Set", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+html.oldie[lang=ko-KR] .page-overview .section-hero h2 {
+    font-family: "Yoon Gothic 100", "Yoon Gothic", "Apple Gothic", "HY Gulim", "MalgumGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-hero h2 {
+        font-size: 64px;
+        line-height: 1.0625;
+        font-weight: 100
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-hero h2 {
+        font-size: 42px;
+        line-height: 1.1429;
+        font-weight: 100
+    }
+}
+
+.page-overview .section-hero p {
+    /*margin-bottom: 0;
+     margin-bottom: 20px;
+    */
+    
+}
+.page-overview .section-hero p a {
+    color: #ccc;
+    white-space: nowrap;
+    margin-left: 20px;
+    margin-right: 20px
+}
+html.no-js .page-overview .section-hero p a:hover {
+    color: #5cc3f6;
+    text-decoration: none
+}
+html.no-touch .page-overview .section-hero p a:hover {
+    color: #5cc3f6;
+    text-decoration: none
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-hero p a {
+        display: block;
+        margin-bottom: 8px;
+        margin-left: 0
+    }
+    .page-overview .section-hero .hero-intro {
+        min-height: 0;
+        height: auto;
+        max-height: none
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    html.touch .page-overview .section-hero .hero-intro {
+        max-height: none
+    }
+    .page-overview .section-hero .hero-intro .section-content {
+        position: initial;
+        top: initial;
+        -webkit-transform: initial;
+        -ms-transform: initial;
+        transform: initial
+    }
+}
+.page-overview .section-hero .intro-headline {
+    /*
+    font-size: 38px;
+    line-height: 1.0625;
+    font-weight: 100
+    */
+}
+html.oldie .page-overview .section-hero .intro-headline {
+    font-weight: normal;
+    font-family: "Myriad Set Pro 100", "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+html.oldie[lang=ja-JP] .page-overview .section-hero .intro-headline {
+    font-family: "Apple TP 100", "Apple TP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+html.oldie[lang=zh-CN] .page-overview .section-hero .intro-headline {
+    font-family: "PingHei 100", "PingHei", "STHeitiSC-Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+html.oldie[lang=zh-TW] .page-overview .section-hero .intro-headline {
+    font-family: "MHei 100", "MHei", "STHeitiTC-Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+html.oldie[lang=zh-HK] .page-overview .section-hero .intro-headline {
+    font-family: "MHei 100", "MHei", "STHeitiTC-Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+html.oldie[lang=th-TH] .page-overview .section-hero .intro-headline {
+    font-family: "Sukhumvit Set 100", "Sukhumvit Set", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+html.oldie[lang=ko-KR] .page-overview .section-hero .intro-headline {
+    font-family: "Yoon Gothic 100", "Yoon Gothic", "Apple Gothic", "HY Gulim", "MalgumGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-hero .intro-copy {
+        text-align: left
+    }
+}
+.page-overview .section-hero .intro-buckets {
+    margin-top: 64px
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-hero .intro-buckets {
+        margin-top: 72px
+    }
+}
+.page-overview .section-hero .intro-buckets .bucket-icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px
+}
+.page-overview .section-hero .intro-buckets .eyebrow {
+    margin-bottom: 0
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-hero .intro-buckets .eyebrow {
+        margin-bottom: 20px
+    }
+}
+.ie .page-overview .section-hero .section-bleed {
+    position: relative
+}
+.page-overview .section-hero .section-bleed.handheld-fixed {
+    height: 100vh
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-hero .section-bleed.handheld-fixed {
+        max-height: 1024px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-hero .section-bleed.handheld-fixed {
+        max-height: 675px
+    }
+}
+.page-overview .section-hero .section-background {
+    z-index: -1
+}
+.page-overview .section-hero .section-background.handheld-fixed {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+.page-overview .section-hero .section-background .section-image.blurry {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    max-height: 100%
+}
+.page-overview .section-hero .section-background.handheld-fixed .section-image.blurry {
+    position: fixed;
+    height: 100vh;
+    max-height: 100%
+}
+.page-overview .section-hero .image-icon-connect-nav {
+    background-repeat: no-repeat;
+    background-image: url("/v/music/bimages/icons/icon_connect_nav.svg");
+    background-size: 46px 46px;
+    height: 46px;
+    width: 46px
+}
+html.no-svg .page-overview .section-hero .image-icon-connect-nav {
+    background-image: url("images/icons/icon_connect_nav_large.png");
+    background-size: 47px 47px;
+    height: 47px;
+    width: 47px
+}
+.page-overview .section-hero .image-icon-radio-nav {
+    background-repeat: no-repeat;
+    background-image: url("/v/music/bimages/icons/icon_radio_nav.svg");
+    background-size: 46px 46px;
+    height: 46px;
+    width: 46px
+}
+html.no-svg .page-overview .section-hero .image-icon-radio-nav {
+    background-image: url("images/icons/icon_radio_nav_large.png");
+    background-size: 47px 47px;
+    height: 47px;
+    width: 47px
+}
+.page-overview .section-hero .image-icon-your-music-nav {
+    background-repeat: no-repeat;
+    background-image: url("/v/music/bimages/icons/icon_your_music_nav.svg");
+    background-size: 46px 46px;
+    height: 46px;
+    width: 46px
+}
+html.no-svg .page-overview .section-hero .image-icon-your-music-nav {
+    background-image: url("images/icons/icon_your_music_nav_large.png");
+    background-size: 47px 47px;
+    height: 47px;
+    width: 47px
+}
+.page-overview .section-foryou {
+    background-repeat: no-repeat;
+    background-size: 1440px 900px;
+    /*background-image: url("images/heros/discover_blurry_bg_large.jpg")*/
+}
+.page-overview .section-foryou .bubble{
+    font-family: Open Sans!important;
+}
+.page-overview .section-foryou .bubble[data-nth-child='0'] {
+    left: 755px;
+    top: 314px
+}
+.page-overview .section-foryou .bubble[data-nth-child='1'] {
+    left: 515px;
+    top: 177px
+}
+.page-overview .section-foryou .bubble[data-nth-child='2'] {
+    left: 436px;
+    top: 573px
+}
+.page-overview .section-foryou .bubble[data-nth-child='3'] {
+    left: 424px;
+    top: 320px
+}
+.page-overview .section-foryou .bubble[data-nth-child='4'] {
+    left: 598px;
+    top: 513px
+}
+.page-overview .section-foryou .bubble[data-nth-child='5'] {
+    left: 930px;
+    top: 502px
+}
+.page-overview .section-foryou .bubble[data-nth-child='6'] {
+    left: 675px;
+    top: 269px
+}
+.page-overview .section-foryou .bubble[data-nth-child='7'] {
+    left: 661px;
+    top: 387px
+}
+.page-overview .section-foryou .bubble[data-nth-child='8'] {
+    left: 506px;
+    top: 485px
+}
+.page-overview .section-foryou .bubble[data-nth-child='9'] {
+    left: 750px;
+    top: 219px
+}
+.page-overview .section-foryou .bubble[data-nth-child='10'] {
+    left: 991px;
+    top: 377px
+}
+.page-overview .section-foryou .bubble[data-nth-child='11'] {
+    left: 603px;
+    top: 606px
+}
+.page-overview .section-foryou .bubble[data-nth-child='12'] {
+    left: 982px;
+    top: 126px
+}
+.page-overview .section-foryou .bubble[data-nth-child='13'] {
+    left: 681px;
+    top: 554px
+}
+.page-overview .section-foryou .bubble[data-nth-child='14'] {
+    left: 573px;
+    top: 420px
+}
+.page-overview .section-foryou .bubble[data-nth-child='15'] {
+    left: 645px;
+    top: 69px
+}
+.page-overview .section-foryou .bubble[data-nth-child='16'] {
+    left: 1070px;
+    top: 617px
+}
+.page-overview .section-foryou .bubble[data-nth-child='17'] {
+    left: 1092px;
+    top: 242px
+}
+.page-overview .section-foryou .bubble[data-nth-child='18'] {
+    left: 909px;
+    top: 616px
+}
+.page-overview .section-foryou .bubble[data-nth-child='19'] {
+    left: 1121px;
+    top: 480px
+}
+.page-overview .section-foryou .bubble[data-nth-child='20'] {
+    left: 831px;
+    top: 261px
+}
+.page-overview .section-foryou .bubble[data-nth-child='21'] {
+    left: 670px;
+    top: 647px
+}
+.page-overview .section-foryou .bubble[data-nth-child='22'] {
+    left: 774px;
+    top: 513px
+}
+.page-overview .section-foryou .bubble[data-nth-child='23'] {
+    left: 1013px;
+    top: 541px
+}
+.page-overview .section-foryou .bubble[data-nth-child='24'] {
+    left: 607px;
+    top: 332px
+}
+.page-overview .section-foryou .bubble[data-nth-child='25'] {
+    left: 928px;
+    top: 219px
+}
+.page-overview .section-foryou .bubble[data-nth-child='26'] {
+    left: 805px;
+    top: 750px
+}
+.page-overview .section-foryou .bubble[data-nth-child='27'] {
+    left: 813px;
+    top: 94px
+}
+.page-overview .section-foryou .bubble[data-nth-child='28'] {
+    left: 823px;
+    top: 352px
+}
+.no-js .page-overview .section-foryou .bubbles {
+    display: none
+}
+.page-overview .section-connect {
+    background-repeat: no-repeat;
+    background-size: 1440px 900px
+}
+.touch .page-overview .section-connect {
+    background-repeat: no-repeat;
+    background-size: 1440px 900px;
+    background-size: 100% 100%
+}
+.ie .page-overview .section-connect .section-bleed {
+    position: relative
+}
+.page-overview .section-guided-tours {
+    background-repeat: no-repeat;
+    background-size: 1440px 896px;
+    height: 896px;
+    width: 1440px;
+    background-size: cover;
+    width: auto
+}
+.page-overview .section-radio {
+    background-repeat: no-repeat;
+    background-size: 1440px 900px;
+    background-image: url("images/heros/radio_bg_blurry_large.jpg")
+}
+.ie .page-overview .section-radio {
+    background-repeat: no-repeat;
+    background-size: 1440px 900px;
+    background-image: url("images/heros/radio_bg_blurry_large.jpg");
+    background-size: 100% 100%
+}
+.page-overview .section-fullheight {
+    min-height: 600px;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden
+}
+html.touch .page-overview .section-fullheight {
+    max-height: 1024px
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight {
+        min-height: 0;
+        height: auto
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .page-overview .section-fullheight {
+        background-size: cover
+    }
+}
+@media only screen and (min-width: 1442px) {
+    .page-overview .section-fullheight {
+        background-size: cover
+    }
+}
+@media only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-width: 1442px) and (min-resolution: 144dpi),
+only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (min-width: 1442px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight {
+        background-size: cover
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-fullheight {
+        background-size: cover
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi),
+only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 1068px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight {
+        background-size: cover
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight {
+        background-size: cover
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dpi),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight {
+        background-size: cover
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    html.touch .page-overview .section-fullheight {
+        max-height: 2048px
+    }
+}
+.page-overview .section-fullheight .section-content {
+    margin-bottom: 0;
+    margin-top: 0
+}
+@media only screen and (min-width: 1442px) {
+    .page-overview .section-fullheight .section-content {
+        width: 1100px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .section-content {
+        margin-top: 70px;
+        margin-bottom: 0
+    }
+}
+.page-overview .section-fullheight .section-content h2 {
+    font-size: 64px;
+    line-height: 1.0625;
+    font-weight: 100
+}
+html.oldie .page-overview .section-fullheight .section-content h2 {
+    font-weight: normal;
+    font-family: "Myriad Set Pro 100", "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+html.oldie[lang=ja-JP] .page-overview .section-fullheight .section-content h2 {
+    font-family: "Apple TP 100", "Apple TP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+html.oldie[lang=zh-CN] .page-overview .section-fullheight .section-content h2 {
+    font-family: "PingHei 100", "PingHei", "STHeitiSC-Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+html.oldie[lang=zh-TW] .page-overview .section-fullheight .section-content h2 {
+    font-family: "MHei 100", "MHei", "STHeitiTC-Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+html.oldie[lang=zh-HK] .page-overview .section-fullheight .section-content h2 {
+    font-family: "MHei 100", "MHei", "STHeitiTC-Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+html.oldie[lang=th-TH] .page-overview .section-fullheight .section-content h2 {
+    font-family: "Sukhumvit Set 100", "Sukhumvit Set", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+html.oldie[lang=ko-KR] .page-overview .section-fullheight .section-content h2 {
+    font-family: "Yoon Gothic 100", "Yoon Gothic", "Apple Gothic", "HY Gulim", "MalgumGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-fullheight .section-content h2 {
+        font-size: 42px;
+        line-height: 1.1429;
+        font-weight: 200
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .section-content h2 {
+        font-size: 42px;
+        line-height: 1.1429;
+        font-weight: 100
+    }
+}
+.page-overview .section-fullheight .column {
+    min-height: 600px;
+    height: 70vh
+}
+html.touch .page-overview .section-fullheight .column {
+    max-height: 1024px
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .column {
+        min-height: 0;
+        height: auto
+    }
+}
+.page-overview .section-fullheight .content-copy {
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+.page-overview .section-fullheight .content-copy h2,
+.page-overview .section-fullheight .content-copy p,
+.page-overview .section-fullheight .content-copy a {
+    color: #fff
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .content-copy {
+        text-align: left;
+        margin-top: 0;
+        position: initial;
+        top: initial;
+        -webkit-transform: initial;
+        -ms-transform: initial;
+        transform: initial
+    }
+}
+.page-overview .section-fullheight .content-copy .more-block {
+    margin-bottom: 0
+}
+.page-overview .section-fullheight .content-hardware {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-top: 30px
+}
+@media only screen and (max-height: 819px) {
+    .page-overview .section-fullheight .content-hardware {
+        margin-top: 108px
+    }
+}
+@media only screen and (min-width: 1442px) and (max-height: 959px) {
+    .page-overview .section-fullheight .content-hardware {
+        margin-top: 100px
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-fullheight .content-hardware {
+        margin-top: 30px
+    }
+}
+@media only screen and (max-width: 1068px) and (max-height: 672px) {
+    .page-overview .section-fullheight .content-hardware {
+        margin-top: 75px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .content-hardware {
+        margin-top: 75px;
+        position: initial;
+        top: initial;
+        -webkit-transform: initial;
+        -ms-transform: initial;
+        transform: initial
+    }
+    .page-overview .section-fullheight .content-hardware .hardware-container {
+        height: 500px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .content-hardware-phone {
+        margin-left: auto;
+        margin-right: auto
+    }
+}
+.page-overview .section-fullheight .image-music-phone {
+    -webkit-transform-origin: bottom center;
+    -ms-transform-origin: bottom center;
+    transform-origin: bottom center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 362px 739px;
+    height: 739px;
+    width: 362px;
+    
+    margin-left: auto;
+    margin-right: 0
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-phone {
+    }
+}
+@media only screen and (min-width: 1442px) {
+    .page-overview .section-fullheight .image-music-phone {
+        background-size: 440px 899px;
+        height: 899px;
+        width: 440px;
+    }
+}
+@media only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-width: 1442px) and (min-resolution: 144dpi),
+only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (min-width: 1442px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-phone {
+        background-image: url("images/hardware/overview_phone_xlarge_2x.png")
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-fullheight .image-music-phone {
+        background-size: 300px 612px;
+        height: 612px;
+        width: 300px;
+        background-image: url("images/hardware/overview_phone_medium.png")
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi),
+only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 1068px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-phone {
+        background-image: url("images/hardware/overview_phone_medium_2x.png")
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .image-music-phone {
+        background-size: 272px 554px;
+        height: 554px;
+        width: 272px;
+        background-image: url("images/hardware/overview_phone_small.png")
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dpi),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-phone {
+        background-image: url("images/hardware/overview_phone_small_2x.png")
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .image-music-phone {
+        margin-left: auto;
+        margin-right: auto
+    }
+}
+.page-overview .section-fullheight .image-music-phone div {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+html.touch .page-overview .section-fullheight .image-music-phone div {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none
+}
+.page-overview .section-fullheight .image-music-phone figure {
+    position: absolute;
+    /*top: 88px;
+    left: 24px*/
+    top: 71px;
+    left: 16px;
+}
+@media only screen and (min-width: 1442px) {
+    .page-overview .section-fullheight .image-music-phone figure {
+        top: 110px;
+        left: 29px
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-fullheight .image-music-phone figure {
+        /*top: 74px;
+        left: 19px*/
+        top: 58px;
+    left: 12px;
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .image-music-phone figure {
+        top: 67px;
+        left: 18px
+    }
+}
+.page-overview .section-fullheight .image-music-phone-white {
+    -webkit-transform-origin: bottom center;
+    -ms-transform-origin: bottom center;
+    transform-origin: bottom center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 362px 739px;
+    height: 739px;
+    width: 362px;
+    background-image: url("images/hardware/tours_iphone_large.png");
+    margin-left: auto;
+    margin-right: 0
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-phone-white {
+        background-image: url("images/hardware/tours_iphone_large_2x.png")
+    }
+}
+@media only screen and (min-width: 1442px) {
+    .page-overview .section-fullheight .image-music-phone-white {
+        background-size: 440px 899px;
+        height: 899px;
+        width: 440px;
+        background-image: url("images/hardware/tours_iphone_xlarge.png")
+    }
+}
+@media only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-width: 1442px) and (min-resolution: 144dpi),
+only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (min-width: 1442px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-phone-white {
+        background-image: url("images/hardware/tours_iphone_xlarge_2x.png")
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-fullheight .image-music-phone-white {
+        background-size: 300px 612px;
+        height: 612px;
+        width: 300px;
+        background-image: url("images/hardware/tours_iphone_medium.png")
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi),
+only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 1068px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-phone-white {
+        background-image: url("images/hardware/tours_iphone_medium_2x.png")
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .image-music-phone-white {
+        background-size: 272px 554px;
+        height: 554px;
+        width: 272px;
+        background-image: url("images/hardware/tours_iphone_small.png")
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dpi),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-phone-white {
+        background-image: url("images/hardware/tours_iphone_small_2x.png")
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .image-music-phone-white {
+        margin-left: auto;
+        margin-right: auto
+    }
+}
+.page-overview .section-fullheight .image-music-phone-white div {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+html.touch .page-overview .section-fullheight .image-music-phone-white div {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none
+}
+.page-overview .section-fullheight .image-music-phone-white figure {
+    position: absolute;
+    /*
+    top: 93px;
+    left: 23px
+    */
+    top: 69px;
+    left: 13px;
+}
+@media only screen and (min-width: 1442px) {
+    .page-overview .section-fullheight .image-music-phone-white figure {
+        top: 86px;
+        left: 20px;
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-fullheight .image-music-phone-white figure {
+        top: 75px;
+        left: 19px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .image-music-phone-white figure {
+        top: 68px;
+        left: 18px
+    }
+}
+.page-overview .section-fullheight .image-music-music-01-screen {
+    background-repeat: no-repeat;
+    background-size: 314px 556px;
+    height: 556px;
+    width: 314px
+}
+@media only screen and (min-width: 1442px) {
+    .page-overview .section-fullheight .image-music-music-01-screen {
+        background-size: 382px 678px;
+        height: 678px;
+        width: 382px
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-fullheight .image-music-music-01-screen {
+        background-size: 260px 462px;
+        height: 462px;
+        width: 260px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .image-music-music-01-screen {
+        background-size: 236px 418px;
+        height: 418px;
+        width: 236px
+    }
+}
+.page-overview .section-fullheight .image-music-music-02-screen {
+    background-repeat: no-repeat;
+    background-size: 314px 556px;
+    height: 556px;
+    width: 314px
+}
+@media only screen and (min-width: 1442px) {
+    .page-overview .section-fullheight .image-music-music-02-screen {
+        background-size: 382px 678px;
+        height: 678px;
+        width: 382px
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-fullheight .image-music-music-02-screen {
+        background-size: 260px 462px;
+        height: 462px;
+        width: 260px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .image-music-music-02-screen {
+        background-size: 236px 418px;
+        height: 418px;
+        width: 236px
+    }
+}
+.page-overview .section-fullheight .image-music-music-03-screen {
+    background-repeat: no-repeat;
+    background-size: 314px 556px;
+    height: 556px;
+    width: 314px
+}
+@media only screen and (min-width: 1442px) {
+    .page-overview .section-fullheight .image-music-music-03-screen {
+        background-size: 382px 678px;
+        height: 678px;
+        width: 382px
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-fullheight .image-music-music-03-screen {
+        background-size: 260px 462px;
+        height: 462px;
+        width: 260px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .image-music-music-03-screen {
+        background-size: 236px 418px;
+        height: 418px;
+        width: 236px
+    }
+}
+.page-overview .section-fullheight .image-music-connect-01-screen {
+    background-repeat: no-repeat;
+    background-size: 314px 556px;
+    height: 556px;
+    width: 314px
+}
+@media only screen and (min-width: 1442px) {
+    .page-overview .section-fullheight .image-music-connect-01-screen {
+        background-size: 382px 678px;
+        height: 678px;
+        width: 382px
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-fullheight .image-music-connect-01-screen {
+        background-size: 260px 462px;
+        height: 462px;
+        width: 260px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .image-music-connect-01-screen {
+        background-size: 236px 418px;
+        height: 418px;
+        width: 236px
+    }
+}
+.page-overview .section-fullheight .image-music-radio-01-screen {
+    background-repeat: no-repeat;
+    /*background-size: 314px 556px;
+    height: 556px;
+    width: 314px*/
+    background-size: 330px 556px;
+    height: 556px;
+    width: 330px;
+}
+@media only screen and (min-width: 1442px) {
+    .page-overview .section-fullheight .image-music-radio-01-screen {
+        background-size: 382px 678px;
+        height: 678px;
+        width: 382px
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-fullheight .image-music-radio-01-screen {
+       /* background-size: 260px 462px;
+        height: 462px;
+        width: 260px*/
+        background-size: 275px 462px;
+        height: 462px;
+        width: 275px;
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .image-music-radio-01-screen {
+        
+        background-size: 236px 418px;
+        height: 418px;
+        width: 236px
+        
+
+    }
+}
+.page-overview .section-fullheight .image-music-tours-01-screen {
+    background-repeat: no-repeat;
+    /*
+    background-size: 314px 556px;
+    height: 556px;
+    width: 314px
+    */
+            background-size: 335px 556px;
+        height: 556px;
+        width: 335px;
+}
+@media only screen and (min-width: 1442px) {
+    .page-overview .section-fullheight .image-music-tours-01-screen {
+    background-size: 397px 725px;
+    height: 725px;
+    width: 397px;
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-fullheight .image-music-tours-01-screen {
+        background-size: 260px 462px;
+        height: 462px;
+        width: 260px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .image-music-tours-01-screen {
+        background-size: 236px 418px;
+        height: 418px;
+        width: 236px
+    }
+}
+.page-overview .section-membership .section-content {
+    margin-bottom: 0;
+    /*margin-top: 222px
+    width: 980px;
+    margin-top: 142px;
+    margin-bottom: 134px;
+    */
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-membership .section-content {
+        /*margin-top: 156px*/
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-membership .section-content {
+        /*margin-top: 60px*/
+    }
+}
+.page-overview .section-devices .section-content {
+    /*margin-bottom: 218px*/
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-devices .section-content {
+        /*margin-bottom: 178px*/
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-devices .section-content {
+        margin-bottom: 85px;
+        margin-top: 0
+    }
+}
+.page-overview .section-devices .section-content .caption-headline {
+    font-weight: 400;
+    font-size: 18px
+}
+.page-overview .section-devices .platform-icon {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 12px
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-devices .platform-icon {
+        /*margin-top: 55px;*/
+        margin-top: 10px;
+        padding-bottom: 4px
+    }
+}
+.page-overview .section-devices .large-platform-icon {
+    width: 20%
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-devices .large-platform-icon {
+        width: 83.3333%
+    }
+}
+.page-overview .section-devices .image-icon-ios {
+    background-repeat: no-repeat;
+    /*background-image: url("images/icons/icon_ios.svg");*/
+    background-image: url("images/icons/icon_ioscc.png");
+    background-size: 35px 73px;
+    height: 73px;
+    width: 35px
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-devices .image-icon-ios {
+        background-size: 27px 56px;
+        height: 56px;
+        width: 27px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-devices .image-icon-ios {
+        background-size: 35px 73px;
+        height: 73px;
+        width: 35px
+    }
+    .page-overview .section-devices .large-push-2{
+        left: 0%;
+    }
+}
+html.no-svg .page-overview .section-devices .image-icon-ios {
+    background-image: url("images/icons/icon_ios_large.png");
+    background-size: 35px 73px;
+    height: 73px;
+    width: 35px
+}
+.page-overview .section-devices .image-icon-watch {
+    background-repeat: no-repeat;
+    background-image: url("images/icons/icon_watch.svg");
+    background-size: 66px 73px;
+    height: 73px;
+    width: 66px
+}
+
+html.no-svg .section-giftcards .icon-giftcards {
+    background-image: url("images/icons/icon_apple_music_gift_card_large.png");
+    background-size: 53px 38px;
+    height: 38px;
+    width: 53px
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .section-giftcards .icon-giftcards {
+        margin: 0 auto 20px
+    }
+}
+.section-giftcards .image-giftcards {
+    background-repeat: no-repeat;
+    /*
+    background-size: 516px 598px;
+    height: 598px;
+    width: 516px;
+    */
+    background-size: 580px 700px;
+    height: 700px;
+    width: 580px;
+    background-image: url("images/heros/gigs.png");
+    /*margin-top: 110px*/
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .section-giftcards .image-giftcards {
+        background-image: url("images/heros/music_gift_card_large_2x.jpg")
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .section-giftcards .image-giftcards {
+        background-size: 420px 560px;
+        height: 560px;
+        width: 420px;
+       
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi),
+only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 1068px) and (min-resolution: 144dppx) {
+    .section-giftcards .image-giftcards {
+        background-image: url("images/heros/music_gift_card_medium_2x.jpg")
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .section-giftcards .image-giftcards {
+        background-size: 302px 347px;
+        height: 347px;
+        width: 302px;
+        background-image: url("images/heros/music_gift_card_small.jpg")
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dpi),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dppx) {
+    .section-giftcards .image-giftcards {
+        background-image: url("images/heros/music_gift_card_small_2x.jpg")
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .section-giftcards .image-giftcards {
+        margin-top: 30px;
+        background-size: 420px 560px;
+        height: 560px;
+        width: 420px;
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .section-giftcards .image-giftcards {
+        margin: 0 auto 30px
+    }
+}
+
+
+
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-devices .image-icon-watch {
+        background-size: 51px 56px;
+        height: 56px;
+        width: 51px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-devices .image-icon-watch {
+        background-size: 66px 73px;
+        height: 73px;
+        width: 66px
+    }
+}
+html.no-svg .page-overview .section-devices .image-icon-watch {
+    background-image: url("images/icons/icon_watch_large.png");
+    background-size: 66px 73px;
+    height: 73px;
+    width: 66px
+}
+.page-overview .section-devices .image-icon-appletv {
+    background-repeat: no-repeat;
+    background-image: url("images/icons/icon_appletv.svg");
+    background-size: 67px 73px;
+    height: 73px;
+    width: 67px
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-devices .image-icon-appletv {
+        background-size: 52px 56px;
+        height: 56px;
+        width: 52px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-devices .image-icon-appletv {
+        background-size: 67px 73px;
+        height: 73px;
+        width: 67px
+    }
+}
+html.no-svg .page-overview .section-devices .image-icon-appletv {
+    background-image: url("images/icons/icon_appletv_large.png");
+    background-size: 67px 73px;
+    height: 73px;
+    width: 67px
+}
+.page-overview .section-devices .image-icon-mac {
+    background-repeat: no-repeat;
+    /*background-image: url("images/icons/icon_mac.svg");*/
+    background-image: url("images/icons/icon_mac2.png");
+    background-size: 139px 73px;
+    height: 73px;
+    width: 139px
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-devices .image-icon-mac {
+        background-size: 108px 56px;
+        height: 56px;
+        width: 108px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-devices .image-icon-mac {
+        background-size: 139px 73px;
+        height: 73px;
+        width: 139px
+    }
+}
+html.no-svg .page-overview .section-devices .image-icon-mac {
+    background-image: url("images/icons/icon_mac_large.png");
+    background-size: 139px 73px;
+    height: 73px;
+    width: 139px
+}
+.page-overview .section-devices .image-icon-pc {
+    background-repeat: no-repeat;
+    /*background-image: url("images/icons/icon_pc.svg");*/
+    background-image: url("images/icons/icon_pcc.png");
+    background-size: 127px 73px;
+    height: 73px;
+    width: 127px
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-devices .image-icon-pc {
+        background-size: 99px 56px;
+        height: 56px;
+        width: 99px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-devices .image-icon-pc {
+        background-size: 127px 73px;
+        height: 73px;
+        width: 127px
+    }
+}
+html.no-svg .page-overview .section-devices .image-icon-pc {
+    background-image: url("images/icons/icon_pc_large.png");
+    background-size: 127px 73px;
+    height: 73px;
+    width: 127px
+}
+.page-overview .section-devices .image-icon-android {
+    background-repeat: no-repeat;
+    /*background-image: url("images/icons/icon_android.svg");*/
+    background-image: url("images/icons/icon_androidc.png");
+    background-size: 39px 73px;
+    height: 73px;
+    width: 39px
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-devices .image-icon-android {
+        background-size: 30px 56px;
+        height: 56px;
+        width: 30px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-devices .image-icon-android {
+        background-size: 39px 73px;
+        height: 73px;
+        width: 39px
+    }
+}
+html.no-svg .page-overview .section-devices .image-icon-android {
+    background-image: url("images/icons/icon_android_large.png");
+    background-size: 39px 73px;
+    height: 73px;
+    width: 39px
+}
+.page-overview .section-devices .platforms p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #666
+}
+.page-overview .section-radio .radio-location {
+    display: none
+}
+.page-overview .section-radio .radio-gradient {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: -webkit-linear-gradient(top, transparent 0%, #000 100%);
+    background: linear-gradient(top, transparent 0%, #000 100%)
+}
+.page-overview .section-itunes .section-content {
+    margin-top: 0;
+    margin-bottom: 9px
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-itunes .section-content {
+        margin-bottom: 7px
+    }
+}
+.page-overview .section-itunes .section-hardware {
+    /*overflow: hidden*/
+}
+.page-overview .section-itunes .section-hardware .column-hardware {
+    /*height: 800px*/
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-itunes .section-hardware .column-hardware {
+        height: 520px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-itunes .section-hardware .column-hardware {
+        height: 450px
+    }
+}
+.page-overview .section-itunes .section-hardware .column-copy {
+    /*height: 800px*/
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-itunes .section-hardware .column-copy {
+        /*height: 520px*/
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-itunes .section-hardware .column-copy {
+        height: auto;
+        margin-top: 86px;
+        margin-bottom: 18px
+    }
+    .page-overview .section-itunes .section-hardware .column-copy .small-vertical-reset {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+        text-align: center
+    }
+}
+.page-overview .section-itunes .section-hardware .headline-icon {
+    margin-left: 0
+}
+.page-overview .section-itunes .image-itunes-hw2 img{
+    margin: 0 auto;
+    border-radius:50%;
+    width:220px;
+    height:220px;
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-itunes .section-hardware .headline-icon {
+        margin-left: auto;
+        margin-right: auto
+    }
+}
+
+.page-overview .section-itunes .image-itunes-hw {
+    
+    background-repeat: no-repeat;
+    /*    background-size: 1135px 1466px;
+    
+    height: 1466px;
+    width: 1135px;*/
+    margin-right: 60px;
+    margin-top: 0px;
+    float: right;    
+    margin-right: 0px;
+    /*
+    background-size: 600px 768px;
+    height: 768px;
+    width: 600px;
+    */
+    background-size: 580px 700px;
+    height: 700px;
+    width: 580px;
+
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-itunes .image-itunes-hw {
+        /*
+        background-size: 846px 1093px;
+        height: 1093px;
+        width: 846px
+        */
+        background-size: 420px 560px;
+        height: 560px;
+        width: 420px;
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-itunes .image-itunes-hw {
+        background-size: 549px 710px;
+        height: 710px;
+        width: 549px
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-itunes .image-itunes-hw {
+        margin-top: 60px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-itunes .image-itunes-hw {
+        margin-top: 40px;
+        margin-left: 0;
+        margin-right: 40px;
+        float: right
+    }
+}
+.page-overview .section-itunes .image-icon-itunes {
+    /*
+    background-repeat: no-repeat;
+    background-image: url("/v/music/bimages/icons/icon_itunes.svg");
+    background-size: 57px 57px;
+    height: 57px;
+    width: 57px
+    */
+}
+html.no-svg .page-overview .section-itunes .image-icon-itunes {
+    background-image: url("images/icons/icon_itunes_large.png");
+    background-size: 58px 58px;
+    height: 58px;
+    width: 58px
+}
+.page-overview .section-ipods .content-spacing {
+    margin-top: 60px;
+    margin-bottom: 60px
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-ipods .content-spacing {
+        margin-top: 60px;
+        margin-bottom: 60px
+    }
+}
+.page-overview .section-ipods .ipod-hardware {
+    position: relative;
+    width: 100%;
+    height: 535px;
+    float: right
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-ipods .ipod-hardware {
+        height: 313px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-ipods .ipod-hardware {
+        width: 337px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        height: 281px
+    }
+}
+.page-overview .section-ipods .ipod-hardware figure {
+    position: absolute
+}
+.page-overview .section-ipods .image-ipod-touch {
+    background-repeat: no-repeat;
+    background-size: 271px 535px;
+    height: 535px;
+    width: 271px;
+    top: 0;
+    right: 0;
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-ipods .image-ipod-touch {
+        background-size: 155px 313px;
+        height: 313px;
+        width: 155px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-ipods .image-ipod-touch {
+        background-size: 139px 281px;
+        height: 281px;
+        width: 139px
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-ipods .image-ipod-touch {
+        right: 57px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-ipods .image-ipod-touch {
+        right: 0
+    }
+}
+.page-overview .section-ipods .image-ipod-nano {
+    /*
+    background-repeat: no-repeat;
+    background-size: 195px 429px;
+    height: 429px;
+    width: 195px;
+    top: 62px;
+    right: 284px
+    */
+    background-repeat: no-repeat;
+    background-size: 230px 480px;
+    height: 480px;
+    width: 230px;
+    top: 25px;
+    right: 220px;
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-ipods .image-ipod-nano {
+        background-size: 114px 251px;
+        height: 251px;
+        width: 114px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-ipods .image-ipod-nano {
+        background-size: 102px 224px;
+        height: 224px;
+        width: 102px
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-ipods .image-ipod-nano {
+        top: 31px;
+        right: 188px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-ipods .image-ipod-nano {
+        top: 31px;
+        right: 116px
+    }
+}
+.page-overview .section-ipods .image-ipod-nano-back {
+    background-repeat: no-repeat;
+    background-size: 242px 339px;
+    height: 339px;
+    width: 242px;
+    top: 99px;
+    right: 410px
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-ipods .image-ipod-nano-back {
+        background-size: 141px 197px;
+        height: 197px;
+        width: 141px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-ipods .image-ipod-nano-back {
+        background-size: 126px 177px;
+        height: 177px;
+        width: 126px
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-ipods .image-ipod-nano-back {
+        top: 56px;
+        right: 259px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-ipods .image-ipod-nano-back {
+        top: 56px;
+        right: 159px
+    }
+}
+.page-overview .section-ipods .image-ipod-shuffle {
+    background-repeat: no-repeat;
+    background-size: 270px 500px;
+    height: 500px;
+    width: 270px;
+    top: 25px;
+    right: 450px;
+/*
+    background-repeat: no-repeat;
+    background-size: 131px 134px;
+    height: 134px;
+    width: 131px;
+    top: 168px;
+    right: 615px
+*/
+}
+
+@media only screen and (min-width: 1069px) and (max-width: 1200px) {
+    .page-overview .section-ipods .ipod-hardware {
+    height: 400px;
+    }
+    .page-overview .section-ipods .image-ipod-shuffle {
+        background-size: 180px 375px;
+        height: 375px;
+        width: 180px;
+        top: 15px;
+        right: 365px;
+    }
+    .page-overview .section-ipods .image-ipod-nano {
+        background-size: 180px 370px;
+        height: 370px;
+        width: 180px;
+        top: 10px;
+        right: 188px;
+    }
+    .page-overview .section-ipods .image-ipod-touch {
+        background-size: 200px 380px;
+        height: 380px;
+        width: 220px;
+        right: 25px;
+    }
+}
+
+
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-ipods .image-ipod-shuffle {
+        /*background-size: 77px 78px;
+        height: 78px;
+        width: 77px*/
+        background-size: 145px 275px;
+        height: 275px;
+        width: 145px;
+
+    }
+
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-ipods .image-ipod-shuffle {
+        background-size: 69px 70px;
+        height: 70px;
+        width: 69px
+
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-ipods .image-ipod-shuffle {
+        /*
+        top: 97px;
+        right: 379px
+        */
+        top: 15px;
+        right: 310px;
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-ipods .image-ipod-shuffle {
+        top: 97px;
+        right: 267px
+    }
+}
+.page-overview .section-ipods .image-icon-ipod {
+    background-repeat: no-repeat;
+    background-image: url("/v/music/bimages/icons/icon_ipod.svg");
+    background-size: 41px 62px;
+    height: 62px;
+    width: 41px
+}
+html.no-svg .page-overview .section-ipods .image-icon-ipod {
+    background-image: url("images/icons/icon_ipod_large.png");
+    background-size: 41px 62px;
+    height: 62px;
+    width: 41px
+}
+.page-overview .section-ipods .headline-icon {
+    margin-left: 0
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-ipods .headline-icon {
+        margin-left: auto
+    }
+}
+.page-overview .section-ipods .column-copy {
+    /*
+    height: 535px;
+    text-align: left
+    */
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-ipods .column-copy {
+        /*height: 313px*/
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-ipods .column-copy {
+        height: auto;
+        text-align: center
+    }
+}
+.page-overview .section-beats .column-first,
+.page-overview .section-beats .column-second {
+    overflow: hidden;
+    height: 555px
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-beats .column-first,
+    .page-overview .section-beats .column-second {
+        height: 410px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-beats .column-first,
+    .page-overview .section-beats .column-second {
+        height: 450px
+    }
+}
+.page-overview .section-beats .column-first h4,
+.page-overview .section-beats .column-second h4 {
+    position: absolute;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 40px
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-beats .column-first h4,
+    .page-overview .section-beats .column-second h4 {
+        bottom: 32px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-beats .column-first h4,
+    .page-overview .section-beats .column-second h4 {
+        bottom: 25px
+    }
+}
+.page-overview .section-beats .column-first {
+    border-right: 2px solid #fff
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-beats .column-first {
+        border-right: none
+    }
+}
+.page-overview .section-beats .column-second {
+    border-left: 2px solid #fff
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-beats .column-second {
+        border-right: none;
+        border-top: 4px solid #fff
+    }
+}
+.page-overview .section-beats .image-headphones {
+    background-repeat: no-repeat;
+    background-size: 450px 446px;
+    height: 446px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -45px
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-beats .image-headphones {
+        background-size: 333px 331px;
+        height: 331px;
+        width: 333px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-beats .image-headphones {
+        background-size: 309px 307px;
+        height: 307px;
+        width: 309px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-beats .image-headphones {
+        top: 40px
+    }
+}
+.page-overview .section-beats .image-speakers {
+    background-repeat: no-repeat;
+    background-size: 445px 219px;
+    height: 219px;
+    width: 445px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-beats .image-speakers {
+        background-size: 330px 162px;
+        height: 162px;
+        width: 330px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-beats .image-speakers {
+        background-size: 322px 161px;
+        height: 161px;
+        width: 322px
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-beats .image-speakers {
+        margin-top: 120px
+    }
+}
+.page-overview .section-beats .image-beats-plus {
+    background-repeat: no-repeat;
+    background-size: 445px 445px;
+    height: 445px;
+    width: 445px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 53px
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-beats .image-beats-plus {
+        background-size: 330px 330px;
+        height: 330px;
+        width: 330px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-beats .image-beats-plus {
+        background-size: 322px 322px;
+        height: 322px;
+        width: 322px
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-beats .image-beats-plus {
+        margin-top: 0px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-beats .image-beats-plus {
+        margin-top: 45px
+    }
+}
+.page-overview .section-festival {
+    text-align: center;
+    height: 897px;
+    background-color: #000000;
+    color: #ffffff
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-festival {
+        height: 960px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-festival {
+        height: 626px
+    }
+}
+.page-overview .section-festival .section-background {
+    background-repeat: no-repeat;
+    background-size: 2560px 896px;
+    height: 896px;
+    width: 2560px;
+    position: absolute;
+    left: 50%;
+    margin-left: -1280px
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-festival .section-background {
+        background-size: 1068px 960px;
+        height: 960px;
+        width: 1068px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-festival .section-background {
+        background-size: 736px 626px;
+        height: 626px;
+        width: 736px
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-festival .section-background {
+        margin-left: -534px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-festival .section-background {
+        margin-left: -368px
+    }
+}
+.page-overview .section-festival .section-content {
+    width: 1020px;
+    margin-top: 230px
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-festival .section-content {
+        width: 544px;
+        margin-top: 268px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-festival .section-content {
+        margin-top: 59px;
+        width: 90%
+    }
+}
+.page-overview .section-festival h2.festival-header {
+    font-size: 70px;
+    font-weight: 100;
+    margin-top: 54px;
+    margin-bottom: 36px
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-festival h2.festival-header {
+        font-size: 52px;
+        line-height: 56px;
+        margin-top: 40px;
+        margin-bottom: 28px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-festival h2.festival-header {
+        font-size: 42px;
+        line-height: 48px;
+        margin-top: 34px;
+        margin-bottom: 22px
+    }
+}
+.page-overview .section-festival .festival-dates {
+    font-size: 32px;
+    font-weight: 200;
+    margin-top: 12px
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-festival .festival-dates {
+        font-size: 28px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-festival .festival-dates {
+        font-size: 24px;
+        margin-top: 4px
+    }
+}
+.page-overview .section-festival h2.festival-logo {
+    background-repeat: no-repeat;
+    background-size: 408px 46px;
+    height: 46px;
+    width: 408px;
+    font: 0/0 a;
+    display: inline-block;
+    margin-bottom: 0
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-festival h2.festival-logo {
+        background-size: 262px 30px;
+        height: 30px;
+        width: 262px
+    }
+}
+.page-overview .section-festival p {
+    margin-bottom: 56px
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-festival p {
+        margin-bottom: 38px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-festival p {
+        margin-bottom: 34px
+    }
+}
+.page-overview .section-festival p.festival-description {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-festival p.festival-description {
+        width: 464px
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-festival p.festival-description {
+        width: 100%
+    }
+}
+.page-overview .section-festival p,
+.page-overview .section-festival p a.festival-cta {
+    font-size: 28px;
+    line-height: 1.5714;
+    font-weight: 200
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-festival p,
+    .page-overview .section-festival p a.festival-cta {
+        font-size: 24px;
+        line-height: 1.5
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-festival p,
+    .page-overview .section-festival p a.festival-cta {
+        font-size: 20px;
+        line-height: 1.4
+    }
+}
+.page-overview .section-festival p a.festival-cta {
+    color: #ffffff
+}
+html.no-js .page-overview .section-festival p a.festival-cta:hover {
+    text-decoration: none;
+    color: #5cc3f6
+}
+html.no-touch .page-overview .section-festival p a.festival-cta:hover {
+    text-decoration: none;
+    color: #5cc3f6
+}
+.page-overview .section-connect {
+    background-image: url("images/connect_blurry_bg_large.jpg");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .page-overview .section-connect {
+        background-image: url("images/connect_blurry_bg_large_2x.jpg");
+    }
+}
+.touch .page-overview .section-connect {
+    background-image: url("images/connect_blurry_bg_large.jpg");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .touch .page-overview .section-connect {
+        background-image: url("images/connect_blurry_bg_large_2x.jpg");
+    }
+}
+.page-overview .section-guided-tours {
+    /*background-image: url("images/guided_tours_bg_large.jpg");*/
+    /*background-image: url("images/festival_back_large.jpg");   */
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .page-overview .section-guided-tours {
+       /* background-image: url("images/guided_tours_bg_large_2x.jpg");*/
+        background-image: url("images/festival_back_large_2x.jpg")      
+    }
+}
+.page-overview .section-fullheight .image-music-music-01-screen {
+    background-image: url("images/overview_music_01_screen_large.jpg");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-music-01-screen {
+        background-image: url("images/overview_music_01_screen_large_2x.jpg");
+    }
+}
+@media only screen and (min-width: 1442px) {
+    .page-overview .section-fullheight .image-music-music-01-screen {
+        background-image: url("images/overview_music_01_screen_xlarge.jpg");
+    }
+}
+@media only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-width: 1442px) and (min-resolution: 144dpi),
+only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (min-width: 1442px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-music-01-screen {
+        background-image: url("images/overview_music_01_screen_xlarge_2x.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-fullheight .image-music-music-01-screen {
+        background-image: url("images/overview_music_01_screen_medium.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi),
+only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 1068px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-music-01-screen {
+        background-image: url("images/overview_music_01_screen_medium_2x.jpg");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .image-music-music-01-screen {
+        background-image: url("images/overview_music_01_screen_small.jpg");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dpi),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-music-01-screen {
+        background-image: url("images/overview_music_01_screen_small_2x.jpg");
+    }
+}
+.page-overview .section-fullheight .image-music-music-02-screen {
+    background-image: url("images/overview_music_02_screen_large.jpg");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-music-02-screen {
+        background-image: url("images/overview_music_02_screen_large_2x.jpg");
+    }
+}
+@media only screen and (min-width: 1442px) {
+    .page-overview .section-fullheight .image-music-music-02-screen {
+        background-image: url("images/overview_music_02_screen_xlarge.jpg");
+    }
+}
+@media only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-width: 1442px) and (min-resolution: 144dpi),
+only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (min-width: 1442px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-music-02-screen {
+        background-image: url("images/overview_music_02_screen_xlarge_2x.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-fullheight .image-music-music-02-screen {
+        background-image: url("images/overview_music_02_screen_medium.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi),
+only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 1068px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-music-02-screen {
+        background-image: url("images/overview_music_02_screen_medium_2x.jpg");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .image-music-music-02-screen {
+        background-image: url("images/overview_music_02_screen_small.jpg");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dpi),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-music-02-screen {
+        background-image: url("images/overview_music_02_screen_small_2x.jpg");
+    }
+}
+.page-overview .section-fullheight .image-music-music-03-screen {
+    background-image: url("images/overview_music_03_screen_large.jpg");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-music-03-screen {
+        background-image: url("images/overview_music_03_screen_large_2x.jpg");
+    }
+}
+@media only screen and (min-width: 1442px) {
+    .page-overview .section-fullheight .image-music-music-03-screen {
+        background-image: url("images/overview_music_03_screen_xlarge.jpg");
+    }
+}
+@media only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-width: 1442px) and (min-resolution: 144dpi),
+only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (min-width: 1442px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-music-03-screen {
+        background-image: url("images/overview_music_03_screen_xlarge_2x.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-fullheight .image-music-music-03-screen {
+        background-image: url("images/overview_music_03_screen_medium.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi),
+only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 1068px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-music-03-screen {
+        background-image: url("images/overview_music_03_screen_medium_2x.jpg");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .image-music-music-03-screen {
+        background-image: url("images/overview_music_03_screen_small.jpg");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dpi),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-music-03-screen {
+        background-image: url("images/overview_music_03_screen_small_2x.jpg");
+    }
+}
+.page-overview .section-fullheight .image-music-connect-01-screen {
+    background-image: url("images/overview_connect_01_screen_large.jpg");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-connect-01-screen {
+        background-image: url("images/overview_connect_01_screen_large_2x.jpg");
+    }
+}
+@media only screen and (min-width: 1442px) {
+    .page-overview .section-fullheight .image-music-connect-01-screen {
+        background-image: url("images/overview_connect_01_screen_xlarge.jpg");
+    }
+}
+@media only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-width: 1442px) and (min-resolution: 144dpi),
+only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (min-width: 1442px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-connect-01-screen {
+        background-image: url("images/overview_connect_01_screen_xlarge_2x.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-fullheight .image-music-connect-01-screen {
+        background-image: url("images/overview_connect_01_screen_medium.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi),
+only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 1068px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-connect-01-screen {
+        background-image: url("images/overview_connect_01_screen_medium_2x.jpg");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .image-music-connect-01-screen {
+        background-image: url("images/overview_connect_01_screen_small.jpg");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dpi),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-connect-01-screen {
+        background-image: url("images/overview_connect_01_screen_small_2x.jpg");
+    }
+}
+.page-overview .section-fullheight .image-music-radio-01-screen {
+    background-image: url("images/overview_radio_01_screen_large.jpg");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-radio-01-screen {
+        background-image: url("images/overview_radio_01_screen_large_2x.jpg");
+    }
+}
+@media only screen and (min-width: 1442px) {
+    .page-overview .section-fullheight .image-music-radio-01-screen {
+        background-image: url("images/overview_radio_01_screen_xlarge.jpg");
+    }
+}
+@media only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-width: 1442px) and (min-resolution: 144dpi),
+only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (min-width: 1442px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-radio-01-screen {
+        background-image: url("images/overview_radio_01_screen_xlarge_2x.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-fullheight .image-music-radio-01-screen {
+        background-image: url("images/overview_radio_01_screen_medium.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi),
+only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 1068px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-radio-01-screen {
+        background-image: url("images/overview_radio_01_screen_medium_2x.jpg");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .image-music-radio-01-screen {
+        background-image: url("images/overview_radio_01_screen_small.jpg");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dpi),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-radio-01-screen {
+        background-image: url("images/overview_radio_01_screen_small_2x.jpg");
+    }
+}
+.page-overview .section-fullheight .image-music-tours-01-screen {
+    background-image: url("images/bgphone_xlarge.png");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-tours-01-screen {
+        background-image: url("images/overview_tours_01_screen_large_2x.jpg");
+    }
+}
+@media only screen and (min-width: 1442px) {
+    .page-overview .section-fullheight .image-music-tours-01-screen {
+        background-image: url("images/bgphone_xlarge.png");
+    }
+}
+@media only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-width: 1442px) and (min-resolution: 144dpi),
+only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (min-width: 1442px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-tours-01-screen {
+        background-image: url("images/overview_tours_01_screen_xlarge_2x.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-fullheight .image-music-tours-01-screen {
+        background-image: url("images/overview_tours_01_screen_medium.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi),
+only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 1068px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-tours-01-screen {
+        background-image: url("images/overview_tours_01_screen_medium_2x.jpg");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-fullheight .image-music-tours-01-screen {
+        background-image: url("images/overview_tours_01_screen_small.jpg");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dpi),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dppx) {
+    .page-overview .section-fullheight .image-music-tours-01-screen {
+        background-image: url("images/overview_tours_01_screen_small_2x.jpg");
+    }
+}
+.page-overview .section-itunes .image-itunes-hw {
+    /*background-image: url("images/itunes_hw_large.jpg");
+    background-image: url("images/4.jpg");
+    */
+
+}
+.page-overview .section-itunes .image-itunes-hw img{
+            margin: 0 auto;
+    border-radius:50%;
+    width:220px;
+    height:220px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .page-overview .section-itunes .image-itunes-hw {
+        background-image: url("images/itunes_hw_large_2x.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-itunes .image-itunes-hw {
+        background-image: url("images/itunes_hw_medium.png");
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi),
+only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 1068px) and (min-resolution: 144dppx) {
+    .page-overview .section-itunes .image-itunes-hw {
+        background-image: url("images/itunes_hw_medium_2x.png");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-itunes .image-itunes-hw {
+        background-image: url("images/itunes_hw_small.jpg");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dpi),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dppx) {
+    .page-overview .section-itunes .image-itunes-hw {
+        background-image: url("images/itunes_hw_small_2x.jpg");
+    }
+}
+.page-overview .section-ipods .image-ipod-touch {
+    background-image: url("images/ipod_touch_large.png");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .page-overview .section-ipods .image-ipod-touch {
+        /*background-image: url("images/ipod_touch_large_2x.png");*/
+        background-image: url("images/ipod_touch_large.png");
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-ipods .image-ipod-touch {
+        /*background-image: url("images/ipod_touch_medium.png");*/
+        background-image: url("images/ipod_touch_large.png");
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi),
+only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 1068px) and (min-resolution: 144dppx) {
+    .page-overview .section-ipods .image-ipod-touch {
+        background-image: url("images/ipod_touch_medium_2x.png");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-ipods .image-ipod-touch {
+        background-image: url("images/ipod_touch_small.png");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dpi),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dppx) {
+    .page-overview .section-ipods .image-ipod-touch {
+        background-image: url("images/ipod_touch_small_2x.png");
+    }
+}
+.page-overview .section-ipods .image-ipod-nano {
+    background-image: url("images/ipod_nano_large.png");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .page-overview .section-ipods .image-ipod-nano {
+        /*background-image: url("images/ipod_nano_large_2x.png");*/
+        background-image: url("images/ipod_nano_large.png");
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-ipods .image-ipod-nano {
+        /*background-image: url("images/ipod_nano_medium.png");*/
+        background-image: url("images/ipod_nano_large.png");
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi),
+only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 1068px) and (min-resolution: 144dppx) {
+    .page-overview .section-ipods .image-ipod-nano {
+        background-image: url("images/ipod_nano_medium_2x.png");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-ipods .image-ipod-nano {
+        background-image: url("images/ipod_nano_small.png");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dpi),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dppx) {
+    .page-overview .section-ipods .image-ipod-nano {
+        background-image: url("images/ipod_nano_small_2x.png");
+    }
+}
+.page-overview .section-ipods .image-ipod-nano-back {
+    background-image: url("images/ipod_nano_back_large.png");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .page-overview .section-ipods .image-ipod-nano-back {
+        background-image: url("images/ipod_nano_back_large_2x.png");
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-ipods .image-ipod-nano-back {
+        background-image: url("images/ipod_nano_back_medium.png");
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi),
+only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 1068px) and (min-resolution: 144dppx) {
+    .page-overview .section-ipods .image-ipod-nano-back {
+        background-image: url("images/ipod_nano_back_medium_2x.png");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-ipods .image-ipod-nano-back {
+        background-image: url("images/ipod_nano_back_small.png");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dpi),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dppx) {
+    .page-overview .section-ipods .image-ipod-nano-back {
+        background-image: url("images/ipod_nano_back_small_2x.png");
+    }
+}
+.page-overview .section-ipods .image-ipod-shuffle {
+    background-image: url("images/ipod_shuffle_large.png");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .page-overview .section-ipods .image-ipod-shuffle {
+        background-image: url("images/ipod_shuffle_large_2x.png");
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-ipods .image-ipod-shuffle {
+        /*background-image: url("images/ipod_shuffle_medium.png");*/
+        background-image: url("images/ipod_shuffle_large.png");
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi),
+only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 1068px) and (min-resolution: 144dppx) {
+    .page-overview .section-ipods .image-ipod-shuffle {
+        background-image: url("images/ipod_shuffle_medium_2x.png");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-ipods .image-ipod-shuffle {
+        background-image: url("images/ipod_shuffle_small.png");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dpi),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dppx) {
+    .page-overview .section-ipods .image-ipod-shuffle {
+        background-image: url("images/ipod_shuffle_small_2x.png");
+    }
+}
+.page-overview .section-beats .image-headphones {
+    background-image: url("images/headphones_large.jpg");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .page-overview .section-beats .image-headphones {
+        background-image: url("images/headphones_large_2x.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-beats .image-headphones {
+        background-image: url("images/headphones_medium.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi),
+only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 1068px) and (min-resolution: 144dppx) {
+    .page-overview .section-beats .image-headphones {
+        background-image: url("images/headphones_medium_2x.jpg");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-beats .image-headphones {
+        background-image: url("images/headphones_small.jpg");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dpi),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dppx) {
+    .page-overview .section-beats .image-headphones {
+        background-image: url("images/headphones_small_2x.jpg");
+    }
+}
+.page-overview .section-beats .image-speakers {
+    background-image: url("images/speakers_large.jpg");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .page-overview .section-beats .image-speakers {
+        background-image: url("images/speakers_large_2x.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-beats .image-speakers {
+        background-image: url("images/speakers_medium.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi),
+only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 1068px) and (min-resolution: 144dppx) {
+    .page-overview .section-beats .image-speakers {
+        background-image: url("images/speakers_medium_2x.jpg");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-beats .image-speakers {
+        background-image: url("images/speakers_small.jpg");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dpi),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dppx) {
+    .page-overview .section-beats .image-speakers {
+        background-image: url("images/speakers_small_2x.jpg");
+    }
+}
+.page-overview .section-beats .image-beats-plus {
+    background-image: url("images/beats_plus_large.jpg");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .page-overview .section-beats .image-beats-plus {
+        background-image: url("images/beats_plus_large_2x.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-beats .image-beats-plus {
+        background-image: url("images/beats_plus_medium.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi),
+only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 1068px) and (min-resolution: 144dppx) {
+    .page-overview .section-beats .image-beats-plus {
+        background-image: url("images/beats_plus_medium_2x.jpg");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-beats .image-beats-plus {
+        background-image: url("images/beats_plus_small.jpg");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dpi),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dppx) {
+    .page-overview .section-beats .image-beats-plus {
+        background-image: url("images/beats_plus_small_2x.jpg");
+    }
+}
+.page-overview .section-festival .section-background {
+    background-image: url("images/festival_back_large.jpg");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .page-overview .section-festival .section-background {
+        background-image: url("images/festival_back_large_2x.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-festival .section-background {
+        background-image: url("images/festival_back_medium.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi),
+only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 1068px) and (min-resolution: 144dppx) {
+    .page-overview .section-festival .section-background {
+        background-image: url("images/festival_back_medium_2x.jpg");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-festival .section-background {
+        background-image: url("images/festival_back_small.jpg");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dpi),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dppx) {
+    .page-overview .section-festival .section-background {
+        background-image: url("images/festival_back_small_2x.jpg");
+    }
+}
+.page-overview .section-festival h2.festival-logo {
+    background-image: url("images/apple_music_festival_large.png");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+(-webkit-min-device-pixel-ratio: 144),
+(min-resolution: 144dppx) {
+    .page-overview .section-festival h2.festival-logo {
+        background-image: url("images/apple_music_festival_large_2x.png");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) {
+    .page-overview .section-festival h2.festival-logo {
+        background-image: url("images/apple_music_festival_small.png");
+    }
+}
+@media only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dpi),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 144),
+only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dppx) {
+    .page-overview .section-festival h2.festival-logo {
+        background-image: url("images/apple_music_festival_small_2x.png");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1) {
+     ::i-block-chrome, .hero-headline {
+        height:600px;
+    }
+    ::i-block-chrome, .hero-intro{
+        top:600px !important;
+    }
+    ::i-block-chrome, .fixsafari{
+        top:-300px !important;
+    }
+}

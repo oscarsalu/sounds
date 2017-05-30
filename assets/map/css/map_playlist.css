@@ -1,0 +1,349 @@
+/*
+    Document        : mep-feature-playlist.css
+    Author          : Andrew Berezovsky <andrew.berezovsky@gmail.com>
+    Original Author : Junaid Qadir Baloch <shekhanzai.baloch@gmail.com>
+*/
+
+/* Start: Show/Hide Playlist*/
+.mejs-controls .mejs-show-playlist button {
+  background: transparent url(controls-playlist.png) no-repeat;
+  background-position: -16px -16px;
+}
+.mejs-controls .mejs-hide-playlist button {
+  background: transparent url(controls-playlist.png) no-repeat;
+  background-position: -16px 0;
+}
+/* End: Show/Hide Playlist */
+
+/* Start: Previous */
+.mejs-controls .mejs-prevtrack button {
+  background: transparent url(controls-playlist.png) no-repeat;
+  background-position: 0 -16px;
+}
+/* End: Previous */
+
+/* Start: Next */
+.mejs-controls .mejs-nexttrack button {
+  background: transparent url(controls-playlist.png) no-repeat;
+}
+/* End: Next */
+
+/* Start: Shuffle */
+.mejs-controls .mejs-shuffle-on button {
+  background: transparent url(controls-playlist.png) no-repeat;
+  background-position: -32px 0;
+}
+.mejs-controls .mejs-shuffle-off button {
+  background: transparent url(controls-playlist.png) no-repeat;
+  background-position: -32px -16px;
+}
+/* End: Shuffle */
+
+/*Start: Playlist*/
+
+.mejs-container
+{
+    //background: #4c4c4c;
+}
+
+.mejs-playlist {
+  position: absolute;
+  margin-top: 0px;
+  left: 0;
+  opacity: 0.8;
+   
+ // background: #4c4c4c;
+  
+}
+
+#playlist
+{
+	margin-top: 25px;
+    //height: 150px;
+    //overflow-x: hidden;
+    //overflow-y: auto;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+25,474747+39,2c2c2c+50,000000+51,111111+60,2b2b2b+76,1c1c1c+91,131313+100;Black+Gloss+%231 */
+    //background: #4c4c4c; /* Old browsers */
+   // background: -moz-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%); /* FF3.6+ */
+   // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c4c4c), color-stop(12%,#595959), color-stop(25%,#666666), color-stop(39%,#474747), color-stop(50%,#2c2c2c), color-stop(51%,#000000), color-stop(60%,#111111), color-stop(76%,#2b2b2b), color-stop(91%,#1c1c1c), color-stop(100%,#131313)); /* Chrome,Safari4+ */
+   // background: -webkit-linear-gradient(top, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* Chrome10+,Safari5.1+ */
+   // background: -o-linear-gradient(top, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* Opera 11.10+ */
+   // background: -ms-linear-gradient(top, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* IE10+ */
+   // background: linear-gradient(to bottom, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* W3C */
+   // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+
+}
+
+.track-info
+{
+    height: 20px;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,000000+100;Black+3D+%231 */
+    //background: #222222; /* Old browsers */
+    //background: -moz-linear-gradient(top, #222222 0%, #000000 100%); /* FF3.6+ */
+    //background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#222222), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+    //background: -webkit-linear-gradient(top, #222222 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+   // background: -o-linear-gradient(top, #222222 0%,#000000 100%); /* Opera 11.10+ */
+   // background: -ms-linear-gradient(top, #222222 0%,#000000 100%); /* IE10+ */
+   // background: linear-gradient(to bottom, #222222 0%,#000000 100%); /* W3C */
+   // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+    
+    font-weight: bold;
+
+
+}
+
+.powered-by
+{    
+    margin: 0px;
+    margin-top: 2px;
+	clear: both;
+	padding-top: 6px;
+	font-size: 10px;
+	text-align: center;
+	padding-right: 8px;
+}
+
+.powered-by a
+{
+	color: #000000;
+}
+
+.powered-by a:hover, .powered-by a:active
+{
+	color: #666666;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.mejs-playlist-selector
+{
+    padding-top: 20px;
+}
+
+/*
+.mejs-playlist-total-listened
+{
+    float: left; 
+    width: 100px; 
+    padding-left: 6px;
+}
+*/
+
+.playlist-selector
+{
+    float: left; 
+    width: 120px;
+    height: 17px;
+}
+
+.cart-order-button
+{ 
+	margin-left: 10%;
+	width: 80%;
+	cursor: pointer;
+    padding: 1px;
+}
+
+.album-order-button
+{
+    float: left;
+   	margin-left: 10%;
+	width: 80%;
+    /*
+	margin-left: 75px;
+    */
+	/*width: 240px;*/
+	cursor: pointer;
+}
+.affialie-button{
+    margin-left: 10%;
+	width: 80%;
+	cursor: pointer;
+    padding: 1px;
+}
+.playlist-selector, .cart-order-button, .album-order-button, .affialie-button
+{
+    border:1px solid #000000;
+    text-align: center;
+    font-size: 12px;
+}
+.cart-order-button, .album-order-button, .affialie-button
+{
+    border:1px solid #000000;
+    text-align: center;
+    font-size: 12px;
+    height: 35px;
+    vertical-align: middle;
+
+}
+.playlist-selector a, .cart-order-button, .album-order-button
+{
+   
+    font-weight: 100;
+}
+
+.playlist-selector a:active, .playlist-selector a:hover, .cart-order-button:active, .cart-order-button:hover,
+.affialie-button:active, .affialie-button:hover
+{
+    color: #666666;
+}
+
+.cart-order-button .cart-price
+{
+	padding-left: 10px;        
+}
+.album-order-button:active, .album-order-button:hover
+{
+    color: #666666;
+}
+
+#playlist .playlist-heading, #playlist .playlist-title, #cartRow
+{
+	margin-top: 0px;
+    font-size: 14px;
+}
+
+#playlist .playlist-heading
+{
+	font-size: 12px;
+	padding-top: 4px;
+    width: 100%;
+    clear: both;
+}
+
+#playlist .playlist-title 
+{
+	padding-left: 6px;
+	font-size: 11px;
+	letter-spacing: 1.1px;
+    clear: both;
+}
+
+
+.mejs-playlist ul, .mejs-playlist-selector-picker ul {
+  margin: 0;
+  padding: 5px;
+  list-style-type: none;  
+  opacity: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 125px;
+  margin: 0 0 2px !important;
+}
+.mejs-playlist li, .mejs-playlist-selector-picker li {
+  font-size: 12px;
+  letter-spacing: -0.1;
+  height: 20px;
+  margin: 2px;
+  padding-left: 2px;
+  cursor: pointer;
+  overflow: hidden;
+   
+}
+
+.mejs-playlist li:hover, .mejs-playlist-selector-picker li:hover {
+  color: #a8a8a8;
+}
+.mejs-playlist li.current,  .mejs-playlist-selector-picker li:current {
+  color: #FFFFCC;
+  font-weight: bold;
+  letter-spacing: -0.1;
+}
+
+.mejs-playlist-total-listened {
+
+	color: white;
+  font-size: 11px;
+  float: right;
+  padding-right: 6px;
+  /*margin: 4px;*/
+  
+  /*
+  text-shadow:
+    1px 1px 0 #222,
+   -1px -1px 0 #222,  
+    1px -1px 0 #222,
+   -1px  1px 0 #222,
+    1px  1px 0 #222;
+   */
+
+}
+
+#playlist input[type=checkbox]
+{
+  /* Double-sized Checkboxes */  
+  /*transform: scale(1.5);*/ /* "all" new browsers */
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  /*-webkit-transform: scale(1.3);*/ /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  padding: 10px;
+  margin-top: 5px;
+}
+
+/*End: Playlist*/
+.mejs-button-action{
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+.mejs-button-action .mejs-action{
+    height: 100%;
+    width: 33.33%;
+    margin-right: 0;
+    float: left;
+}
+/*Start: Playlist Selector*/
+
+.mejs-playlist-selector {
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 0px;
+  left: 0;
+  height: 42px;
+  width: 100px;
+
+}
+
+.mejs-playlist-selector-picker
+{
+    background-color: #333333;
+    opacity: 0.9;
+    padding: 8px;
+}
+
+.mejs-playlist-selector-picker h4
+{
+    margin: 0;
+    font-size: 12px;
+    margin-bottom: 6px;
+    }
+
+/*End: Playlist Selector*/
+
+
+.button-link
+{
+  color: white;
+  font-size: 12px;
+  height: 16px;
+  overflow: hidden;
+  margin: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  
+  /*
+  text-shadow:
+    1px 1px 0 #000,
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
+    */
+}

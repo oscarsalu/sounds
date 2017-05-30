@@ -1,0 +1,11 @@
+php_value allow_url_fopen On
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond $1 !^(index\.php|uploads|asset|application)
+RewriteRule ^(.*)$ ./index.php?/$1 [L]
+</IfModule>
+<IfModule mod_mime.c>
+# Microsoft Favicon (ICO) lossless icon
+AddType image/vnd.microsoft.icon .ico
+AddType image/x-icon .ico
+</IfModule>

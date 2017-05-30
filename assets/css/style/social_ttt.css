@@ -1,0 +1,11 @@
+.label_laypout{
+    margin-right: 5px;
+    margin-left: 2px;
+}
+.chckLbl , .chkBox{
+	float:left;
+	width: auto !important;
+}
+.chkBox{
+	margin-right:10px !important;
+}

@@ -1,0 +1,48 @@
+.column {
+	overflow: hidden;
+}
+.subs-props {
+    padding: 25px 15px;
+    background: #fcfcfc;
+    border: 1px solid #e7e7e7;
+}
+.subs-props .field:not(:first-child) {
+    border-left: 1px solid #e7e7e7;
+}
+.content-column .header-small {
+    padding: 10px 30px;
+    border-bottom: 1px solid #EDEDED;
+    height: 67px;
+    
+}
+#dp-container{
+    border-left: 1px solid #ddd;
+}
+.zi-table tbody tr.active td {
+    background-color: #C5C5C5;
+    padding-top: 40px;
+}
+@media (min-width: 993px){
+   .navbar-nav {
+        width: 100%;
+    } 
+}
+.non_renewing{background-color:#8C8B8B}
+.live{background-color:#34BE28}
+.future{background-color:#71a5bc}
+.cancelled{background-color:#AEAEAE}
+.unpaid{background-color:#BF504C}
+.trial{background-color:#3577C7}
+.cancelled_from_dunning,
+.creation_failed,
+.expired,
+.in_progress,
+.trial_expired{background-color:#000}
+.subStatus {
+    padding: 2px 4px;
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    margin-left: 5px;
+    vertical-align: top;
+}

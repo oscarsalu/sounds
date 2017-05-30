@@ -1,0 +1,634 @@
+﻿/*
+    Common 
+*/
+.wizard section{
+    color:#000;
+}
+.wizard,
+.tabcontrol
+{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wizard a,
+.tabcontrol a
+{
+    outline: 0;
+}
+.wizard .steps ul{
+    height: 64px;
+    background: black;
+}
+.wizard ul,
+.tabcontrol ul
+{
+    list-style: none !important;
+    margin: 0;
+    padding: 0px;
+}
+
+.wizard ul > li,
+.tabcontrol ul > li
+{
+    display: block;
+    padding: 0;
+}
+
+/* Accessibility */
+.wizard > .steps .current-info,
+.tabcontrol > .steps .current-info
+{
+    position: absolute;
+    left: -999em;
+}
+
+.wizard > .content > .title,
+.tabcontrol > .content > .title
+{
+    position: absolute;
+    left: -999em;
+}
+
+
+
+/*
+    Wizard
+*/
+
+.wizard > .steps
+{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.wizard.vertical > .steps
+{
+    display: inline;
+    float: left;
+    width: 10%;
+}
+
+.wizard > .steps .number
+{
+    font-size: 1.429em;
+}
+
+.wizard > .steps > ul > li
+{
+    width: 25%;
+}
+    .wizard.vertical > .steps {
+        display: inline;
+         float: none;
+        width: 10%;
+    }
+    .wizard.vertical > .steps > ul > li {
+        float: left!important;
+        width: 12.5%!important;
+    }
+    .wizard.vertical > .content {
+        width: 100%!important;
+    }
+.wizard > .steps > ul > li,
+.wizard > .actions > ul > li
+{
+    float: left;
+}
+
+.wizard.vertical > .steps > ul > li
+{
+    float: none;
+    width: 100%;
+}
+
+.wizard > .steps a,
+.wizard > .steps a:hover,
+.wizard > .steps a:active
+{
+    display: block;
+    width: auto;
+    padding: 1em 1em;
+    text-decoration: none;
+
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.wizard > .steps .disabled a,
+.wizard > .steps .disabled a:hover,
+.wizard > .steps .disabled a:active
+{
+    background: #000;
+    color: #fff;
+    cursor: default;
+}
+
+.wizard > .steps .current a,
+.wizard > .steps .current a:hover,
+.wizard > .steps .current a:active
+{
+    background: #2184be;
+    color: #fff;
+    cursor: default;
+    
+    
+}
+.wizard.vertical > .steps > ul > li {
+    background-image: url('../icon/li-bg.png');
+    background-repeat: no-repeat;
+    background-position: 16px -241px!important;
+}
+.wizard > .steps .done a,
+.wizard > .steps .done a:hover,
+.wizard > .steps .done a:active
+{
+    background: #000;
+    color: #fff;
+}
+
+.wizard > .steps .error a,
+.wizard > .steps .error a:hover,
+.wizard > .steps .error a:active
+{
+    background: #ff3111;
+    color: #fff;
+}
+
+.wizard > .content
+{
+    background: #F6F6F6;
+    color: black;
+    display: block;
+    margin: 0.5em;
+    min-height: 29em;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.wizard.vertical > .content
+{
+    display: inline;
+    float: left;
+    margin: 0 0.5% 0.5em 0.5%;
+    width: 89%;
+}
+
+.wizard > .content > .body
+{
+    float: left;
+    position: relative;
+    width: 95%;
+    padding: 2.5%;
+}
+
+.wizard > .content > .body ul
+{
+    list-style: disc !important;
+}
+
+.wizard > .content > .body ul > li
+{
+    display: list-item;
+    list-style: none;
+}
+
+.wizard > .content > .body > iframe
+{
+    border: 0 none;
+    width: 100%;
+    height: 100%;
+}
+
+.wizard > .content > .body input
+{
+    display: block;
+    border: 1px solid #ccc;
+}
+
+.wizard > .content > .body input[type="checkbox"]
+{
+    display: inline-block;
+}
+
+.wizard > .content > .body input.error
+{
+    background: rgb(251, 227, 228);
+    border: 1px solid #fbc2c4;
+    color: #8a1f11;
+}
+
+.wizard > .content > .body label
+{
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+
+.wizard > .content > .body label.error
+{
+    color: #8a1f11;
+    display: inline-block;
+    margin-left: 1.5em;
+}
+
+.wizard > .actions
+{
+    position: relative;
+    display: block;
+    text-align: right;
+    width: 100%;
+}
+
+.wizard.vertical > .actions
+{
+    display: inline;
+    float: right;
+    margin: 0 2.5%;
+    width: 95%;
+    display: none;
+}
+
+.wizard > .actions > ul
+{
+    display: inline-block;
+    text-align: right;
+}
+
+.wizard > .actions > ul > li
+{
+    margin: 0 0.5em;
+}
+
+.wizard.vertical > .actions > ul > li
+{
+    margin: 0 0 0 1em;
+}
+
+.wizard > .actions a,
+.wizard > .actions a:hover,
+.wizard > .actions a:active
+{
+    background: #2184be;
+    color: #fff;
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.wizard > .actions .disabled a,
+.wizard > .actions .disabled a:hover,
+.wizard > .actions .disabled a:active
+{
+    background: #eee;
+    color: #aaa;
+}
+
+.wizard > .loading
+{
+}
+
+.wizard > .loading .spinner
+{
+}
+
+
+
+/*
+    Tabcontrol
+*/
+
+.tabcontrol > .steps
+{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.tabcontrol > .steps > ul
+{
+    position: relative;
+    margin: 6px 0 0 0;
+    top: 1px;
+    z-index: 1;
+}
+
+.tabcontrol > .steps > ul > li
+{
+    float: left;
+    margin: 5px 2px 0 0;
+    padding: 1px;
+
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tabcontrol > .steps > ul > li:hover
+{
+    background: #edecec;
+    border: 1px solid #bbb;
+    padding: 0;
+}
+
+.tabcontrol > .steps > ul > li.current
+{
+    background: #fff;
+    border: 1px solid #bbb;
+    border-bottom: 0 none;
+    padding: 0 0 1px 0;
+    margin-top: 0;
+}
+
+.tabcontrol > .steps > ul > li > a
+{
+    color: #5f5f5f;
+    display: inline-block;
+    border: 0 none;
+    margin: 0;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.tabcontrol > .steps > ul > li > a:hover
+{
+    text-decoration: none;
+}
+
+.tabcontrol > .steps > ul > li.current > a
+{
+    padding: 15px 30px 10px 30px;
+}
+
+.tabcontrol > .content
+{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 35em;
+    overflow: hidden;
+    border-top: 1px solid #bbb;
+    padding-top: 20px;
+}
+
+.tabcontrol > .content > .body
+{
+    float: left;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.tabcontrol > .content > .body ul
+{
+    list-style: disc !important;
+}
+
+.tabcontrol > .content > .body ul > li
+{
+    display: list-item;
+}
+#info_statistics_div_placeholder .new_charts li {
+    width: 50% !important;
+    height: 150px;
+    padding: 10px 0px;
+    border-color: #ccc;
+    border-style: dashed;
+    color: #535353;
+    display: block;
+    float: left;
+}
+#info_statistics_div_placeholder .new_charts div {
+    text-align: center !important;
+}
+.lineChart {
+    background: #d7d7d7;
+    width: 78%;
+    height: 13px;
+    float: left;
+    margin-top: 3px;
+}
+#info_statistics_div_placeholder  .labelChart {
+    float: left;
+    width: 26%;
+     margin-top: 3px;
+}
+#info_statistics_div_placeholder .row {
+     margin-right: 3px; 
+     margin-left: 0; 
+}
+@media (min-width: 992px) {
+    .labelChart {
+        width: 26%;
+    }
+    .lineChart {
+        width: 72%;
+    }
+}
+@media (max-width: 992px) {
+    .labelChart {
+        width: 25%;
+    }
+    .lineChart {
+        width: 71%;
+    }
+}
+.wizard .photo_container {
+    min-width: 300px;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0 50px 0 50px;
+    text-align: center;
+}
+.wizard .side  h5 {
+    padding-top: 15px;
+    font-weight: bold;
+}
+.wizard .side h5, .wizard .side p {
+    line-height: 19px;
+}
+.stats_container h4, .stats_container p.info {
+    padding-bottom: 10px;
+}
+.stats_container .demographic_stats {
+    float: left;
+    width: 100%;
+}
+.center_stat_column table {
+    width: 100%;
+}
+.stats_container td {
+    border-bottom: 1px solid #ccc;
+}
+.stats_container td span {
+    color: #000;
+}
+.stats_container .right_percentage {
+    text-align: right;
+    padding-left: 0;
+}
+.bio_container img {
+    -moz-box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    -o-box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    float: left;
+    max-height: 300px;
+    max-width: 350px;
+    margin: 0 20px 20px 0;
+}
+.songs_container .playlist {
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    margin: 0 auto;
+    width: 100%;
+    height: 260px;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #fff;
+}
+.songs_container .playlist li {
+    line-height: 40px;
+    border-bottom: 1px solid #DDDDDD;
+    background: #fff url('../../icon/promoter_play_button.png') 4px 6px no-repeat;
+}
+.songs_container .playlist a.selected {
+    background: #fff url('../../icon/promoter_pause_button.png') 6px 0px no-repeat;
+}
+.songs_container .playlist a {
+    padding: 3px 0 3px 42px;
+    font-size: 18px;
+    color: #000;
+    font-weight: 300;
+}
+.press_container {
+    margin: 0px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.tabs .tabs_items {
+    background: #fff;
+}
+.tabs .tabs_items .tab_content.no_data {
+    background: #fff;
+}
+.tabs .tab_content {
+    overflow-y: auto;
+    height: 270px;
+    position: relative;
+}
+.tabs .tabs_items .tab_content.no_data p {
+    text-align: center;
+    display: block;
+    position: relative;
+    height: 40px;
+    top: 50%;
+    margin-top: -20px;
+}
+.press_container .press_item .lquote {
+    width: 74px;
+    background-image: url('../../icon/press_left_quote.jpg');
+    background-repeat: no-repeat;
+}
+.press_container .press_item .rquote {
+    width: 74px;
+    background-image: url('../../icon/press_right_quote.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.press_container table {
+    margin: 0 auto;
+}
+.photos_wrapper .photo_image{
+    float:left;
+    padding: 5px ;
+}
+.video_container .media a {
+    color: #0086EA;
+    display: block;
+    font-size: 8em;
+    font-weight: bold;
+    height: 50px;
+    line-height: 0em;
+    margin-top: -25px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(0,0,0,0.6);
+    top: 50%;
+    width: 50px;
+    text-decoration: none;
+}
+.video_container .media a.left {
+    left: 0;
+}
+.video_container .media a.right {
+    right: 0;
+}
+.video_container .media-video{
+    width: 80%;
+    left: 10%;
+    position: relative;
+}
+#contact .checkbox{
+    padding: 0 20px;
+    float: left;
+    margin-top: 0;
+} 
+#demographics .innerLineChart{
+    height: 15px;
+    background: #2184BE;
+}
+#photo .song_box .sortable {
+    padding: 10px;
+    max-height: 350px;
+    border: 1px solid #cbcbcb;
+    border-radius: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#photo .song_box .sortable li {
+    width: auto;
+    height: auto;
+    border-bottom: 1px solid #d7d7d7;
+    position: relative;
+    padding: 7px;
+}
+#photo .song_box .sortable li a {
+    color: #333;
+}
+#songsdownload .song_box .sortable {
+    padding: 10px;
+    max-height: 350px;
+    border: 1px solid #cbcbcb;
+    border-radius: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 150px;
+}
+#songsdownload .song_box .sortable li {
+    width: auto;
+    height: auto;
+    border-bottom: 1px solid #d7d7d7;
+    position: relative;
+    padding: 7px;
+}
+#songsdownload .song_box .sortable li a {
+    color: #333;
+}

@@ -1,0 +1,132 @@
+ #showgigs b,.star b{
+    margin-right: 20px;
+    font-size: 2em;
+   }
+   #showgigs .rating-xs {
+       font-size: 1.2em;
+   }
+   .panel-body{
+    padding: 5px !important;
+   }
+  #showgigs button{
+    margin: 5px;
+    padding: 5px 10px;
+    width: 80px;
+  }  
+  .star_top{
+    margin-top: -20px;
+  }  
+  .commenttings{
+    background-color:#f3f6f6;
+    height: 225px;
+    overflow: auto;
+  }       
+  .commenttings h3{
+      color:#f8941d;
+      text-transform: capitalize;
+  } 
+  .commenttings p{
+    font-size:16px;
+  } 
+    #booking_request input{
+    width: 100%;
+    float: left;
+    margin: 0;
+  }
+  .add_stats,.add_stats_not{
+    float: left;
+  }
+  .img_left{
+     float: left;
+     height:80px;
+     width:80px;
+     margin: 0;
+     margin-right: 10px;
+ }
+ .comment_height{
+    min-height: 100px;
+ }
+ .comment_height p,.comment_height h3{
+    padding-left: 10px;
+ }
+ .commenttings{
+    padding: 0;
+ }
+ #delete_comment{
+    margin-right: -13px !important;
+    margin-top: -6px !important;
+ }
+ #sum_star .rating-container,#sum_star b{
+    float:left;
+    margin-right: 5px;
+  }
+  #sum_star p,#sum_star b{
+    font-size: 14px;
+  }
+  #sum_star p{
+    margin-top: 7px;
+  }
+  #sum_star {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .jumbotron{
+    border: 1px solid #ddd;
+    border-radius: 7px;
+  }
+  
+  @media all and (max-width: 991px) {
+    .p_star{
+      font-size: 17px !important;
+   }
+   #button_star_rate{
+        margin-right: 60px !important;
+    }
+  }
+  @media all and  (max-width:350px){
+    #sum_star b{
+        font-size: 7px;
+    }
+    #button_star_rate{
+        margin-right: 30px !important;
+    }
+    
+  }
+.questionMark,.questionMarkGen,.questionMarkAr {
+position:relative;
+height:26px; /*dimensions of our image*/
+width:26px;
+background:url(../images/questionMark.gif) top left no-repeat;
+float:right;
+right:70%;
+}
+.questionMarkGen{
+    right: 78%;
+    top: -22px;
+}
+.questionMarkAr{
+    right: 52%;
+    top: -22px;
+}
+.toolTip{
+    background-color: #eeeeee;
+    border: 1px solid #ffffff;
+    display: none;
+    font: 12px/15px Arial,Helvetica,sans-serif;
+    padding: 5px;
+    position: absolute;
+    width: 500px;
+}
+  
+.toolTipSim {
+    left: 26px;
+    top: -50px;
+}
+.toolTipGen {
+    left: 26px;
+    top: -36px;
+}
+.toolTipAr{
+    left: 26px;
+    top: -36px;
+}

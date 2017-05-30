@@ -1,0 +1,191 @@
+.bg-landing{
+    background: url('../../../../assets/images/bg/8277771-hd-backgrounds.jpg') fixed;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+} 
+.row .nopad-res {
+   background: none;padding-left: 0px;
+   padding: 20px 15px!important;
+  
+}
+
+.w-n-max img {
+    width: 100%;min-height: 383px;max-height: 383px;
+}
+.nen1 {
+    width: 100%;min-height: 383px;max-height: 383px;background-color: #302F2F;padding-top: 90px;
+}
+.nen1 h2 {
+     color: #fff;
+}
+.avt {
+     width:130px; height:125px; min-height: 125px;max-height: 125px;
+}
+.docs-pictures li img {
+      width: 1px !important;
+}
+.box-hd {
+    max-height: 444px;width: 64%;
+}
+.nen2 {
+    padding-bottom:20px;
+}
+.nen2 h2 {
+     background-color: rgba(250, 95, 0, 0.34);border-right: 2px solid #fff;
+}
+.nen2 .text-justify a span {
+     height:24px;width:24px;
+}
+.nen2 .col-lg-12 {
+     margin-top: 20px;padding: 0px;
+}
+.nen2 .col-lg-12 button {
+    width: 100%;
+}
+.blog h2 {
+    background-color: rgba(250, 95, 0, 0.34);border-right: 2px solid #fff;
+}
+.mb1-blog-img img {
+     width:150px;
+}
+.day {
+    color: #000;
+}
+.day span {
+    font-size: small;
+}
+.cmt h2 {
+     background-color: rgba(171, 10, 108, 0.34);
+}
+.cmt1 span {
+    font-size: 16px!important;
+}
+.stats {
+     margin-left: -25px;margin-right: 10px;padding-top: 0px;
+}
+.songs {
+    margin-right: 10px;padding-top: 0px;
+}
+.songs h2 {
+     background-color: rgba(9, 171, 132, 0.34);
+}
+.views .full-w {
+   font-size: 16px;margin-left: 15px;
+}
+.views .full-w-tt {
+     float: right;
+}
+.videos {
+     padding-top: 0px;
+}
+.videos h2 {
+     background-color: rgba(9, 171, 132, 0.34);
+}
+.videos .col-lg-6 {
+     margin: 0 auto;margin-bottom: 10px;padding: 0px;
+}
+.videos .col-lg-6 img {
+    min-height: 100px;
+}
+.views .full-w-tt span {
+    color: #57ce57;font-size: 12px;margin-right: 20px;
+}
+.amp h2 {
+     background-color: rgba(250, 95, 0, 0.34);
+}
+.cmt1 span a img {
+    width: 60px; min-height: 40px;margin-bottom: 5px;margin-right: 10px;
+}
+.posi_img {
+    position:absolute;top:-7px;font-weight: bold;
+}
+.image_fix_value{
+    width: 120px;
+    height: 120px;
+    background-position: 50% 25% !important;
+    background-size: cover !important;
+    transition-duration: 500ms;
+    transition-property: width, height;
+    cursor:  pointer;
+    margin: 0px auto;
+    margin: 0 auto 0;
+    border: 6px solid #CACACA;
+    border-radius: 100%;
+}
+.docs-pictures img{
+    border: none !important;
+}
+.viewer-canvas img{
+    border-radius: 0px !important;
+}
+.container{
+    width: 90% !important;
+}
+.docs-pictures li {
+    margin-top: 15px!important;
+}
+.remove_padding{
+    padding: 0px !important;
+}
+#event{
+    border-bottom: 0px solid #333;
+    padding: 5px 0px;
+    box-shadow: 0 1px 0 rgba(34, 34, 34, 0.8);
+    -webkit-box-shadow: 0 1px 0 rgba(34, 34, 34, 0.8);
+}
+#event:last-child{
+    border-bottom: 0px solid #333;
+    padding: 5px 0px;
+    box-shadow: 0 0px 0 rgba(34, 34, 34, 0.8);
+    -webkit-box-shadow: 0 0px 0 rgba(34, 34, 34, 0.8);
+}
+.wp_content_list{
+    border-bottom: 1px solid #080808;
+    box-shadow: 0 1px 0 rgba(34, 34, 34, 0.8);
+    -webkit-box-shadow: 0 1px 0 rgba(34, 34, 34, 0.8);
+    margin: 15px 0;
+    overflow: hidden;
+}
+.wp_content_list:last-child{
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.jp-jplayer{
+    width: 337px !important;
+}
+.jp-video-270p{
+    width: 337px !important;
+}
+.jp-jplayer img{
+    width: 100% !important;
+}
+.video-landing {
+    max-width: 150px!important;
+}
+.jp-video .jp-volume-controls{
+    left: 30px !important;
+}
+.jp-video .jp-type-playlist .jp-controls{
+    margin-left: 140px !important;
+}
+.jp-video .jp-toggles{
+    right: 60px !important;
+}
+.btn-danger{
+    margin-top: 10px !important;
+}
+.mb1-blog-img{
+    float: left;
+    margin-right: 5px;
+}
+@media (min-width: 950px)
+.row {
+    margin-left: -15px!important;
+}
+@media (max-width: 767px) {
+    .row{
+        pading-right:10px!important;
+    }

@@ -1,0 +1,204 @@
+.advanced{
+       padding-left: 22px; 
+       background: url("<?php echo base_url('/assets/icon/down-arrow.png'); ?>") no-repeat left center;
+       background-size: 20px 20px;
+       cursor: pointer;
+       text-decoration: none;
+       -webkit-transition: width 2s, height 2s; /* For Safari 3.1 to 6.0 */
+            transition: width 2s, height 2s;
+    }
+    
+    .advanced:hover{
+      text-decoration: none;
+      
+    }    
+    
+    .float_left{
+       margin: 0px 5px 0px 5px;
+        float:left;
+        
+    }
+    .float_right {
+        float: right;
+        margin: 0px 50px 0px 20px;
+    }
+    .clear{
+        clear: both;
+    }
+    table {
+   
+    }
+
+    th,tr {
+        height: 35px;
+        
+    }
+    a.but{
+        background: #5CB85C !important;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        border: none;
+        padding: 5px;
+        box-shadow: 1px 1px 5px #B6B6B6;
+        border-radius: 3px;
+        text-shadow: 1px 1px 1px #9E3F3F;
+        cursor: pointer;
+        margin: 2px 10px;
+        -webkit-transition:  1s; /* Safari */
+        -webkit-transition-delay: 0.5s; /* Safari */
+        transition: 1s;
+        transition-delay: 0.5s;
+    }
+    a.but:hover{
+        background: #033811 !important;
+        
+    }
+    
+    
+    input[type="submit"]{
+        background: #5CB85C !important;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        border: none;
+        padding: 10px 25px 10px 25px;
+        box-shadow: 1px 1px 5px #B6B6B6;
+        border-radius: 3px;
+        text-shadow: 1px 1px 1px #9E3F3F;
+        cursor: pointer;
+        -webkit-transition:  1s; /* Safari */
+        -webkit-transition-delay: 0.5s; /* Safari */
+        transition: 1s;
+        transition-delay: 0.5s;
+    }
+    
+    input[type="submit"]:hover{
+        background: #033811 !important;
+        
+    }
+    input[type=checkbox] {
+	   visibility: hidden;
+      
+    }
+    .check{
+        border:2px dotted #00f;
+        display:block;
+        background: blue;
+    }
+    /* SQUARED THREE */
+.squaredThree {
+	position: relative;
+}
+
+.squaredThree label {
+	cursor: pointer;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 0;
+	border-radius: 2px;
+
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+
+    background: #5CB85C;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222', endColorstr='#45484d',GradientType=0 );
+}
+
+.squaredThree label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 4px;
+	left: 4px;
+	border: 3px solid #fcfff4;
+	border-top: none;
+	border-right: none;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.squaredThree label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0.3;
+}
+
+.squaredThree input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+    
+    
+/* Basic Grey */
+#advancedOptions table {
+    
+    margin: 30px 0 0 100px!important;
+   
+    padding: 25px 15px 25px 10px;
+    
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+   
+}
+.lab {
+    float: left;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    color: #888;
+}
+input[type="text"],.s select {
+    border: 1px solid #DADADA;
+    color: #888;
+    height: 30px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    margin-left: 15px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 45%;
+    font-size: 12px;
+    line-height:15px;
+    float: left;
+    box-shadow: inset 0px 1px 4px #ECECEC;
+    -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+    -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+.wrap-ttt td{ margin: 10px;   
+}
+.div#advancedOptions {
+    margin: 30px 0 0 100px;
+    
+}
+
+.s select {
+    background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+    appearance:none;
+    -webkit-appearance:none; 
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 50%;
+    height: 35px;
+    line-height: 25px;
+}
+body{
+    background: black;
+}

@@ -1,0 +1,326 @@
+.tbox {
+  display: table;
+  width: 100%;
+  height: 100%;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+
+.tbox > .tcol {
+  display: table-cell;
+  float: none;
+  height: 100%;
+  vertical-align: top;
+}
+
+@media only screen and (max-width: 992px) {
+  .tbox-sm {
+    display: block;
+  }
+  .tbox-sm > .tcol {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .tbox-xs {
+    display: block;
+  }
+  .tbox-xs > .tcol {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+}
+.p-15 {
+  padding: 15px !important;
+}
+.bg-tr-white {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.page-chat #inbox {
+  margin: 20px -15px -15px;
+}
+
+.page-chat #inbox > li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  line-height: 1em;
+}
+
+.page-chat #inbox > li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.page-chat #inbox > li > a {
+  display: block;
+  position: relative;
+  color: #616f77;
+  padding: 15px;
+}
+
+.page-chat #inbox > li > a:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.page-chat #inbox > li > a:hover .chat-actions {
+  display: block;
+}
+
+.page-chat #inbox > li > a:focus {
+  text-decoration: none;
+}
+
+.page-chat #inbox > li > a .media {
+  position: relative;
+  height: 45px;
+}
+
+.page-chat #inbox > li > a .media .media-body {
+  width: 100%;
+  display: inline-block;
+  padding-right: 40px;
+  position: absolute;
+  top: 0;
+}
+
+.page-chat #inbox > li > a .message {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  width: 85%;
+}
+
+.page-chat #inbox > li > a .chat-actions {
+  font-size: 11px;
+  display: none;
+}
+
+.page-chat #inbox > li > a .chat-actions > span {
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.page-chat #inbox > li > a .chat-actions > span.archive:hover {
+  color: #ff4a43;
+}
+
+.page-chat #inbox > li > a .chat-actions > span.mark-unread:hover {
+  color: #16a085;
+}
+
+.page-chat #inbox > li > a .chat-actions > span.mark-unread:hover i:before {
+  content: "\f111";
+}
+
+.page-chat #inbox > li > a .chat-actions > span.mark-readed {
+  color: #16a085;
+}
+
+.page-chat #inbox > li > a .chat-actions > span.mark-readed:hover {
+  color: #616f77;
+}
+
+.page-chat #inbox > li > a .chat-actions > span.mark-readed:hover i:before {
+  content: "\f10c";
+}
+
+.page-chat #inbox > li.active > a {
+  background-color: white;
+}
+
+.page-chat ul.chats > li .media-body {
+  padding: 10px;
+}
+
+.page-chat ul.chats > li.in .media-body {
+  background-color: white;
+  padding-left: 20px;
+}
+
+.page-chat ul.chats > li.out .media-body {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-right: 20px;
+}
+
+ul.chats {
+  list-style: none;
+}
+
+ul.chats > li {
+  margin: 20px auto;
+  font-size: 12px;
+  
+}
+
+ul.chats > li:last-child {
+  margin-bottom: 0;
+}
+
+ul.chats > li .media {
+  position: relative;
+  z-index: 1;
+}
+
+ul.chats > li .name,
+ul.chats > li .datetime {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+ul.chats > li .datetime {
+  color: #95a2a9;
+  font-size: 12px;
+}
+
+ul.chats > li.conversation-divider {
+  font-size: 10px;
+  color: white;
+  text-align: center;
+}
+
+ul.chats > li.conversation-divider span {
+  display: inline-block;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 4px 10px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+ul.chats > li.in .media-body {
+  text-align: left;
+  border-left: 3px solid #16a085;
+  margin-left: 65px;
+  padding-left: 5px;
+}
+
+ul.chats > li.in .name {
+  color: #16a085;
+}
+
+ul.chats > li.in .media:after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-bottom: 4px solid transparent;
+  border-right: 4px solid #16a085;
+  border-top: 4px solid transparent;
+  position: absolute;
+  top: 18px;
+  left: 36px;
+  z-index: 1;
+}
+
+ul.chats > li.out .media-body {
+  border-right: 3px solid #e05d6f;
+  margin-right: 65px;
+  text-align: right;
+  padding-right: 5px;
+}
+
+ul.chats > li.out .name {
+  color: #e05d6f;
+}
+
+ul.chats > li.out .name,
+ul.chats > li.out .datetime {
+  text-align: right;
+}
+
+ul.chats > li.out .media:after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid #e05d6f;
+  border-top: 4px solid transparent;
+  position: absolute;
+  top: 18px;
+  right: 36px;
+  z-index: 1;
+}
+
+.chat-form {
+  padding: 10px;
+  background-color: #dbe0e2;
+  overflow: hidden;
+  clear: both;
+}
+
+@media only screen and (min-width: 993px) {
+  .collapse.collapse-sm,
+  .collapse.collapse-xs {
+    display: block;
+  }
+}
+.thumb {
+  width: 60px;
+  display: inline-block;
+}
+
+.thumb img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.thumb.thumb-sm {
+  width: 40px;
+}
+
+.thumb.thumb-md {
+  width: 80px;
+}
+
+.thumb.thumb-lg {
+  width: 100px;
+}
+
+.thumb.thumb-xl {
+  width: 120px;
+}
+
+.thumb.thumb-xxl {
+  width: 160px;
+}
+
+.thumb .thumb-header,
+.thumb .thumb-body {
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.thumb .thumb-header {
+  border-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.thumb .thumb-body {
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.w-xl, .w-360 {
+  width: 360px;
+}
+ul.list_affilaite,ul.list_artist_chat,ul.list_recent_chat{
+    max-height: 400px;
+    height: 400px;
+    overflow-y: auto
+}
+.page-chat .nav-tabs > li.active > a,.page-chat .nav-tabs > li.active > a:hover,.page-chat .nav-tabs > li.active > a:focus {
+    color: #fffbfb;
+    background-color: rgba(147, 147, 147, 0.18);
+    border-bottom-color: transparent;
+}

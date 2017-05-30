@@ -1,0 +1,105 @@
+
+.tp-heading {
+    margin-bottom: 5px;
+    margin-top: 63px;
+    font-size: 48px;
+     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+.tp-title{
+	color:#337AB7;
+ text-shadow: 2px 2px 3px rgba(26, 62,112, 0.6);	
+}
+.bkimage{
+	background:url('../../../assets/images/Lead Guitarist-yellow background.jpg');
+	background-attachment: fixed;
+background-size:100%;
+color:#fff;
+height: auto;
+display:block;
+padding:0 !important;
+margin:0;
+}
+.mdcolor{
+	border:1px solid red;
+}
+.mdarea1{
+	text-align:right;
+}
+.txcent{
+	text-align:center;
+}
+.mar-top{margin-top:10px;}
+@media screen and (max-width: 1280px) {
+ 
+   .mdarea1{
+	text-align:right;
+}
+}
+@media screen and (max-width: 1024px) {
+ 
+   .mdarea{
+	padding-left: 45px;}
+}
+@media screen and (max-width:800px) {
+ 
+ .mdarea1{
+	margin-left:10px;
+}
+   .mdarea{
+	padding-right:20px;
+}
+}
+@media screen and (max-width: 767px) {
+ .tp-heading {
+ 	 margin-bottom: 5px;
+	margin-top:0px;
+	text-align:center;
+   }
+ 
+}
+@media screen and (max-width: 768px) {
+	.mdarea1{
+	text-align:center;
+}
+   .mdarea{
+	text-align:center;
+}
+
+}
+
+@media screen and (max-width: 640px) {
+ .tp-heading {
+ 	 margin-bottom: 5px;
+	margin-top:0px;
+	text-align:center;
+   }
+   .mdarea1{
+	text-align:center;
+}
+   .mdarea{
+	text-align:center;
+}
+}
+@media screen and (max-width: 480px) {
+ .tp-heading {
+ 	 margin-bottom: 5px;
+	margin-top:0px;
+	text-align:center;
+   }
+   .mdarea{
+	text-align:center;
+}
+}
+@media screen and (max-width: 360px) {
+ .tp-heading{
+ 	 margin-bottom: 5px;
+	margin-top:0px;
+	font-size:180%;
+   }
+@media screen and (max-width: 320px) {
+ .tp-heading {
+ 	 margin-bottom: 5px;
+	margin-top:0px;
+	font-size:180%;
+   }
+}

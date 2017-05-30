@@ -1,0 +1,75 @@
+.header-top {
+  background-color: #3b4141;
+  vertical-align: middle;
+  @media(max-width:768px){
+    text-align: center;
+  }
+  img {
+    padding: 30px 0;
+  }
+}
+
+.header-bottom {
+  background-color: #a0a19c;
+  .bottom-part {
+    height: 100%;
+    width: 100%;
+  }
+  > .container {
+    background: url('../img/header-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center ;
+    position: relative;
+    height: 1080px;
+
+    @media(max-width:962px){
+      height: auto;
+      background-position: top center;
+      background-size: cover;
+    }
+    @media(max-width:500px){
+      background-size: cover;
+    }
+    > .row {
+      max-width: 992px;
+      margin: 0 auto;
+      h1 {
+        margin-top: 70px;
+        @media(max-width:962px){
+          margin-top: 20px;
+          font-size: 30px;
+        }
+        color: white;
+        font-size: 36px;
+        line-height: 50px;
+        .din-700;
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+      }
+      ul {
+        list-style: none;
+        color: white;
+        .din-500;
+        font-size: 22px;
+        line-height: 23px;
+        @media(max-width:962px){
+          text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+        }
+        li {
+          display: block;
+          margin-bottom: 40px;
+          position: relative;
+          &:before {
+            content: url('../img/yes-ico-circle.png');
+            width: 44px;
+            height: 49px;
+            position: absolute;
+            left: -50px;
+            top: -15px;
+          }
+        }
+      }
+    }
+  }
+}

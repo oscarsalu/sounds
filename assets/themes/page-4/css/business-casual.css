@@ -1,0 +1,645 @@
+/*!
+ * Start Bootstrap - Business Casual Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #000;
+}
+
+hr {
+    max-width: 400px;
+    border-color: #999999;
+}
+
+.brand,
+.address-bar {
+    display: none;
+}
+
+.nnavbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.nnavbar-nav {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.img-full {
+    min-width: 100%;
+}
+
+.brand-before,
+.brand-name {
+    text-transform: capitalize;
+}
+
+.brand-before {
+    margin: 15px 0;
+}
+
+.brand-name {
+    margin: 0px 0px 0px 0px;
+    font-size: 3em;
+}
+
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #999999;
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+.intro-text {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.img-border {
+    float: none;
+    margin: 0 auto 0;
+    border: #999999 solid 1px;
+}
+
+.img-left {
+    float: none;
+    margin: 0 auto 0;
+}
+
+.ffooter {
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+.ffooter p {
+    margin: 0;
+    padding: 50px 0;
+}
+
+.ma-gin
+{
+    margin-top: 80px;
+}
+
+.img-profiles img
+{
+    padding: 5px;
+    border: 2px solid #fff; 
+    margin-top: -66px!important;
+    margin-bottom: 20px!important;
+    margin: 0 auto 0;    
+}
+
+.btn-center
+{
+    margin-top: 30px!important;
+    width: 100%;
+    /*margin-left: 25px;*/
+}
+
+.btn-center-sm
+{
+    margin-top: 30px!important;
+    padding: 10px 100px;
+    margin-left: 35px;
+}
+
+.btn-info {
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #EB4F51;
+    background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+    background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+    background-image: -o-linear-gradient(top, #1BBC9B, #1BBC9B);
+    background-image: linear-gradient(to bottom, #1BBC9B, #1BBC9B);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);
+    
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid: DXImageTransform.Microsoft.gradient(enabled false);
+    
+    border-top: 1px solid #1BBC9B;
+    border-bottom: 4px solid #329F8A;
+}
+
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .btn-info.disabled, .btn-info[disabled] {
+    color: #ffffff;
+    background-color: #1BBC9B;    
+    border-bottom: 4px solid #0B584A;
+   
+}
+.btn-info:active:focus
+{
+    color: #ffffff;
+    background-color: #0B5C4D;
+    border-bottom: 0px solid #0B5C4D;
+    border-top: 4px solid #043F33;
+}
+
+.ul_quick
+{
+    text-align: left!important;
+} 
+
+.avata 
+{    
+    margin-left: 5px;
+    min-height: 446px;
+    width: 35%;
+    padding: 20px 0px 0px 4px;
+}
+
+.avata img
+{
+    margin: 0 auto 0;
+    border: 6px solid #CACACA;
+    border-radius: 100%;
+}
+
+.avata h1
+{
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.avata h2 small
+{   
+    font-size: 20px;
+}
+.avata h2
+{
+    /*margin-top: -15px!important;*/
+} 
+
+.right-mar img
+{
+    margin-right: 5px;
+}
+
+.w-box
+{
+    width: 98.7%;
+    padding-top: 0px;
+}
+.title-all
+{
+    background-color: #C23939;
+    margin-top: 0px;
+    padding: 14px;
+    margin-left: -15px;
+    width: 108%;
+    margin-bottom:30px;
+    color:#fff;
+}
+
+.title-padding
+{
+    padding: 0px;
+}
+    
+.bo-cm
+{
+    border:2px solid #ccc;
+    border-radius: 100%;
+    margin-top: -10px;
+}
+
+.bo-fans
+{
+    border:2px solid #ccc;
+    border-radius: 100%;
+}
+
+@media (max-width: 1292px) {
+    .ld-6
+    {
+        margin-top: -8px!important;
+    }
+    .avata
+    {
+        padding-top: 5px;
+    }
+    
+    .title-all
+    {
+        width: 109%;
+    }
+    
+    .stats
+    {
+        width: 33.3%!important;
+        margin-right: 0px!important;
+        margin-left: -29px!important;
+    }
+    .songs
+    {
+        margin-left: 15px!important;
+        margin-right: 0px;
+    }
+    .comment
+    {
+        margin-left: 2px!important;
+        width: 33.3%;
+    }
+    .no-pad-comment img
+    {
+        margin-left: -15px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .brand {
+        display: inherit;
+        margin: 0;
+        padding: 30px 0 10px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 5em;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+    }
+    
+    .ul_quick
+    {
+        text-align: center;
+    }
+
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .address-bar {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 40px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-transform: uppercase;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+
+    .nnavbar {
+        border-radius: 0;
+    }
+
+    .nnavbar-header {
+        display: none;
+    }
+
+    .nnavbar {
+        min-height: 0;
+    }
+
+    .nnavbar-default {
+        border: none;
+        background: #fff;
+        background: rgba(255,255,255,0.9);
+    }
+
+    .nnav>li>a {
+        padding: 35px;
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+
+    .nnavbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: 1.25em;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+@media (max-width: 1200px) {
+    .min-h-res
+    {
+        min-height:325px!important;
+    }
+    .repon {
+        text-align: center;
+        margin: 0 auto 0;
+        margin-top: 10px;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .bt-res
+    {
+        margin-bottom: 20px;
+    }
+    .hr-small-max-w
+    {
+        max-width: 100%;
+    }
+    .mg-res
+    {
+        margin-right: 0px;
+        width: 104.7%;
+    }
+    .mg-song-res
+    {
+        margin-right: -14px!important;
+        margin-left: -20px;
+    }
+    .width-res
+    {
+        margin-right: -14px!important;
+        margin-left: -20px;
+    }
+    .posi_img
+    {
+        top: -17px!important;
+    }
+    .blocks-3
+    {
+        min-height: 300px;
+        max-height: 600px;
+    }
+    .blocks-4
+    {
+        min-height: 400px;
+        max-height: 600px;
+    }
+    .max-width
+    {
+        float: left;
+        width: 33.333%;
+    }
+    .img-event .repon 
+    {
+        margin-top: 2px!important;
+        margin-bottom: 5px!important;
+    }
+    .none-dp
+    {
+        display: none;
+    }
+    .nopad-res
+    {
+        padding: 0px;
+    }
+    .avata
+    {
+        width: 101.7%;
+        margin-left: -16px;
+    }
+    .ld-6
+    {
+        margin-top: 65px!important;
+    }
+    .w-n-max
+    {
+        width: 98.7%;
+    }
+    .pd-left
+    {
+        padding-left: 30%;
+    }
+    .stats
+    {
+        margin-left: -15px!important;
+        float:left;
+    }
+    .songs
+    {
+        width: 33.3%;
+        float: left
+    }
+    .comment
+    {
+        float:left;
+        margin-left: 26px!important;
+    }
+    .title-all
+    {
+        width: 110.5%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .pd-left
+    {
+        padding-left: 25%;
+    }
+}
+
+@media (max-width: 890px) {
+    .avata
+    {
+        width: 102.8%;
+        margin-left: -19px;
+    }
+    .max-width
+    {
+        width: 100%;
+        min-height: 246px;
+    }
+    .title-all
+    {
+        width: 103.9%;
+    }
+    .blocks-3
+    {
+        min-height: 750px;
+        max-height: 750px;
+        overflow: hidden;        
+    }
+    .blocks-4
+    {
+        min-height: 1015px;
+        max-height: 1015px;
+        overflow: hidden;
+    }
+    .stats
+    {
+        width: 103.4%!important;
+        margin-left: -20px!important;
+        overflow: hidden;
+    }
+    .songs
+    {
+        width: 103.4%;
+        float: left;
+        margin-left: -20px!important;
+        overflow: hidden;
+    }
+    .comment
+    {
+        width: 103.4%;
+        float:left;
+        margin-left: -20px!important;
+        overflow: hidden;    
+    }    
+}
+
+@media (max-width: 767px) {
+    .row{
+        padding-right:17px!important;        
+    }        
+    .repon
+    {
+        text-align: center;
+        margin: 0 auto 0;
+        margin-top: 10px;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .margin-res
+    {
+        margin-bottom: 30px;
+    }
+    .min-h-res
+    {
+        min-height: 325px;
+    }
+    .mg-res
+    {
+        margin: 0px!important;
+    }
+    .hr-small-max-w
+    {
+        max-width: 100%;
+    }
+    .mg-song-res
+    {
+        margin-right: 0px!important;
+        margin-top: 20px;
+        margin-left: 0px!important;
+    }
+    .mg-res
+    {
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+        width: 100%;
+    }
+    .width-res
+    {
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+    }
+    .posi_img
+    {
+        top:-16px!important;
+    }
+    .margin-res-imgt
+    {
+        margin-bottom: 10px;
+    }
+    .pd-left
+    {
+        padding-left: 0%!important;
+    }        
+    .pd-left div
+    {
+        display: inline-block;
+        padding-left:0%!important;        
+    }
+    .ld-6 {
+        margin-top: 20px!important;
+        margin-bottom: 11px;
+    }   
+    .avata {
+        width: 98.3%;
+        margin-left: 0px;
+    }
+    .title-all {
+        width: 120%;
+    }
+    .max-width {        
+        min-height: 199px;
+    }
+    .stats
+    {
+        width: 98.3%!important;
+        margin-left: 0px!important;
+    }
+    .songs
+    {
+        width: 98.3%;
+        float: left;
+        margin-left: 0px!important;
+    }
+    .comment
+    {
+        width: 98.3%;
+        float:left;
+        margin-left: 0px!important;
+    }
+    .song_url
+    {
+        margin-top: 0px!important;
+        margin-right: 6px!important;
+    }
+}
+
+@media (max-width: 432px) {
+    .hide-res
+    {
+        display:none;            
+    }
+    .img-profiles img
+    {
+        padding: 5px;
+        border: 2px solid #fff; 
+        margin-top: 0px!important;        
+        margin-bottom: 20px!important;
+        margin: 0 auto 0;    
+    }
+    .btn-center
+    {
+        margin-left: 0px!important;
+    }
+}

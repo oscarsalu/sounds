@@ -1,0 +1,39 @@
+@-moz-document url-prefix(){
+.top-phone{
+background:#fff;
+height:18px;
+margin-bottom: 0px;
+}
+.phone-text{
+    margin: 0!important;
+    padding:6px 0 3px 0!important;
+}
+.phone-text p{
+    margin: 0;
+}
+.all-artist{
+    margin-left:0!important;
+    margin-right: 0!important;
+}
+.all-artist img{
+    margin-left:0!important;
+    margin-right: 0!important;
+    width: 100%!important;
+}
+.name-color-size h5{
+    color: #6C6C6C!important;
+    font-size:10px!important;
+    line-height: 1.3!important;
+    margin:0;
+}
+.name-color-size .col-xs-4{
+    margin:2px 0;
+    padding-left:3px;
+     padding-right:3px;
+}
+.name-color-size img{
+    height:92px!important;
+    width:126.75px;
+}
+
+}
