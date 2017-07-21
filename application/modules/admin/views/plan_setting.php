@@ -54,7 +54,7 @@
                         <th>Created Time</th>
                          <th>Updated Time</th>
                     </tr>
-                    
+                   <!--  foreach($plan_list->plans as $plan) -->
                         <?php foreach($plan_list->plans as $plan) {   ?>
                     <tr>
                         <td><?php echo $plan->plan_code;?></td>
@@ -165,7 +165,7 @@
                     </div>-->
                     <hr />
                     <div class="form-group art">
-                        <label  class="col-sm-2 control-label"> Commissions 99sound</label>
+                        <label  class="col-sm-2 control-label"> Commissions</label>
                         <div class="col-sm-6">
                             <div class="input-group">
                                 <input type="number" min="0" max="100" class="form-control"  name="commissions_99sound" value="<?=$settings_global['commissions_99sound']?>" placeholder="Commissions 99sound"/>

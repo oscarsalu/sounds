@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>99Sound Admin</title>
+    <title>Kenya-Sounds Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
@@ -99,7 +99,7 @@
                         <div class="navbar-header">
                             <a class="navbar-brand" href="<?php echo base_url(); ?>">
                                 <div class="icon fa fa-paper-plane"></div>
-                                <div class="title">99Sound Admin</div>
+                                <div class="title">Ke-Sounds Admin</div>
                             </a>
                             <button type="button" class="navbar-expand-toggle pull-right visible-xs">
                                 <i class="fa fa-times icon"></i>

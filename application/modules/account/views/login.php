@@ -4,7 +4,7 @@
          <div class="panel panel-default signup-form">
             <div class="panel-body">
                <h3 class="text-center">
-                  Login in to 99 Sound
+                  Login in
                </h3>
                <form class="form form-signup" role="form" action="" method="post">
                   <div class="form-group">
@@ -31,7 +31,7 @@
                         <input type="password" class="form-control" placeholder="Password" name="password" />
                      </div>
                   </div>
-                  <input type="submit" class="btn btn-lg btn-primary btn-block" name="login" value="Login to 99sound.com" />
+                  <input type="submit" class="btn btn-lg btn-primary btn-block" name="login" value="Login" />
                </form>
             </div>
          </div>

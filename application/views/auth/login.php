@@ -110,7 +110,8 @@ $(document).ready(function(){
                    <h3 class="text-center">
                       Login
                    </h3>
-                <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="true" data-auto-logout-link="false"></div>
+                <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
+                <br><br>
                 <a class="btn" href="<?=$authUrl?>"><img src="<?php  echo base_url();?>/assets/icon/imgpsh_fullsize.png" style="max-width: 120px;max-height: 53px;margin-left: -10px;"></a>
 
 

@@ -90,7 +90,7 @@ class Admin_profile extends CI_Controller
         $data['list_album'] = $this->M_album_song->list_albums($user_id);
         $users = $this->db->where('id', $user_id)->get('users')->result_array();
         $data['users'] = $users;
-        
+        $data['avatar_position_x'] = "";
         $data['type_tpl'] = $users[0]['template_landing'];
         $data['comments'] = $this->M_comment->all_comment_alp($user_id, 0, 5);
         $data['fans'] = $this->M_fan->list_fan_alp($user_id, 8);

@@ -1,6 +1,6 @@
 <div class="panel-body">
 	<h3 class="text-center">
-		Join 99 Sound For Free
+		Join Sound For Free
 	</h3>
     
 	<form class="form form-signup" role="form" action="<?php echo base_url().'auth/login'?>" method="post">

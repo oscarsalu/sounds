@@ -7,9 +7,7 @@
  *
  * @category  PHP
  *
- * @author    sound99 <author@example.com>
- * @copyright 2016 99SOUND
- * @license   http://www.99SOUND.COM  PHP License 3.01   
+ * @author    sound99 <author@example.com>  
  *
  * @link      http://pear.php.net/package/PackageName
  */

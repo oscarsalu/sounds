@@ -142,14 +142,14 @@ input[type=radio] + label:before{
                         
                     </div>                                                  
                 </form>
-              <?php if($avatar_position['avatar_position_x']!="" and $avatar_position['avatar_position_y']!="" ){?>
+              <!-- <?php if($avatar_position['avatar_position_x']!="" and $avatar_position['avatar_position_y']!="" ){?>
                 <div id="avatar1" class="img-avarar" title="Change the avatar" style="right:auto;bottom:auto; left:<?php echo $avatar_position['avatar_position_x']."px;";?>top:<?php echo $avatar_position['avatar_position_y'] ."px;";?>"> 
  
                   
                     <img src="<?php echo $this->M_user->get_avata($user_data['id'])?>" class="thumbnail" height="150" width="150" alt="Avatar"/>
                       <a class="avatar_change" href="#" data-toggle="modal" data-target="#avatar-modal">Change Avatar</a>
                 </div>
-              <?php } else { ?>
+              <?php } else { ?> -->
                 
                  <div id="avatar1" class="img-avarar" title="Change the avatar"> 
  
@@ -158,7 +158,7 @@ input[type=radio] + label:before{
                     
                 </div>
                 
-              <?php }   ?>
+             <!--  <?php }   ?> -->
                 
             </div>    
 			<!--content-->
@@ -194,9 +194,7 @@ input[type=radio] + label:before{
 								<dt>City & State</dt>
 								<dd><?php echo ucfirst($user_data['city'])?></dd>
 								<dt>Country</dt>
-                                                                <?php $countryname=$this->M_find_location->get_country_by_id($user_data['countries']);
-                                                             
-                                                                ?>
+                    <?php $countryname=$this->M_find_location->get_country_by_id($user_data['countries']); ?>
                                                                
 								<dd><?php echo ucfirst($countryname['country']);?></dd>
 								<dt>Fans</dt>

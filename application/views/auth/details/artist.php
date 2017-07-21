@@ -77,7 +77,7 @@
                             <label>
                                 <input type="checkbox" required="" name="agreeCheckbox" id="agreeCheckbox"> I agree to All The <a target="_blank" href="<?=base_url('footer/terms')?>">Terms and Conditions</a>,
                                 <a target="_blank" href="<?=base_url('footer/copyright')?>">Copyright</a>,
-                              <a target="_blank" href="<?=base_url('footer/privacy-policy')?>">Privacy Policy </a> and <a target="_blank" href="<?=base_url('footer/abuse-policy')?>">Abuse</a> Policies of 99Sound.com
+                              <a target="_blank" href="<?=base_url('footer/privacy-policy')?>">Privacy Policy </a> and <a target="_blank" href="<?=base_url('footer/abuse-policy')?>">Abuse</a> Policies of Sound.com
                             </label>
                             <?php echo form_error('agreeCheckbox', '<div class="strike-heading"><span><div class="error">', '</div></span></div>'); ?>
                          </div>
