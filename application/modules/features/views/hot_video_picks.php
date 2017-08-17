@@ -15,7 +15,7 @@
           <h4 class="text-center wow slideInUp opensans" style="color:#fff;"  about="/content_homes1_tittle_new2_23/">                                 
                   <span property= "content" id= "content_homes1_tittle_new2_23">
                         <?php
-                            echo $this->M_text->getdatavalue('<_scontent_homes1_tittle_new2_23_s>',"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...");
+                            echo $this->M_text->getdatavalue('<_scontent_homes1_tittle_new2_23_s>',"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...");
                         ?>
                     </span>  
               

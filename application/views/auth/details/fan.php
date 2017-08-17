@@ -85,7 +85,7 @@ $(document).ready(function(){
                          </div>
                          <?php echo form_error('birth_date', '<div class="strike-heading"><span><div class="error">', '</div></span></div>'); ?>
             		  </div>
-                      <div class="strike-heading"><span>How did you hear about <strong>99Sound</strong>?</span></div>
+                      <div class="strike-heading"><span>How did you hear about <strong>Sound</strong>?</span></div>
                       <div class="form-group">
                          <div style="position: relative;">
                              <select id="question" class="form-control" name="question" >
@@ -108,7 +108,7 @@ $(document).ready(function(){
                         <label>
                             <input type="checkbox" required="" name="agreeCheckbox" id="agreeCheckbox"> You are agreeing to All The <a target="_blank" href="<?=base_url('footer/terms')?>" style="color:#fff; text-decoration:underline;">Terms and Conditions</a>,
                                 <a target="_blank" href="<?=base_url('footer/copyright')?>" style="color:#fff;text-decoration:underline;">Copyright</a>,
-                              <a target="_blank" href="<?=base_url('footer/privacy-policy')?>" style="color:#fff;text-decoration:underline;">Privacy Policy </a> and <a target="_blank" href="<?=base_url('footer/abuse-policy')?>" style="color:#fff;text-decoration:underline;">Abuse</a> Policies of 99Sound.com
+                              <a target="_blank" href="<?=base_url('footer/privacy-policy')?>" style="color:#fff;text-decoration:underline;">Privacy Policy </a> and <a target="_blank" href="<?=base_url('footer/abuse-policy')?>" style="color:#fff;text-decoration:underline;">Abuse</a> Policies of Sound.com
                         </label>
                          <?php echo form_error('agreeCheckbox', '<div class="strike-heading"><span><div class="error">', '</div></span></div>'); ?>
                      </div>

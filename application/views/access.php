@@ -79,8 +79,7 @@
                 success:function(response){   
                     
                     if(response == "ok")
-                    {
-                     
+                    {                     
                         window.location = $redirect_url;
                     }else{
                         alert('Password enter not correct!');

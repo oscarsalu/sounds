@@ -45,7 +45,7 @@
         		 </div>
                  <div class="checkbox">
                     <label>
-                        <input type="checkbox" required=""> You are agreeing to 99sound.com <a target="_blank" href="<?=base_url('footer/terms')?>">Terms and Conditions</a>
+                        <input type="checkbox" required=""> You are agreeing to sound.com <a target="_blank" href="<?=base_url('footer/terms')?>">Terms and Conditions</a>
                      and <a target="_blank" href="<?=base_url('footer/privacy-policy')?>">Privacy Policy </a>
                     </label>
                  </div>

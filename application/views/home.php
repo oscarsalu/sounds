@@ -88,7 +88,7 @@ if($this->session->flashdata('message_error')){
                                 </div>
                                 </div>
                  <div class="col-md-5" style="margin-top:20px;">
-<iframe id="iframe_amp" src="http://99sound.com/amp/embed/5aa6884a1c57a26cdbdcab26eec1a99d" frameborder="0" scrolling="no" width="100%" height="500px"></iframe>
+<!-- <iframe id="iframe_amp" src="http://99sound.com/amp/embed/5aa6884a1c57a26cdbdcab26eec1a99d" frameborder="0" scrolling="no" width="100%" height="500px"></iframe> -->
                             </div>
                              
 			</div>
@@ -123,7 +123,7 @@ if($this->session->flashdata('message_error')){
         
     </div>
     
-</div>--->
+</div>-->
 
 <!--<div class="new_home_page">
     <div class="col-md-10 music_distribution col-md-offset-1" id="music">

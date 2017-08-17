@@ -559,7 +559,7 @@ if (($params1 == 'mds' || ($params1 == 'artist' && $params2 == 'amp') || ($param
                         <li>
                             <span class="wsmenu-click"></span><a <?php if ($params1 == 'findamusician' || $params1 == 'artists' || $params1 == 'make_money' || $params1 == 'top-100-list') {
     echo 'class="active"';
-} ?> href="#"><i class="fa fa-music"></i>&nbsp;&nbsp;Earn Money<span class="arrow"></span></a>
+} ?> href="#"><i class="fa fa-money"></i>&nbsp;&nbsp;Earn Money<span class="arrow"></span></a>
         					<ul class="wsmenu-submenu" style="min-width: 160px;">
         						<li <?php if ($params1 == 'artists') {
     echo 'class="activesub"';

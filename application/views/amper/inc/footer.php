@@ -31,7 +31,7 @@
     <footer class="footer wapper_footer" style="position: relative; z-index:5;">
         <div class="container top_footer">
             <div class="col-md-6 left_top_footer">
-                &COPY;2016 By 99SOUND.COM INC. All Rights Reserved
+                &COPY;Osk All Rights Reserved
             </div>
             <div class="col-md-6 right_top_footer">
                 <a href="#" data-toggle="tooltip" data-placement="left" title="Linkedin" class="icon_social"><i class="fa fa-linkedin"></i></a>
@@ -64,7 +64,7 @@
                 <div class="col-md-2 col-sm-4 col-xs-12">
                     <h4 class="forstyle_header">Support</h4>
                     <ul class="list-unstyled list-footer">
-                        <li><a href="https://99sound.zendesk.com/hc/en-us/categories/202475728-Catalog">Frequently Asked Questions</a></li>
+                        <li><a href="#">Frequently Asked Questions</a></li>
                         
                         <li><a href="<?=base_url('social_media')?>">Social Sync</a></li>
                     </ul>
@@ -108,8 +108,8 @@
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 
-<!-- Start of 99soundhelp Zendesk Widget script -->
-<script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(e){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("//assets.zendesk.com/embeddable_framework/main.js","99soundhelp.zendesk.com");
+<!-- Start of soundhelp Zendesk Widget script -->
+<script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(e){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("//assets.zendesk.com/embeddable_framework/main.js","soundhelp.zendesk.com");
 /*]]>*/</script>
 <!-- End of 99soundhelp Zendesk Widget script -->
 <!-- End of 99soundhelp Zendesk Widget script -->

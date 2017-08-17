@@ -110,7 +110,7 @@ header("Content-type: text/css");
 
 // Array of css files
 $css = array(
-     FCPATH.'assets/css/navbar/color-theme.css',
+       FCPATH.'assets/css/navbar/color-theme.css',
        FCPATH.'assets/css/navbar/webslidemenu.css',
        FCPATH.'assets/css/navbar/demo.css',
        FCPATH.'assets/css/bootstrap.css' ,

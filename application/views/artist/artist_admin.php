@@ -68,6 +68,12 @@ $("#avatar1").draggable({
     background-color: #222222;
     border-color: #222222; 
 }
+.button_changebanner {
+    color: #ffffff;
+    background-color: #222222;
+    border-color: #222222;
+    width:150px;
+}
 .btn-choose-layout:hover ,.btn-choose-layout:active,.btn-choose-layout:focus{
         color: #ffffff;
     background-color: #090909;
@@ -142,23 +148,23 @@ input[type=radio] + label:before{
                         
                     </div>                                                  
                 </form>
-              <!-- <?php if($avatar_position['avatar_position_x']!="" and $avatar_position['avatar_position_y']!="" ){?>
+              <?php if($avatar_position['avatar_position_x']!="" and $avatar_position['avatar_position_y']!="" ){?>
                 <div id="avatar1" class="img-avarar" title="Change the avatar" style="right:auto;bottom:auto; left:<?php echo $avatar_position['avatar_position_x']."px;";?>top:<?php echo $avatar_position['avatar_position_y'] ."px;";?>"> 
  
                   
                     <img src="<?php echo $this->M_user->get_avata($user_data['id'])?>" class="thumbnail" height="150" width="150" alt="Avatar"/>
-                      <a class="avatar_change" href="#" data-toggle="modal" data-target="#avatar-modal">Change Avatar</a>
+                      <a class="avatar_change" href="#" data-toggle="modal" data-target="#avatar-modal" style="color: pink;">Change Avatar</a>
                 </div>
-              <?php } else { ?> -->
+              <?php } else { ?>
                 
-                 <div id="avatar1" class="img-avarar" title="Change the avatar"> 
+                 <div id="avatar1" class="img-avarar" title="Change the avatar" style="right:auto;bottom:auto; left:0px;top:0px;"> 
  
-                    <a class="avatar_change" href="#" data-toggle="modal" data-target="#avatar-modal">Change Avatar</a>
+                    <a class="avatar_change" href="#" data-toggle="modal" data-target="#avatar-modal" style="color: pink;">Change Avatar</a>
                     <img src="<?php echo $this->M_user->get_avata($user_data['id'])?>" class="thumbnail" height="150" width="150" alt="Avatar"/>
                     
                 </div>
                 
-             <!--  <?php }   ?> -->
+              <?php }   ?> 
                 
             </div>    
 			<!--content-->
@@ -166,12 +172,13 @@ input[type=radio] + label:before{
 				<!--row-->
 				<div class="row">
 				 	<!--profile left part-->
-					<!-- TODO:<div class="my_account one-fourth wow fadeInLeft animated" >
+					<!-- TODO:
+          <div class="my_account one-fourth wow fadeInLeft animated" >
 						<figure>
 							<img src="<?php echo $this->M_user->get_avata($user_data['id'])?>" alt="">
 						</figure>
                         <div class="container-ad"></div>
-					</div>
+					</div> -->
 					<!--//profile left part--> 
 					<div class="three-fourth" >
 						<nav class="tabs">
@@ -182,15 +189,14 @@ input[type=radio] + label:before{
 						</nav>
 						<!--about-->
 						<div class="tab-content" id="about" style="display: block;">
-                                                    <div class="container_ad" style="min-height: 210px;">
+              <div class="container_ad" style="min-height: 210px;">
 							<dl class="basic">
 								<dt>Name</dt>
 								<dd><?php echo $this->M_user->get_name($user_data['id'])?></dd>
-								
-                                <dt>Genre</dt>
+								<dt>Genre</dt>
 								<dd><?php if (!empty($genre)) {
-    echo ucfirst($genre->name);
-} ?></dd>
+                      echo ucfirst($genre->name);
+                  } ?></dd>
 								<dt>City & State</dt>
 								<dd><?php echo ucfirst($user_data['city'])?></dd>
 								<dt>Country</dt>
@@ -199,21 +205,21 @@ input[type=radio] + label:before{
 								<dd><?php echo ucfirst($countryname['country']);?></dd>
 								<dt>Fans</dt>
 								<dd><?php if (!empty($num_fands)) {
-    echo $num_fands;
-} else {
-    echo 0;
-} ?></dd>
-                                <dt>Featured / Premium</dt>
+                                echo $num_fands;
+                            } else {
+                                echo 0;
+                            } ?></dd>
+                <dt>Featured / Premium</dt>
 								<dd><?php if (!empty($pack)) {
-    echo '<a href="'.base_url('subscriptions/featured').'">Featured/Premium Artist on Homepage</a>';
-} else {
-    echo '<a href="'.base_url('subscriptions/featured').'">Paid Featured/Premium Artist on Homepage</a>';
-} ?></dd>
+                        echo '<a href="'.base_url('subscriptions/featured').'">Featured/Premium Artist on Homepage</a>';
+                    } else {
+                        echo '<a href="'.base_url('subscriptions/featured').'">Paid Featured/Premium Artist on Homepage</a>';
+                    } ?></dd>
 							</dl>
                                                         
-                                                        <a href="#" class="btn btn-default" data-toggle="modal" data-target="#editabout" style="margin-bottom:10px;">Edit: About Me</a>
+                    <a href="#" class="btn btn-default" data-toggle="modal" data-target="#editabout" style="margin-bottom:10px;">Edit: About Me</a>
 						</div>
-                                                </div>
+            </div>
 						<!--//about-->
 						<!--my bio-->
 						<div class="tab-content" id="bio" style="display: none;">
@@ -222,22 +228,22 @@ input[type=radio] + label:before{
                                     <article class="searchform">-->
                     					<h5>Bio</h5>
                                         <?php if (!empty($user_data['bio'])) {
-    $desLength = strlen($user_data['bio']);
-                                            //var_dump($desLength);exit;            
-                                            $stringMaxLength = 970;
-    if ($desLength > $stringMaxLength) {
-        $des = substr($user_data['bio'], 0, $stringMaxLength);
-        $text = $des.'...'; ?><p><?php echo $text; ?></p><?php 
-    } else {
-        ?><p> <?php echo $user_data['bio'];
-    } ?></p>
-                                            <a href="#" class="btn btn-default" data-toggle="modal" data-target="#addbio" style="margin-bottom:10px;">Edit Bio</a>
+                                    $desLength = strlen($user_data['bio']);
+                                                                            //var_dump($desLength);exit;            
+                                                                            $stringMaxLength = 970;
+                                    if ($desLength > $stringMaxLength) {
+                                        $des = substr($user_data['bio'], 0, $stringMaxLength);
+                                        $text = $des.'...'; ?><p><?php echo $text; ?></p><?php 
+                                    } else {
+                                        ?><p> <?php echo $user_data['bio'];
+                                    } ?></p>
+          <a href="#" class="btn btn-default" data-toggle="modal" data-target="#addbio" style="margin-bottom:10px;">Edit Bio</a>
                                             <?php
 
-} else {
-    ?><a href="#" class="btn btn-default" data-toggle="modal" data-target="#addbio" style="margin-bottom:10px;">Add Bio</a><?php
+            } else {
+                ?><a href="#" class="btn btn-default" data-toggle="modal" data-target="#addbio" style="margin-bottom:10px;">Add Bio</a><?php
 
-}
+            }
                                         ?>
                     				<!--</article>
                                 </div>-->
@@ -249,16 +255,16 @@ input[type=radio] + label:before{
                         <h4 class="text-center" style="color:#aaa;font-size:20px;">Dashboard Manager</h4>
 						<ul class="boxed gold">
 							<li class="light"><a href="<?php echo base_url(); ?>artist/managerphoto" title="Photo"><img height="60px" src="<?php echo base_url() ?>assets/images/icon/manager_photo.png" /><span>Photo</span></a></li>
-                                                        <li class="medium"><a href="<?php echo base_url(); ?>artist/managersong" title="Playlist →Song"><img height="60px" src="<?php echo base_url() ?>assets/images/icon/manager_songs.png" /><span style="font-size:8px;">Playlist <i class="fa fa-arrow-right" aria-hidden="true"></i>Song / Video</span></a></li>
+              <li class="medium"><a href="<?php echo base_url(); ?>artist/managersong" title="Playlist →Song"><img height="60px" src="<?php echo base_url() ?>assets/images/icon/manager_songs.png" /><span style="font-size:8px;">Playlist <i class="fa fa-arrow-right" aria-hidden="true"></i>Song / Video</span></a></li>
 							<li class="dark"><a href="<?php echo base_url(); ?>artist/managervideo" title="Video"><img height="60px" src="<?php echo base_url() ?>assets/images/icon/manager_video.png" /><span>Video</span></a></li>
 							
 							<li class="medium"><a href="<?php echo base_url()?>artist/managerpress" title="Press"><img height="60px" src="<?php echo base_url() ?>assets/images/icon/manager_press.png" /><span>Press</span></a></li>
 							<li class="dark"><a href="<?php echo base_url()?>artist/blogsmanager" title="Blog"><img height="60px" src="<?php echo base_url() ?>assets/images/icon/manager_blog.png" /><span>Blog</span></a></li>
 							<li class="dark"><a href="<?php echo base_url()?>artist/biomanager" title="Bio"><img height="60px" src="<?php echo base_url() ?>assets/images/icon/manager_bios.png" /><span>Bio</span></a></li>
 							<li class="dark"><a href="<?php echo base_url()?>artist/basic_info" title="Profile"><img height="60px" src="<?php echo base_url() ?>assets/images/icon/profilemanager.png" /><span>Profile</span></a></li>
-                                                        <li class="light"><a href="<?php echo base_url(); ?>artist/managerevent" title="Gigs & Event"><img height="60px" src="<?php echo base_url() ?>assets/images/icon/manager_git_event.png" /><span>Gigs & Events</span></a></li>
+              <li class="light"><a href="<?php echo base_url(); ?>artist/managerevent" title="Gigs & Event"><img height="60px" src="<?php echo base_url() ?>assets/images/icon/manager_git_event.png" /><span>Gigs & Events</span></a></li>
 							<li class="medium"><a href="<?php echo base_url(); ?>artist/manager-comment/" title="Comment"><img height="60px" src="<?php echo base_url() ?>assets/images/icon/manager_comment.png" /><span>Comment</span></a></li>
-                                                        <li class="medium"><a href="<?php echo base_url(); ?>artist/lyricmanager" title="Lyrics"><img height="60px" src="<?php echo base_url() ?>assets/images/icon/lyric.png" /><span>Lyrics</span></a></li>
+              <li class="medium"><a href="<?php echo base_url(); ?>artist/lyricmanager" title="Lyrics"><img height="60px" src="<?php echo base_url() ?>assets/images/icon/lyric.png" /><span>Lyrics</span></a></li>
 						</ul>
                     </div>
 				</div>
@@ -273,14 +279,13 @@ input[type=radio] + label:before{
 					<div class="row" style="color: #356280;" >
 						<!--item-->
 						<div class="one-fifth add-new-on">
-                            <a href="#" data-toggle="modal" data-target="#uploadphoto">
-                                <div class="container_ad">
-                                    <span class="subtitle"><br></span>
+                <a href="#" data-toggle="modal" data-target="#uploadphoto">
+                    <div class="container_ad">
+                        <span class="subtitle"><br></span>
 									<i class="fa fa-picture-o fa-3x"></i>
-                                                                       
-                                                                        <span class="subtitle">Add Photo<br><br></span>
+                        <span class="subtitle">Add Photo<br><br></span>
 								</div>
-                            </a>
+                </a>
 						</div>
 						<!--//item-->
                        <!--item-->

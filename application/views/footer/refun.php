@@ -23,7 +23,7 @@
 					My trial period is over, are there any exceptions, which would allow me to cancel?
 					<ul>
 						<li>Yes, site malfunction in excess of 24 hours.</li>
-						<li>Reported malfunctions to support@99sound.com</li>
+						<li>Reported malfunctions to support@sound.com</li>
 					</ul>
 				</li>
 				<li>

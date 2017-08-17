@@ -283,7 +283,7 @@
         				'</div>'+
         			'</div>'+
                                 '<div class="copy" style="font-size:10px; margin-top:10px;"><ul>'+
-                                '<li style="display:inline; margin-left:-40px;font-size:10px;"><a style="text-decoration:none;color:red;" href="'+base_url+'">'+'99SOUND.COM</a>'+'</li>'+
+                                '<li style="display:inline; margin-left:-40px;font-size:10px;"><a style="text-decoration:none;color:red;" href="'+base_url+'">'+'Home</a>'+'</li>'+
                                 '<li style="display:inline; margin-left:35px;"><a style="text-decoration:none;" href="'+base_url+'footer/terms">'+'Terms & Conditions</a>'+'</li>'+
                                 '<li style="display:inline; margin-left:5px;"><a style="text-decoration:none;" href="'+base_url+'footer/copyright">'+' | Copyright</a>'+'</li>'+
                                 '<li style="display:inline; margin-left:5px;"><a  style="text-decoration:none;" href="'+base_url+'footer/abuse-policy">'+'| Abuse Policy</a>'+'</li>'+

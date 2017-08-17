@@ -399,6 +399,8 @@ if (!empty($U_map['option_widget'])) {
                             		</div>
                                 </div>
                             </div>
+
+                            <!-- start of media player -->
             <div class="col-md-7">
                 <script>var base_url="<?php echo base_url();?>";</script>
                 <div align="center" style=" height: 400px;" class="wcustomhtml" >

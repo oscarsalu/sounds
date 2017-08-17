@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:type"               content="article" />
-    <meta property="og:title"              content="99sound | Connect with Fans" />
-    <meta property="og:description"        content="99sound | Connect with Fans" />
+    <meta property="og:title"              content="kesound | Connect with Fans" />
+    <meta property="og:description"        content="kesound | Connect with Fans" />
     <meta name="google-signin-client_id" content="614939124466-0rsd0pptd6c443503hqrb2uss5smhbmu.apps.googleusercontent.com">
     <?php
     if (!empty($meta_rpk)) {
