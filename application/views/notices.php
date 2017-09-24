@@ -13,7 +13,7 @@
                     $link = '#';
                 } ?>
                 <li class="list-group-item b-primary">
-                <a href="<?=base_url()?>notifications/remove/<?=$row->id; ?>" /><i class="fa fa-trash-o"></i></a>
+                <a href="<?=base_url()?>notifications/remove/<?=$row->id; ?>"><i class="fa fa-trash-o"></i></a>
                     <a href="<?=$link?>">
                     <div class="media">
                         <div class="media-body">

@@ -131,7 +131,7 @@ $(document).ready(function(){
                         }
 
                     ?>
-                        <div class="strike-heading"><span>Login with your email address</span></div>
+                <div class="strike-heading"><span>Login with your email address</span></div>
             		<div class="form-group">
             			<div class="input-group">
             				<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>

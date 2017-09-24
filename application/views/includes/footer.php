@@ -1,6 +1,3 @@
-
-
-
 <div class="alert_gloabal">
     <?php if ($this->session->flashdata('message_msg')) {
     ?>
@@ -136,14 +133,12 @@ var base_url = <?php echo base_url(); ?>;
 <!--  row  -->
 </div>
 <!--  container  -->
-
 <div id="CopyRightGrid">
 <div class="container">
 <div class="row">
 	<div class="col-md-6">
     <p>©2017 By OSKProgrammers INC. All Rights Reserved</p>
     </div>
-    
     <div class="col-md-6">
     	<ul class="social-network social-circle">
             <li>    <a href="#" data-toggle="tooltip" data-placement="left" title="Linkedin" class="icon_social"><i class="fa fa-linkedin"></i></a></li>
@@ -176,9 +171,9 @@ $(document).ready(function(){
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 
-<!-- Start of 99sound Zendesk Widget script -->
+<!-- Start of sound Zendesk Widget script -->
 
-<!-- End of 99sound Zendesk Widget script -->
+<!-- End of sound Zendesk Widget script -->
 
 <script src="<?php echo base_url(); ?>home/combined_homepage_js"></script>
 <script src="<?php echo base_url(); ?>assets/js/jquery.easing-1.3.pack.js"></script>

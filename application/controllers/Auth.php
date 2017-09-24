@@ -1,34 +1,5 @@
 <?php
-/**
- * PHP_CodeSniffer tokenizes PHP code and detects violations of a
- * defined set of coding standards.
- *
- * PHP version 5
- *
- * @category  PHP
- *
- * @author    sound99 <author@example.com>
- * @copyright 2016 99SOUND
- * @license   http://www.99SOUND.COM  PHP License 3.01   
- *
- * @link      http://pear.php.net/package/PackageName
- */
-
 defined('BASEPATH') or exit('No direct script access allowed');
-
-/**
- * Auth.
- * 
- * @category  PHP
- *
- * @author    sound99 <author@example.com>
- * @copyright 2016 99sound
- * @license   http://www.99SOUND.COM  PHP License 3.01
- *
- * @version   2016
- *
- * @link      http://pear.php.net/package/PackageName
- */
 class Auth extends CI_Controller
 {
     /**
@@ -43,19 +14,19 @@ class Auth extends CI_Controller
         $this->load->model('M_zoho');
         $this->load->model('M_user_reset_password');
         $this->load->helper('string');
-        $this->load->helper('captcha');  
-        $this->load->model('M_album_song'); 
+        $this->load->helper('captcha');
+        $this->load->model('M_album_song');
         $this->load->model('M_channel');
         $this->config->load('facebook');
         $this->config->load('googleplus');
         $ac = $this->session->userdata('access');
         $data['redirect_url']=$this->curPageURL();
         if (!isset($ac) && !in_array($ac, $this->config->item('access_password'))) {
-           
+
             redirect("access?redirect_url=".$data['redirect_url']);
         }
     }
-    
+
     public function curPageURL() {
      $pageURL = 'http';
      if ( isset( $_SERVER["HTTPS"] ) && strtolower( $_SERVER["HTTPS"] ) == "on" ) {
@@ -68,11 +39,11 @@ class Auth extends CI_Controller
       $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
      }
      return $pageURL;
-     
+
     }
-    /** 
+    /**
      * Check login.
-     * 
+     *
      * @return redirect
      */
     protected function isLogin()
@@ -83,9 +54,9 @@ class Auth extends CI_Controller
     }
     /**
      * Auth::register().
-     * 
+     *
      * @param int $data null
-     * 
+     *
      * @return response
      */
     public function register($data = null)
@@ -93,7 +64,7 @@ class Auth extends CI_Controller
         include APPPATH.'libraries/Google/autoload.php';
         $config = $this->config->item('facebook_app_id');
         $config_google = $this->config->item('googleplus');
-        //Insert your cient ID and secret 
+        //Insert your cient ID and secret
         //You can get it from : https://console.developers.google.com/
         $client_id = $config_google['client_id'];
         $client_secret = $config_google['client_secret'];
@@ -114,10 +85,10 @@ class Auth extends CI_Controller
     }
     /**
      * View Step register.
-     * 
+     *
      * @param array $date null
      * @param int   $step
-     * 
+     *
      * @return Response
      */
     public function signup($date = '', $step = 0)
@@ -135,7 +106,7 @@ class Auth extends CI_Controller
             $this->session->unset_userdata('tmp_password');
             include APPPATH.'libraries/Google/autoload.php';
             $config_google = $this->config->item('googleplus');
-            //Insert your cient ID and secret 
+            //Insert your cient ID and secret
             //You can get it from : https://console.developers.google.com/
             $client_id = $config_google['client_id'];
             $client_secret = $config_google['client_secret'];
@@ -163,7 +134,7 @@ class Auth extends CI_Controller
     /**
      * Post Step1  register
      * email - password.
-     * 
+     *
      * @return response
      */
     public function step1()
@@ -173,15 +144,15 @@ class Auth extends CI_Controller
             $this->load->library('form_validation');
             $this->form_validation->set_rules('email', 'email', 'trim|required|valid_email|is_unique[users.email]|max_length[255]');
             $this->form_validation->set_rules('password', 'password', 'trim|required|max_length[64]');
-        
-            if ($this->form_validation->run() != false) 
+
+            if ($this->form_validation->run() != false)
             {
                 $data['tmp_email'] = $this->session->set_userdata('tmp_email', $this->input->post('email'));
                 $data['tmp_password'] = $this->session->set_userdata('tmp_password', $this->input->post('password'));
                 //Code added for change flow of verification
                 $data['encrypted_string'] = random_string('alpha', 16);
                 $data_password = $this->_createNewPassword($this->input->post('password'));
-                
+
                     $insertArr = array(
                         'email'=>$this->input->post('email'),
                         'password' => $data_password['password'],
@@ -190,7 +161,7 @@ class Auth extends CI_Controller
                         'token'=>$data['encrypted_string']
                     );
                 $this->db->insert('users', $insertArr);
-                
+
                 $email = $this->input->post('email');
                 $this->sendVerificationMail($email, $data['encrypted_string']);
                 $this->session->set_flashdata('message_msg', 'Please check your email and verify for further, thank you!');
@@ -210,7 +181,7 @@ class Auth extends CI_Controller
     /**
      * Post Step 2  register
      * Role user artist/fans.
-     * 
+     *
      * @return response
      */
     public function step2()
@@ -231,20 +202,20 @@ class Auth extends CI_Controller
     /**
      * Post Step 3  register
      * Confirm create new user.
-     * 
+     *
      * @return response
      */
     public function step3()
     {
         $email = $this->session->userdata('tmp_email');
-       
+
         $tmp_password = $this->session->userdata('tmp_password');
         $role = $this->session->userdata('tmp_role');
         $data_password = $this->_createNewPassword($tmp_password);
-        
+
         switch ($role) {
         case 1:
-           
+
             $this->load->library('form_validation');
             $this->form_validation->set_rules('city', 'city', 'required|max_length[128]');
             $this->form_validation->set_rules('genre', 'genre', 'required');
@@ -262,7 +233,7 @@ class Auth extends CI_Controller
                     $plan_status = '1';
                 }
                 $birthdate=$this->input->post('birth_date');
-                
+
                 $newBirthDate = date("Y-m-d", strtotime($birthdate));
                 $userDetails = $this->db->where('email', $email)->where('active', 1)->get('users')->row_array();
                 $updateArr = array(
@@ -277,9 +248,9 @@ class Auth extends CI_Controller
                     'home_page' => $home_page,
                     'plan_status' => $plan_status,
                     'template_landing' => $this->input->post('template_landing'),
-                    //'creatdate'      => strtotime("now"),  					
+                    //'creatdate'      => strtotime("now"),
                 );
-                 $this->db->where('id', $userDetails['id']); 
+                 $this->db->where('id', $userDetails['id']);
                 $this->db->update('users', $updateArr);
                 //$this->db->insert('users', $insertArr);
                 $id = $userDetails['id'];
@@ -298,7 +269,7 @@ class Auth extends CI_Controller
                 $channel_data = $this->M_channel->check_artist_affiliates_channel($id);
                 if(empty($channel_data))
                 {
-                    for ($i=1; $i <= 4; $i++) { 
+                    for ($i=1; $i <= 4; $i++) {
                         $channel_name = $userDetails['artist_name'].'-Affilaite-Level'.$i;
                         $dataArray = array('name'=> $channel_name, 'user_id'=> $id, 'type' =>'private', 'time'=> time(), 'is_admin'=> 0, 'group_type'=>'affiliates', 'group_id'=>$id, 'level'=>$i);
                        $channel_id = $this->M_channel->save($dataArray);
@@ -312,10 +283,10 @@ class Auth extends CI_Controller
                 if (check_live_server()) {
                     if($age<18){
                         redirect('auth/amp_form');
-                        
+
                     } else {
                         $parent_data=array('parental_approve'=>1);
-                      $this->db->where('id', $id); 
+                      $this->db->where('id', $id);
                       $this->db->update('users', $parent_data);
                       $insertArr = array(
                         'name' => "HIDDEN",
@@ -324,7 +295,7 @@ class Auth extends CI_Controller
                         'decs' => strip_tags('This Playlist is for uploading songs that only the artist can see and hear.', '<p><b>'),
                         'user_id' => $id,
                         'time' => time(),
-                         'attribute'=>0, 
+                         'attribute'=>0,
                     );
                     $this->db->insert('album_song', $insertArr);
                     $id_playlist = $this->db->insert_id();
@@ -334,7 +305,7 @@ class Auth extends CI_Controller
                 } else {
                     if($age<18){  redirect('auth/amp_form');} else {
                         $parent_data=array('parental_approve'=>1);
-                      $this->db->where('id', $id); 
+                      $this->db->where('id', $id);
                       $this->db->update('users', $parent_data);
                       $insertArr = array(
                         'name' => "HIDDEN",
@@ -343,14 +314,14 @@ class Auth extends CI_Controller
                         'decs' => strip_tags('This Playlist is for uploading songs that only the artist can see and hear.', '<p><b>'),
                         'user_id' =>$id,
                         'time' => time(),
-                          'attribute'=>0, 
+                          'attribute'=>0,
                     );
                     $this->db->insert('album_song', $insertArr);
                     $id_playlist = $this->db->insert_id();
                     $this->M_audio_song->add_new_option_playlist($id, $id_playlist);
                     redirect('artist/profile');
                 }
-                
+
                 }
             } else {
                 $this->signup($data = '', $step = 2);
@@ -366,7 +337,7 @@ class Auth extends CI_Controller
             if ($this->form_validation->run() != false) {
                 $home_page = $this->m_user->create_homepage(str_replace(' ', '', $this->input->post('fan_name')));
                 $birthdate=$this->input->post('birth_date');
-              
+
                 $newBirthDate = date("Y-m-d", strtotime($birthdate));
                 $from = new DateTime($newBirthDate);
                 $to   = new DateTime('today');
@@ -383,10 +354,10 @@ class Auth extends CI_Controller
                     'active' => '1',
                     'home_page' => $home_page,
                     'template_landing' => 1,
-                    //'creatdate'      => strtotime("now"),  					
+                    //'creatdate'      => strtotime("now"),
                 );
 
-            $this->db->where('id', $userDetails['id']); 
+            $this->db->where('id', $userDetails['id']);
                 $this->db->update('users', $updateArr);
                 // $this->db->insert('users', $insertArr);
                 $id = $userDetails['id'];
@@ -411,7 +382,7 @@ class Auth extends CI_Controller
                         redirect('auth/amp_form');
                   } else {
                       $parent_data=array('parental_approve'=>1);
-                      $this->db->where('id', $id); 
+                      $this->db->where('id', $id);
                       $this->db->update('users', $parent_data);
                 redirect('');
                   }
@@ -423,9 +394,9 @@ class Auth extends CI_Controller
     }
     /**
      * View Register step 3email - password.
-     * 
+     *
      * @param int $data dataview
-     * 
+     *
      * @return response
      */
     public function viewdetails($data)
@@ -441,12 +412,12 @@ class Auth extends CI_Controller
             break;
         }
     }
-    
+
     /**
      * Creaate password.
-     * 
+     *
      * @param string $str null
-     * 
+     *
      * @return array [password][hash]
      **/
     private function _createNewPassword($str = null)
@@ -461,9 +432,9 @@ class Auth extends CI_Controller
     }
     /**
      * View Login.
-     * 
+     *
      * @param array $data null
-     * 
+     *
      * @return redirect
      **/
     public function getlogin($data = '')
@@ -471,7 +442,7 @@ class Auth extends CI_Controller
         $data = $this->session->userdata('login_false');
         include APPPATH.'libraries/Google/autoload.php';
         $config_google = $this->config->item('googleplus');
-        //Insert your cient ID and secret 
+        //Insert your cient ID and secret
         //You can get it from : https://console.developers.google.com/
         $client_id = $config_google['client_id'];
         $client_secret = $config_google['client_secret'];
@@ -482,7 +453,7 @@ class Auth extends CI_Controller
         $client->setRedirectUri($redirect_uri);
         $client->addScope('email');
         $client->addScope('profile');
-        
+
         $data['authUrl'] = $client->createAuthUrl();
     // Captcha configuration
         $config = array(
@@ -500,17 +471,17 @@ class Auth extends CI_Controller
                 'border' => array(255, 255, 255),
                 'text' => array(0, 0, 0),
                 'grid' => array(255, 40, 40)
-        )  
+        )
         );
         $captcha = create_captcha($config);
-        
+
         // Unset previous captcha and store new captcha word
         $this->session->unset_userdata('captchaCode');
         $this->session->set_userdata('captchaCode',$captcha['word']);
-        
+
         // Send captcha image to view
         $data['captchaImg'] = $captcha['image'];
-        
+
         $this->load->view('includes/header');
         $this->load->view('includes/navbar');
         $this->load->view('auth/login', $data);
@@ -519,7 +490,7 @@ class Auth extends CI_Controller
         if (!empty($_COOKIE['email'])) {
             $email = $_COOKIE['email'];
             $password = $_COOKIE['password'];
-          
+
             $signin_result = $this->M_user->signin_check($email, $password);
             if (!is_null($signin_result)) {
                 $this->session->set_userdata('loged_in', $signin_result['id']);
@@ -540,10 +511,10 @@ class Auth extends CI_Controller
     }
     /**
      * Refresh Captcha.
-     * 
+     *
      * @return Response
      **/
-    
+
      public function refresh_captcha(){
         // Captcha configuration
         $config = array(
@@ -566,18 +537,18 @@ class Auth extends CI_Controller
 
         );
         $captcha = create_captcha($config);
-        
+
         // Unset previous captcha and store new captcha word
         $this->session->unset_userdata('captchaCode');
         $this->session->set_userdata('captchaCode',$captcha['word']);
-        
+
         // Display captcha image
         echo $captcha['image'];
     }
-    
+
     /**
      * Post Login.
-     * 
+     *
      * @return Response
      **/
     public function postlogin()
@@ -602,9 +573,9 @@ class Auth extends CI_Controller
     }
     /**
      * Chech account login.
-     * 
+     *
      * @param array $signin_result mesager signin
-     * 
+     *
      * @return redirect
      **/
     public function checkAccountLogin($signin_result,$inputCaptcha,$sessCaptcha)
@@ -645,7 +616,7 @@ class Auth extends CI_Controller
                         $channel_data = $this->M_channel->check_artist_affiliates_channel($signin_result['id']);
                         if(empty($channel_data))
                         {
-                            for ($i=1; $i <= 4; $i++) { 
+                            for ($i=1; $i <= 4; $i++) {
                                 $channel_name = $signin_result['artist_name'].'-Affilaite-Level'.$i;
                                 $dataArray = array('name'=> $channel_name, 'user_id'=> $signin_result['id'], 'type' =>'private', 'time'=> time(), 'is_admin'=> 0, 'group_type'=>'affiliates', 'group_id'=>$signin_result['id'], 'level'=>$i);
                                $channel_id = $this->M_channel->save($dataArray);
@@ -681,11 +652,11 @@ class Auth extends CI_Controller
             $this->session->set_userdata('login_false', $login_false);
             redirect('account/login');
         }
-        
+
     }
     /**
      * Logout account.
-     * 
+     *
      * @return redirect
      **/
     public function logout()
@@ -705,7 +676,7 @@ class Auth extends CI_Controller
     }
     /**
      * View forget password.
-     * 
+     *
      * @return response
      **/
     public function forgottenPassword()
@@ -717,7 +688,7 @@ class Auth extends CI_Controller
     }
     /**
      * Send email forget password.
-     * 
+     *
      * @return redirect
      **/
     public function forgotPass()
@@ -762,10 +733,10 @@ class Auth extends CI_Controller
     }
     /**
      * View reset password.
-     * 
+     *
      * @param string $encrypted_string random string
      * @param int    $user_id          user id
-     * 
+     *
      * @return response
      **/
     public function resetPassword($encrypted_string, $user_id)
@@ -789,7 +760,7 @@ class Auth extends CI_Controller
     }
     /**
      * Post reset password.
-     * 
+     *
      * @return response
      **/
     public function postResetPassword()
@@ -815,9 +786,9 @@ class Auth extends CI_Controller
     }
     /**
      * Check Resiter facebook.
-     * 
+     *
      * @param int $fb_id facebookid
-     * 
+     *
      * @return bool
      **/
     public function registerFbCheck($fb_id)
@@ -832,14 +803,14 @@ class Auth extends CI_Controller
     /**
      * View step 1 Resiter facebook
      * Choose roles artsit/fans.
-     * 
+     *
      * @return Response
      **/
     public function registerFbSt1()
     {
         $id_fb = $_SESSION['FB_ID'];
         if ($this->registerFbCheck($id_fb)) {
-            // 
+            //
             $this->load->view('includes/header');
             $this->load->view('includes/navbar');
             $this->load->view('auth/choosestype_fb');
@@ -850,7 +821,7 @@ class Auth extends CI_Controller
     }
     /**
      * View step 2 Resiter facebook.
-     * 
+     *
      * @return Response
      **/
     public function registerFbSt2()
@@ -874,7 +845,7 @@ class Auth extends CI_Controller
     }
     /**
      * Confirm register facebook.
-     * 
+     *
      * @return redirect
      **/
     public function registerFbSt3()
@@ -1000,7 +971,7 @@ class Auth extends CI_Controller
     }
     /**
      * Login facebook.
-     * 
+     *
      * @return response
      **/
     public function loginFb()
@@ -1009,7 +980,7 @@ class Auth extends CI_Controller
     }
     /**
      * Confirm login facebook.
-     * 
+     *
      * @return redirect
      **/
     public function loginFbPost()
@@ -1026,14 +997,14 @@ class Auth extends CI_Controller
     }
     /**
      * Register google.
-     * 
+     *
      * @return redirect
      **/
     public function registerWithGoogle()
     {
         include APPPATH.'libraries/Google/autoload.php';
         $config_google = $this->config->item('googleplus');
-        //Insert your cient ID and secret 
+        //Insert your cient ID and secret
         //You can get it from : https://console.developers.google.com/
         $client_id = $config_google['client_id'];
         $client_secret = $config_google['client_secret'];
@@ -1081,16 +1052,16 @@ class Auth extends CI_Controller
     }
     /**
      * View Register affilaite.
-     * 
+     *
      * @return redirect
      **/
     public function registerAffliate()
     {
         $parent_affiliate = $this->input->post('affiliateId');
-       if( $this->session->userdata('loged_in')){ 
+       if( $this->session->userdata('loged_in')){
            redirect('amper/become_affiliate/'.$parent_affiliate);
        } else {
-       
+
         if (isset($parent_affiliate)) {
             $data['parent_affiliate'] = $this->db->select('u.firstname,u.lastname,a.affiliate_id')->where('affiliate_id', $parent_affiliate)->join('users u', 'a.user_id = u.id')->get('affiliates a')->row();
             if (!empty($data['parent_affiliate'])) {
@@ -1109,7 +1080,7 @@ class Auth extends CI_Controller
     }
     /**
      * Confirm Affiliate login.
-     * 
+     *
      * @return redirect
      **/
     public function loginAffiliate()
@@ -1150,7 +1121,7 @@ class Auth extends CI_Controller
     }
     /**
      * Confirm register affilaite.
-     * 
+     *
      * @return redirect
      **/
     public function postRegisterAffliate()
@@ -1205,7 +1176,7 @@ class Auth extends CI_Controller
     }
     /**
      * View Register google step 1.
-     * 
+     *
      * @return reponse
      **/
     public function registerGgSt1()
@@ -1217,7 +1188,7 @@ class Auth extends CI_Controller
     }
     /**
      * View Register google step 2.
-     * 
+     *
      * @return response
      **/
     public function registerGgSt2()
@@ -1241,7 +1212,7 @@ class Auth extends CI_Controller
     }
     /**
      * Confirm  Register google.
-     * 
+     *
      * @return redirect
      **/
     public function registerGgSt3()
@@ -1382,7 +1353,7 @@ class Auth extends CI_Controller
     }
     /**
      * Check Register google.
-     * 
+     *
      * @param int $email email
      *
      * @return bool
@@ -1398,14 +1369,14 @@ class Auth extends CI_Controller
     }
     /**
      * Confirm Login google.
-     * 
+     *
      * @return redirect
      **/
     public function loginGgPost()
     {
         include APPPATH.'libraries/Google/autoload.php';
         $config_google = $this->config->item('googleplus');
-        //Insert your cient ID and secret 
+        //Insert your cient ID and secret
         //You can get it from : https://console.developers.google.com/
         $client_id = $config_google['client_id'];
         $client_secret = $config_google['client_secret'];
@@ -1452,19 +1423,19 @@ class Auth extends CI_Controller
             }
         }
     }
-    
+
     public function amp_form()
     {
         $data['user_data'] = $this->session->userdata('user_data');
-   
+
         $this->load->view('includes/header', $data);
         $this->load->view('includes/navbar', $data);
         $this->load->view('footer/amp_form', $data);
         $this->load->view('includes/footer', $data);
     }
-    
+
     public function amp_form_send(){
-       
+
         $this->load->library('form_validation');
         $this->form_validation->set_rules('parent_name', 'parent_name', 'required');
                 $this->form_validation->set_rules('parent_address', 'parent_address', 'required');
@@ -1483,7 +1454,7 @@ class Auth extends CI_Controller
                         'dob' => strtotime($newBirthDate),
                         'place_of_birth' => $this->input->post('place_birth'),
                        'user_id'=>$this->input->post('user_id')
-                        
+
                     );
          if( $this->db->insert('parental_forms', $insertArr)) {
              redirect('subscriptions/checkout/Artist_basic');
@@ -1495,12 +1466,12 @@ class Auth extends CI_Controller
     }
     //Function to verification mail
     public function verification($token){
-       
+
         $userDetails = $this->db->where('token', $token)->where('active', 2)->get('users')->row_array();
         if($userDetails){
             $this->M_user->update_user_id($userDetails['id'], $userDetails['email']);
             $updateStatus = array('active' => 1);
-            $this->db->where('id', $userDetails['id']); 
+            $this->db->where('id', $userDetails['id']);
             $this->db->update('users', $updateStatus);
             $data['tmp_email'] = $userDetails['email'];
             $this->signup($data, $step = 1);
@@ -1508,7 +1479,7 @@ class Auth extends CI_Controller
             $this->session->set_flashdata('message_error', 'Invalid link please signup again');
             redirect('/account/signup', 'refresh');
         }
-       
+
     }
 
     //Function to send mail
@@ -1518,9 +1489,9 @@ class Auth extends CI_Controller
         $data['encrypted_string'] = $token;
         $data['subject_main'] = 'Congratulation and welcome to Big music, where both Artists & Fans EARN MONEY by selling Your Music!';
         $data['subject_thank'] = 'Thanks for Joining. Please Take a Moment to Confirm Your Email Address and User login: '.$email;
-        
+
         $message = $this->load->view('email/account_confirmation_mail', $data, true);
-        
+
         $this->load->library('email');
         $config['protocol'] = 'smtp';
         $config['charset'] = 'utf-8';
@@ -1551,5 +1522,5 @@ class Auth extends CI_Controller
        echo 'success';
     }
 
-    
+
 }

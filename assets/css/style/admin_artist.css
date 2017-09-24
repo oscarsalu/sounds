@@ -1,7 +1,9 @@
 body {
     color: #555;
-    background: #000;
+    background-image: url('../../../assets/images/bg_fcopy.png');
+    background-color: red;
     overflow-x: hidden;
+    background-position: 50% 50%;
     word-wrap: break-word;
     text-rendering: optimizeLegibility;
 }
@@ -11,7 +13,7 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1;max-wid
 
 /*LAYOUT*/
 .head .wrap 	{height:100%;background:#fff;-webkit-box-shadow:0 1px 4px rgba(0,0,0,.2);-moz-box-shadow:0 1px 4px rgba(0,0,0,.2);box-shadow:0 1px 4px rgba(0,0,0,.2);display:inline-block;}
-.main		{float:left;width:100%;display:block;min-height:500px;padding:30px 0 30px;}
+.main		{float:left;width:100%;display:block;min-height:600px;padding:30px 0 30px;}
 .wrap 		{margin:0 auto;width:1170px;text-align:left;position:relative;max-width:96%;}
 
 .row			 {margin:0 -15px;}

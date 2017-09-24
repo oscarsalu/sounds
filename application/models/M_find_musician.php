@@ -39,6 +39,20 @@ class M_find_musician extends CI_Model
 
         return $results;
     }
+    public function rand_country($limit)
+    {
+        $results = $this->db->select('countries.country')
+                    ->from('users')
+                    ->join('countries', 'users.countries = countries.id')
+                    ->where('users.role', 1)->where('users.is_admin', 0)->where('users.lock', 0)
+                    ->group_by('users.id')
+                    ->order_by('users.id', 'RANDOM')
+                    ->limit($limit)
+                    ->get()
+                    ->result_array();
+
+        return $results;
+    }
     /**
      * Search find a musican.
      *

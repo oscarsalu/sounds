@@ -32,27 +32,27 @@ class Admin_profile extends CI_Controller
             }
         }
         $ac = $this->session->userdata('access');
-      
+
          $data['redirect_url']=$this->curPageURL();
         if (!isset($ac) && !in_array($ac, $this->config->item('access_password'))) {
-           
+
             redirect("access?redirect_url=".$data['redirect_url']);
         }
     }
-    
+
     public function curPageURL() {
- $pageURL = 'http';
- if ( isset( $_SERVER["HTTPS"] ) && strtolower( $_SERVER["HTTPS"] ) == "on" ) {
-    $pageURL .= "s";
-}
- $pageURL .= "://";
- if ($_SERVER["SERVER_PORT"] != "80") {
-  $pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
- } else {
-  $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
- }
- return $pageURL;
- 
+     $pageURL = 'http';
+     if ( isset( $_SERVER["HTTPS"] ) && strtolower( $_SERVER["HTTPS"] ) == "on" ) {
+        $pageURL .= "s";
+    }
+     $pageURL .= "://";
+     if ($_SERVER["SERVER_PORT"] != "80") {
+      $pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
+     } else {
+      $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+     }
+     return $pageURL;
+
 }
     /**
      * View Artist landing page.
@@ -264,9 +264,7 @@ class Admin_profile extends CI_Controller
         $this->load->library('form_validation');
         $this->form_validation->set_rules('city', 'city', 'required|max_length[50]');
         $this->form_validation->set_rules('address', 'address', 'required|max_length[255]');
-        $this->form_validation->set_rules('address2', 'address2', 'max_length[255]');
-        $this->form_validation->set_rules('zipcode', 'zipcode', 'max_length[50]');
-        $this->form_validation->set_rules('state', 'state', 'max_length[255]');
+        $this->form_validation->set_rules('County', 'state', 'max_length[255]');
         $this->form_validation->set_rules('phone', 'phone', 'max_length[50]');
         $this->form_validation->set_rules('artist_email', 'artist_email', 'max_length[255]');
         $this->form_validation->set_rules('booking_info_email', 'booking_info_email', 'max_length[255]');
@@ -299,13 +297,13 @@ class Admin_profile extends CI_Controller
             $this->basic_info();
         }
     }
-     
+
     /**
      * Get Bio
      */
-    
+
     public function get_bio(){
-        
+
         $admin = $this->session->userdata('is_admin');
         if (isset($admin) && $admin == 1) {
             $data['is_admin'] = $admin;
@@ -334,7 +332,7 @@ class Admin_profile extends CI_Controller
         $this->session->set_userdata('user_data', $user_data);
         redirect('artist/biomanager');
     }
-    
+
      /**
      * Update Lyrics.
      **/
@@ -582,7 +580,7 @@ class Admin_profile extends CI_Controller
 
         return true;
     }
-    
+
     public function set_draggable_avatar(){
         $this->input->post('x');
         $this->input->post('y');
@@ -591,7 +589,7 @@ class Admin_profile extends CI_Controller
         $this->db->where(array('id'=>$user_id))->update('users',$data);
         echo json_encode($data);
     }
-    
+
     public function update_about(){
         $firstname=$this->input->post('firstname');
         $lastname=$this->input->post('lastname');
@@ -607,4 +605,3 @@ class Admin_profile extends CI_Controller
                 redirect('artist/profile');
     }
 }
-

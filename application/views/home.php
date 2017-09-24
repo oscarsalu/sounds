@@ -21,7 +21,7 @@ if($this->session->flashdata('message_error')){
 <link rel="stylesheet" type="text/css" href="<?php base_url() ?>assets/css/mystyle.css" />
 <div id="home">
 
-<section class="s1 text-center" style="padding:50px;height:1100px;color:#FFF">
+<section class="s1 text-center" style="padding:50px;height:1100px;color:#FFF;">
     <?php echo $this->M_user->background_videos('home',1); ?>
     
     <div class="hs1" style="margin-top: 0px;">
@@ -199,7 +199,7 @@ if($this->session->flashdata('message_error')){
                <p about="/content_desc_home_amp1/" class="text-muted"><span property="content" id="content_desc_home_amp1"><?php echo $this->M_text->getdatavalue('<_scontent_desc_home_amp1_s>','An Industry First 4 level Affiliate Music Player, Fans & Artist can earn money
                        Post This Player almost anywhere with shortcode you embed') ?></span></p>
            
-                                             <h5 about="/content_title_home_amp1_link/" class="text-center"><span property="content" id="content_title_home_amp1_link"><?php echo $this->M_text->getdatavalue('<_scontent_title_home_amp1_link_s>','<a href="/make_money"  display:inline-block;">View Artist Music Player</a>'); ?></span></h5>
+            <h5 about="/content_title_home_amp1_link/" class="text-center"><span property="content" id="content_title_home_amp1_link"><?php echo $this->M_text->getdatavalue('<_scontent_title_home_amp1_link_s>','<a href="/make_money"  display:inline-block;">View Artist Music Player</a>'); ?></span></h5>
             </div>
             <div class="col-lg-3 col-sm-6  serive-box text-center">
                 <img class="img-rounded img-responsive img-center" src="<?php echo base_url();?>assets/images/al_page.png" alt="">

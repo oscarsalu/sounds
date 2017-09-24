@@ -119,9 +119,9 @@ input[type=radio] + label:before{
 </script>
 
 <script src="<?php echo base_url(); ?>assets/js/detail_pages/artists/artist_admin_1.js"></script>
-<div class="admin-profile" style="" id="crop-avatar">
+<div class="admin-profile" id="crop-avatar">
     <!--main-->
-	<main class="main" role="main" style="background-image: url('../assets/images/bg_fancapture.png');background-position: 50% 50%;background-attachment: fixed;">
+	<main class="main" role="main" style="background-color: green; background-image: url('../assets/images/bg_fancapture.png');background-position: 40% 60%;background-attachment: fixed;">
 		<!--wrap-->
 		<div class="wrap clearfix_ad">
             <div class="cover-allsong" id="banner-modal">
@@ -153,13 +153,13 @@ input[type=radio] + label:before{
  
                   
                     <img src="<?php echo $this->M_user->get_avata($user_data['id'])?>" class="thumbnail" height="150" width="150" alt="Avatar"/>
-                      <a class="avatar_change" href="#" data-toggle="modal" data-target="#avatar-modal" style="color: pink;">Change Avatar</a>
+                      <a class="avatar_change" href="#" data-toggle="modal" data-target="#avatar-modal" style="color: black;">Change Avatar</a>
                 </div>
               <?php } else { ?>
                 
                  <div id="avatar1" class="img-avarar" title="Change the avatar" style="right:auto;bottom:auto; left:0px;top:0px;"> 
  
-                    <a class="avatar_change" href="#" data-toggle="modal" data-target="#avatar-modal" style="color: pink;">Change Avatar</a>
+                    <a class="avatar_change" href="#" data-toggle="modal" data-target="#avatar-modal" style="color: black;">Change Avatar</a>
                     <img src="<?php echo $this->M_user->get_avata($user_data['id'])?>" class="thumbnail" height="150" width="150" alt="Avatar"/>
                     
                 </div>
@@ -962,6 +962,7 @@ input[type=radio] + label:before{
 		</div>
 		<!--//wrap-->
 	</main>
+
 	<!--//main-->
     <!-- Cropping modal -->
     <div class="modal fade new_modal_style" id="avatar-modal" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
@@ -1279,7 +1280,7 @@ $parts = explode(' ', $name);
                 </div>            
                 <div class="modal-body">
                     <div class="form-group col-xs-12">
-                        <p>Desired template change will be seen upon selecting Create Profile as Fan</p>
+                        <p>Desired template change will be seen upon selecting Preview as Fan</p>
                     </div>
                     <div class="alp-template_box">
                         <ul class="sortable with_main_songs"> 

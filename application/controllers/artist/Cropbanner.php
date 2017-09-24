@@ -58,7 +58,11 @@ class Cropbanner extends CI_Controller
             if ($type) {
                 $extension = image_type_to_extension($type);
                 $id = $_POST['id_user'];
-                $src = FCPATH.'uploads/'.$id.'/photo/banner/banner_original'.$extension;
+                $date =date('YmdHis');
+                $bannerimage= $date.''.$extension;
+                $this->session->set_userdata('bannerimage', $bannerimage);
+                $src = FCPATH.'uploads/'.$id.'/photo/banner/'.$bannerimage;
+                //$src = FCPATH.'uploads/'.$id.'/photo/banner/banner_original'.$extension;
                 $url = FCPATH.'uploads/'.$id.'/photo/banner/';
         //$src = 'uploads/' . date('YmdHis') . '.original' . $extension;
 
@@ -79,7 +83,7 @@ class Cropbanner extends CI_Controller
                 $this->extension = $extension;
                 $this->setDst();
                 $updateArr = array(
-                                'banner_image' => 'banner.png',
+                                'banner_image' => $this->session->userdata('bannerimage'),
                             );
                 $this->db->update('users', $updateArr, array('id' => $id));
             } else {
@@ -99,7 +103,7 @@ class Cropbanner extends CI_Controller
     private function setDst()
     {
         $id = $_POST['id_user'];
-        $this->dst = FCPATH.'uploads/'.$id.'/photo/banner/banner.png';
+        $this->dst = FCPATH.'uploads/'.$id.'/photo/banner/'.$this->session->userdata('bannerimage');
     //$this -> dst = 'uploads/' . date('YmdHis') . '.png';
     }
 

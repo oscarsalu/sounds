@@ -181,12 +181,60 @@
             <h1 class="header_h1" about="/content_homes1_tittle_new1_29/">
                  <span property="content" id= "content_homes1_tittle_new1_29">
                     <?php
-                        echo $this->M_text->getdatavalue('<_scontent_homes1_tittle_new1_29_s>', 'STATE');
+                        echo $this->M_text->getdatavalue('<_scontent_homes1_tittle_new1_29_s>', 'COUNTRY');
                     ?>
                  </span> 
             </h1>
+           
             <div class="row">
-                <div class="col-xs-6 col-sm-3">
+             <?php 
+            foreach ($countries as $key) {
+                if (count($countries) <= 4) { ?>
+                <div class="col-xs-6 col-sm-12">
+                    <ul class="list">
+                        <li><a href="#"><?php echo $key['country']; ?></a></li>
+                    </ul>
+                </div>
+            <?php    }elseif (count($countries) <= 8) {
+                while (count($countries) <= 4) { ?>
+                <div class="col-xs-6 col-sm-6">
+                    <ul class="list">
+                        <li><a href="#"><?php echo $key['country']; ?></a></li>
+                    </ul>
+                </div>
+               <?php } while (count($countries) >= 4 && count($countries) <= 8) { ?>
+                  <div class="col-xs-6 col-sm-6">
+                    <ul class="list">
+                        <li><a href="#"><?php echo $key['country']; ?></a></li>
+                    </ul>
+                </div>
+               <?php
+           }
+                # code...
+            }elseif (count($countries) <= 12) { 
+                while (count($countries) <= 4) { ?>
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="list">
+                        <li><a href="#"><?php echo $key['country']; ?></a></li>
+                    </ul>
+                </div>
+               <?php } while (count($countries) > 4 && count($countries)<=8) { ?>
+                  <div class="col-xs-6 col-sm-4">
+                    <ul class="list">
+                        <li><a href="#"><?php echo $key['country']; ?></a></li>
+                    </ul>
+                </div>
+            <?php } while (count($countries) > 8 && count($countries)<=12) { ?>
+                  <div class="col-xs-6 col-sm-4">
+                    <ul class="list">
+                        <li><a href="#"><?php echo $key['country']; ?></a></li>
+                    </ul>
+                </div>
+            <?php 
+        }
+            } }
+             ?>
+                <!-- <div class="col-xs-6 col-sm-3">
                     <ul class="list">
                         <li><a href="#">Alabama</a></li>
                         <li><a href="#" >Alaska</a></li>
@@ -218,7 +266,7 @@
                         <li><a href="#">American Samoa</a></li>
                         <li><a href="#">Arizona</a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
             

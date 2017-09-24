@@ -56,5 +56,5 @@ $config['proxy_ips']               = '';
 $config['admin_email']               = 'oscarsalu@gmail.com';
 $config['admin_name']               = 'sound.com';
 $config['composer_autoload'] = TRUE;
-$config['access_password']=array("43h77","8e742","89k62","76g52","985d4","9r582");
+$config['access_password']=array("43h99","8e612","79k62","76y52","345d4","9r481");
 

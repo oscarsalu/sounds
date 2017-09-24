@@ -71,6 +71,7 @@ class Find_A_Musician extends MX_Controller
     {
         $this->load->library('pagination');
         $data['musicians'] = $this->M_find_musician->rand_musician(12);
+        $data['countries'] = $this->M_find_musician->rand_country(12);
         $data['genres'] = $this->M_genre->get_all_genres();
         $data['user_data'] = $this->session->userdata('user_data');
         $this->load->view('includes/header', $data);

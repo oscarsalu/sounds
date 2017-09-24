@@ -61,11 +61,29 @@ class Notices extends CI_Controller
         $this->load->view('includes/footer', $data);
     }
     //Funtion to delete notice
-    public function remove()
+    public function remove($notice_id)
     {
-        $notice_id = $this->input->post('notification_id');
-        $this->M_notify->remove_notifications($notice_id);   
+        //$notice_id = $this->input->post('notification_id');
+        $this->M_notify->remove_notifications($notice_id);
+        $data['user_data'] = $this->session->userdata('user_data');
+        $user_id = $this->session->userdata('loged_in');
+        $config['base_url'] = base_url().'notifications/all';
+        $config['per_page'] = 12;
+        $start = $this->input->get('per_page');
+        if (empty($start)) {
+            $start = 1;
+        }
+        $config['total_rows'] = $this->M_notify->num_notices($user_id);
+        $this->load->library('pagination', $config);
+        $data['notifications'] = $this->M_notify->get_all_notifications($user_id, $config['per_page'], $start - 1);
+        $data['register_affiliates'] = $this->M_notify->get_all_notifications_by_type($user_id, $config['per_page'], $start - 1,  'amper_register');
+        $data['per_page'] = 12;
         echo json_encode("success");
+        $this->load->view('includes/header', $data);
+        $this->load->view('includes/navbar', $data);
+        $this->load->view('notices.php', $data);
+        $this->load->view('includes/footer', $data);   
+        
     }
 
     public function get_data_by_type($user_id, $type)

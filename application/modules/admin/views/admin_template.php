@@ -264,7 +264,7 @@
         </div>
         <footer class="app-footer">
             <div class="wrapper">
-                <span class="pull-right">2.0 <a href=""><i class="fa fa-long-arrow-up"></i></a></span> © 2015 Copyright.
+                <span class="pull-right">2.0 <a href=""><i class="fa fa-long-arrow-up"></i></a></span> © <p>Copyright  &copy OSK Programmers <?php echo date('Y');?></p>.
             </div>
         </footer>
         <div>

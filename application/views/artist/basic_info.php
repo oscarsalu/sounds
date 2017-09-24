@@ -107,6 +107,23 @@
         		        </div>
                 	</div>
                     <div class="form-group">
+                        <label for="home_page" class="col-sm-2 control-label">*Country</label>
+                        <div class="col-sm-10 col-md-8">
+                            <select name="countries" class="form-control">
+                                <?php 
+                                foreach ($countries as $key) {
+                                    ?><option value="<?php echo $key['id'] ?>" <?php if ($user_data['countries'] == $key['id']) {
+    echo 'selected';
+} ?> >
+                                    <?php echo $key['country']?></option><?php 
+                                }
+                                ?>
+                            </select>
+                            <?php echo form_error('genre', '<div class="strike-heading"><span><div class="error">', '</div></span></div>'); ?>
+                  
+                        </div>
+                    </div>
+                    <div class="form-group">
                 		<label for="birthday" class="col-sm-2 control-label"><strong>* Birthday</strong></label>
                 		<div class="col-sm-10 col-md-8">
                             <input type="date" name="birthday" class="form-control" value="<?php if ($user_data['birthday'] != 0) {
@@ -122,7 +139,7 @@
                 		</div>
                 	</div>
                     <div class="form-group">
-                		<label for="home_page" class="col-sm-2 control-label">State / Province</label>
+                		<label for="home_page" class="col-sm-2 control-label">State / County</label>
                 		<div class="col-sm-10 col-md-8">
                 			<input type="text" name="state" class="form-control" value="<?php echo $user_data['state']?>">
                             <?php echo form_error('state', '<div class="strike-heading"><span><div class="error">', '</div></span></div>'); ?>
