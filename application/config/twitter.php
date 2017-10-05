@@ -1,9 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-$config['twitter_consumer_token']		= 'dwhOPFqaCQH08wvfKl3izAXi8';
-$config['twitter_consumer_secret']		= 'PwgWPhXg1vfUucRcEHRShjicO7PqlU6eQYEoDpg7Z3NHur0cdd';
-$config['twitter_access_token']			= '701721111323541505-CrhjK5ghV9vizlZETFYt0Y88eUL25p1'; // Optional
-$config['twitter_access_secret']		= '2jByoYeS9PhT34ng7xZKzph7oZ8Qi4xDBpdk00kqgkC8X'; // Optional
+$config['twitter_consumer_token']		= 'hNNEG2U4nHgTjCnhuRKeqqEyY';
+$config['twitter_consumer_secret']		= 'kfqTDYjbfGgiOBx2UPFybJf92Ze3qX5sLzp5FbxWkJi5rj8EHo';
+$config['twitter_access_token']			= '186084029-avVUNVFXim4tTntEDIKySMYSRQNAECGqLS0p5nqF'; // Optional
+$config['twitter_access_secret']		= 'QhCnLDA88o2LD8OAEF5fSz2gFstBwtCA5jTODHjQL9Z9k'; // Optional
 
 /*
 // TTT

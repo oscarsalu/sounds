@@ -238,7 +238,7 @@ class Auth extends CI_Controller
                 $userDetails = $this->db->where('email', $email)->where('active', 1)->get('users')->row_array();
                 $updateArr = array(
                     'artist_name' => $this->input->post('artist_name'),
-                    'countries' => 217,
+                    'countries' => 109,
                     'genre' => $this->input->post('genre'),
                     'city' => $this->input->post('city'),
                     'firstname' => $this->input->post('name'),
@@ -346,7 +346,7 @@ class Auth extends CI_Controller
                 $userDetails = $this->db->where('email', $email)->where('active', 1)->get('users')->row_array();
                 $updateArr = array(
                     'fan_name' => $this->input->post('fan_name'),
-                    'countries' => 217,
+                    'countries' => 109,
                     'gender' => $this->input->post('gender'),
                     'birthday'=>strtotime($newBirthDate),
                     'city' => $this->input->post('city'),
@@ -875,7 +875,7 @@ class Auth extends CI_Controller
                         'hash' => $data_password['hash'],
                         'email' => $this->input->post('email'),
                         'artist_name' => $fbfirstname,
-                        'countries' => 217,
+                        'countries' => 109,
                         'genre' => $this->input->post('genre'),
                         'city' => $this->input->post('city'),
                         'firstname' => $fbfirstname,
@@ -931,7 +931,7 @@ class Auth extends CI_Controller
                         'hash' => $data_password['hash'],
                         'email' => $this->input->post('email'),
                         'fan_name' => $fblastname,
-                        'countries' => 217,
+                        'countries' => 109,
                         'gender' => $fbgender,
                         'city' => $this->input->post('city'),
                         'role' => $role,
@@ -1247,7 +1247,7 @@ class Auth extends CI_Controller
                         'hash' => $data_password['hash'],
                         'email' => $ggemail,
                         'artist_name' => $gglastname,
-                        'countries' => 217,
+                        'countries' => 109,
                         'city' => $this->input->post('city'),
                         'firstname' => $ggfirstname,
                         'lastname' => $gglastname,
@@ -1302,7 +1302,7 @@ class Auth extends CI_Controller
                         'hash' => $data_password['hash'],
                         'email' => $ggemail,
                         'fan_name' => $gglastname,
-                        'countries' => 217,
+                        'countries' => 109,
                         'city' => $this->input->post('city'),
                         'role' => $role,
                         'active' => '1',
@@ -1493,7 +1493,12 @@ class Auth extends CI_Controller
         $message = $this->load->view('email/account_confirmation_mail', $data, true);
 
         $this->load->library('email');
+        
         $config['protocol'] = 'smtp';
+        $config['smtp_host'] = 'ssl://smtp.googlemail.com';
+        $config['smtp_port'] = 465;
+        $config['smtp_user'] = 'oscarsalu@gmail.com';
+        $config['smtp_pass'] = 'bling07zee';      
         $config['charset'] = 'utf-8';
         $config['mailtype'] = 'html';
         $config['newline'] = "\r\n";

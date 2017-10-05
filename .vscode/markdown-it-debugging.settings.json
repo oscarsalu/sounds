@@ -1,0 +1,273 @@
+{
+    "markdownItOptions": {
+        "html": true,
+        "linkify": false,
+        "breaks": false,
+        "typographer": true,
+        "quotes": "“”‘’"
+    },
+    "plugins": [
+        {
+            "enabled": true,
+            "path": "assets/template/admin/bower_components/select2",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/template/admin/bower_components/bootstrap",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/template/admin/bower_components/chartjs",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/template/admin/bower_components/animate.css",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/js/createjs/js/aloha/plugins/extra/linkchecker",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/js/createjs/js/aloha/plugins/extra/formatlesspaste",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/js/createjs/js/aloha/plugins/extra/toc",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/js/createjs/js/aloha/plugins/extra/comments",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/js/createjs/js/aloha/plugins/extra/ribbon",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/js/createjs/js/aloha/plugins/extra/speak",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/js/createjs/js/aloha/plugins/extra/cite",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/js/createjs/js/aloha/plugins/extra/hints",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/js/createjs/js/aloha/plugins/extra/googletranslate",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/js/createjs/js/aloha/plugins/extra/draganddropfiles",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/js/createjs/js/aloha/plugins/common/contenthandler",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/js/createjs/js/aloha/plugins/common/table",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/js/createjs/js/aloha/plugins/common/align",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/js/createjs/js/aloha/plugins/common/highlighteditables",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/js/createjs/js/aloha/plugins/common/block",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/js/createjs/js/aloha/plugins/common/abbr",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/js/createjs/js/aloha/plugins/common/paste",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/js/createjs/js/aloha/plugins/common/commands",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/js/createjs/js/aloha/plugins/common/image",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/js/createjs/js/aloha/plugins/common/undo",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/js/createjs/js/aloha/plugins/common/list",
+            "options": {
+                
+            }
+        },
+        {
+            "enabled": true,
+            "path": "assets/customscrollbar",
+            "options": {
+                
+            }
+        }
+    ],
+    "testDataSet": [
+        "application/libraries/PayPal-PHP-SDK/vendor/psr/log/README.md",
+        "application/libraries/PayPal-PHP-SDK/vendor/paypal/rest-api-sdk-php/README.md",
+        "application/libraries/PayPal-PHP-SDK/vendor/paypal/rest-api-sdk-php/sample/README.md",
+        "application/libraries/PayPal-PHP-SDK/vendor/paypal/rest-api-sdk-php/release_notes.md",
+        "application/libraries/PayPal-PHP-SDK/vendor/paypal/rest-api-sdk-php/CHANGELOG.md",
+        "application/libraries/PayPal-PHP-SDK/vendor/paypal/rest-api-sdk-php/CONTRIBUTING.md",
+        "application/libraries/google-api-php-client-master/UPGRADING.md",
+        "application/libraries/google-api-php-client-master/README.md",
+        "application/libraries/google-api-php-client-master/CONTRIBUTING.md",
+        "application/third_party/pritteer/README.md",
+        "application/third_party/pritteer/LICENSE.md",
+        "application/third_party/pritteer/CHANGELOG.md",
+        "assets/template/admin/bower_components/select2/README.md",
+        "assets/template/admin/bower_components/select2/docs/README.md",
+        "assets/template/admin/bower_components/select2/LICENSE.md",
+        "assets/template/admin/bower_components/select2/CONTRIBUTING.md",
+        "assets/template/admin/bower_components/DataTables/Readme.md",
+        "assets/template/admin/bower_components/DataTables/Contributing.md",
+        "assets/template/admin/bower_components/bootstrap/README.md",
+        "assets/template/admin/bower_components/matchHeight/README.md",
+        "assets/template/admin/bower_components/matchHeight/CHANGELOG.md",
+        "assets/template/admin/bower_components/chartjs/README.md",
+        "assets/template/admin/bower_components/chartjs/docs/04-Polar-Area-Chart.md",
+        "assets/template/admin/bower_components/chartjs/docs/06-Advanced.md",
+        "assets/template/admin/bower_components/chartjs/docs/00-Getting-Started.md",
+        "assets/template/admin/bower_components/chartjs/docs/02-Bar-Chart.md",
+        "assets/template/admin/bower_components/chartjs/docs/07-Notes.md",
+        "assets/template/admin/bower_components/chartjs/docs/01-Line-Chart.md",
+        "assets/template/admin/bower_components/chartjs/docs/05-Pie-Doughnut-Chart.md",
+        "assets/template/admin/bower_components/chartjs/docs/03-Radar-Chart.md",
+        "assets/template/admin/bower_components/chartjs/LICENSE.md",
+        "assets/template/admin/bower_components/chartjs/CONTRIBUTING.md",
+        "assets/template/admin/bower_components/bootstrap-switch/README.md",
+        "assets/template/admin/bower_components/bootstrap-switch/CHANGELOG.md",
+        "assets/template/admin/README.md",
+        "assets/themes/page-4/README.md",
+        "assets/js/gauge.js/README.md",
+        "assets/js/createjs/js/aloha/plugins/extra/formatlesspaste/README.md",
+        "assets/js/createjs/js/aloha/plugins/extra/ribbon/README.md",
+        "assets/js/createjs/js/aloha/plugins/extra/wai-lang/README.md",
+        "assets/js/createjs/js/aloha/plugins/extra/hints/README.md",
+        "assets/js/createjs/js/aloha/plugins/extra/googletranslate/README.md",
+        "assets/js/createjs/js/aloha/plugins/extra/draganddropfiles/TODO.md",
+        "assets/js/createjs/js/aloha/plugins/extra/draganddropfiles/README.md",
+        "assets/js/createjs/js/aloha/plugins/common/contenthandler/README.md",
+        "assets/js/createjs/js/aloha/plugins/common/image/README.md",
+        "assets/js/ckeditor/plugins/wsc/README.md",
+        "assets/js/ckeditor/plugins/wsc/LICENSE.md",
+        "assets/js/ckeditor/plugins/scayt/README.md",
+        "assets/js/ckeditor/plugins/scayt/LICENSE.md",
+        "assets/js/ckeditor/plugins/scayt/CHANGELOG.md",
+        "assets/js/ckeditor/CHANGES.md",
+        "assets/js/ckeditor/skins/moono/readme.md",
+        "assets/js/ckeditor/README.md",
+        "assets/js/ckeditor/LICENSE.md",
+        "assets/js/flot/API.md",
+        "assets/js/flot/README.md",
+        "assets/js/flot/PLUGINS.md",
+        "assets/js/flot/NEWS.md",
+        "assets/js/flot/FAQ.md",
+        "assets/js/flot/CONTRIBUTING.md",
+        "assets/js/bxslider/readme.md",
+        "assets/playermusic/lib/README.md",
+        "vendor/aws/aws-sdk-php/LICENSE.md",
+        "vendor/aws/aws-sdk-php/NOTICE.md",
+        "vendor/symfony/event-dispatcher/README.md",
+        "vendor/symfony/event-dispatcher/CHANGELOG.md",
+        "vendor/guzzle/guzzle/UPGRADING.md",
+        "vendor/guzzle/guzzle/README.md",
+        "vendor/guzzle/guzzle/CHANGELOG.md",
+        "vendor/guzzle/guzzle/src/Guzzle/Iterator/README.md"
+    ],
+    "debugSessionOptions": {
+        "saveHtmlFiles": true,
+        "showLastHTML": true,
+        "quitOnFirstPluginLoadFailure": false,
+        "quitOnFirstPluginActivationFailure": false,
+        "quitOnFirstRenderingFailure": true
+    }
+}

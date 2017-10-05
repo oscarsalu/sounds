@@ -104,36 +104,22 @@ $(document).ready(function(){
                           <?php echo form_error('first_name'); ?>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-3 control-label pagetext-color">Favorite Genre:</label>
-                    <div class="col-sm-9">
-                     <!--  <input type="text" name="last_name" value="<?php echo $user_data['lastname']  ?>" class="form-control" placeholder="Favorite Genre">
-                             <?php echo form_error('last_name'); ?> -->
-                        <select class="form-control" name="genre" id="genre">
-                                    <option value="">Genre</option>
-                                    <?php 
-                                    foreach ($genres as $key) {
-                                        ($key['id'] == set_value(genre)) ? $select = 'selected' : $select = ''; ?><option <?=$select?> value="<?php echo $key['id'] ?>"><?php echo $key['name']?></option><?php 
-                                    } 
-                                    ?>
-                        </select>     
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-3 control-label pagetext-color">Favorite Artist:</label>
-                    <div class="col-sm-9">
+                
+                <!-- <div class="form-group"> -->
+                    <!-- <label for="inputEmail3" class="col-sm-3 control-label pagetext-color">Favorite Artist:</label> -->
+                    <!-- <div class="col-sm-9"> -->
                       <!-- <input type="email"  name="email_paypal" value="<?php echo $U_map['paypal'] ?>" class="form-control" placeholder="Favorite Artist">
                          <?php echo form_error('email_paypal'); ?> -->
-                         <select class="form-control" name="favorite_artist" id="favorite_artist">
+                         <!-- <select class="form-control" name="favorite_artist" id="favorite_artist">
                                     <option value="">Artists</option>
                                     <?php 
                                     foreach ($list_artist as $key) {
                                         ($key['id'] == set_value(favorite_artist)) ? $select = 'selected' : $select = ''; ?><option <?=$select?> value="<?php echo $key['id'] ?>"><?php echo $key['artist_name']?></option><?php 
                                     }
                                     ?>
-                            </select>  
-                    </div>
-                </div>
+                            </select>   -->
+                    <!-- </div> -->
+                <!-- </div> -->
             </div>
             <div class="col-md-6 col-sm-6"> 
                 
@@ -167,6 +153,21 @@ $(document).ready(function(){
                     </div>
                 </div>
                 <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-3 control-label pagetext-color">Favorite Genre:</label>
+                    <div class="col-sm-9">
+                     <!--  <input type="text" name="last_name" value="<?php echo $user_data['lastname']  ?>" class="form-control" placeholder="Favorite Genre">
+                             <?php echo form_error('last_name'); ?> -->
+                        <select class="form-control" name="genre" id="genre">
+                                    <option value="">Genre</option>
+                                    <?php 
+                                    foreach ($genres as $key) {
+                                        ($key['id'] == set_value(genre)) ? $select = 'selected' : $select = ''; ?><option <?=$select?> value="<?php echo $key['id'] ?>"><?php echo $key['name']?></option><?php 
+                                    } 
+                                    ?>
+                        </select>     
+                    </div>
+                </div>
+                <div class="form-group">
                     <label for="inputEmail3" class="col-sm-3 control-label pagetext-color">Favorite Artist:</label>
                     <div class="col-sm-9">
                       <!-- <input type="email"  name="email_paypal" value="<?php echo $U_map['paypal'] ?>" class="form-control" placeholder="Favorite Artist">
@@ -181,7 +182,7 @@ $(document).ready(function(){
                             </select>  
                     </div>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="inputEmail3" class="col-sm-3 control-label pagetext-color">Your Favorite Place:</label>
                     <div class="col-sm-9">
                         <input type="input" name="fav_place" class="form-control " value="<?php echo $user_data['fav_place'] ?>" placeholder="Your Favorite Place">
@@ -208,7 +209,7 @@ $(document).ready(function(){
                         <input type="input" name="age_range" class="form-control" value="<?php echo $user_data['age_range'] ?>" placeholder="Age range">
                         <?php echo form_error('age_range'); ?>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="col-md-12 text-center">
                 <input type="submit" value="Update" class="btn btn-info ">
