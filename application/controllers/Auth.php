@@ -1498,7 +1498,7 @@ class Auth extends CI_Controller
         $config['smtp_host'] = 'ssl://smtp.googlemail.com';
         $config['smtp_port'] = 465;
         $config['smtp_user'] = 'oscarsalu@gmail.com';
-        $config['smtp_pass'] = 'bling07zee';      
+        $config['smtp_pass'] = '';      
         $config['charset'] = 'utf-8';
         $config['mailtype'] = 'html';
         $config['newline'] = "\r\n";
