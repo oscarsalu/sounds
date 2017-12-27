@@ -4,12 +4,7 @@
  * defined set of coding standards.
  *
  * PHP version 5
- *
- * @category  PHP
- *
- * @author    sound99 <author@example.com>
- * @copyright 2016 99SOUND
- * @license   http://www.99SOUND.COM  PHP License 3.01   
+ *   
  *
  * @link      http://pear.php.net/package/PackageName
  */
@@ -20,11 +15,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
  * 
  * @category  PHP
  *
- * @author    sound99 <author@example.com>
- * @copyright 2016 GallerySoft
- * @license   http://www.99SOUND.COM  PHP License 3.01
  *
- * @version   2016
  *
  * @link      http://pear.php.net/package/PackageName
  */
